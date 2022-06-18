@@ -1,0 +1,46 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://infinityswap.one/tokenlist.schema.json",
+    "title": "InfinitySwap Token List",
+    "description": "Schema for list of tokens supported by InfinitySwap",
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "The name of the token list",
+        "type": "string"
+      },
+      "tokens": {
+        "type": "array",
+        "description": "list of tokens in the list",
+        "items": {
+            "type": "object",
+            "description": "Metadata for a single token in the list",
+            "properties": {
+                "principal": {
+                    "type": "string",
+                    "description": "Principal id of a token"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the token"
+                },
+                "symbol": {
+                    "type": "string",
+                    "description": "Symbol of the token"
+                },
+                "standard": {
+                    "type": "string",
+                    "description": "Token standard"
+                }
+            },
+            "required": [
+                "principal",
+                "name",
+                "symbol"
+            ]
+        },
+        "minItems": 1
+      }
+    },
+    "required": [ "name", "tokens" ]
+}
