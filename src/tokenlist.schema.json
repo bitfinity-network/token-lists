@@ -18,25 +18,42 @@
             "properties": {
                 "principal": {
                     "type": "string",
-                    "description": "Principal id of a token"
+                    "description": "Principal id of a token",
+                    "examples": [ "gear3-daaaa-aaaaj-ailpa-cai" ]
                 },
                 "name": {
                     "type": "string",
-                    "description": "Name of the token"
+                    "description": "Name of the token",
+                    "minLength": 1,
+                    "maxLength": 40,
+                    "examples": [ "Token 1" ]
                 },
                 "symbol": {
                     "type": "string",
-                    "description": "Symbol of the token"
+                    "description": "Symbol of the token",
+                    "minLength": 1,
+                    "maxLength": 20,
+                    "examples": ["TKN1"]
+                },
+                "decimals": {
+                    "type": "integer",
+                    "description": "The number of decimals for the token balance",
+                    "minimum": 0,
+                    "maximum": 255,
+                    "examples": [ 8 ]
                 },
                 "standard": {
                     "type": "string",
-                    "description": "Token standard"
+                    "description": "Token standard",
+                    "examples": [ "IS20" ]
                 }
             },
             "required": [
                 "principal",
                 "name",
-                "symbol"
+                "symbol",
+                "decimals",
+                "standard"
             ]
         },
         "minItems": 1
