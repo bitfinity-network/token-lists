@@ -1,4 +1,7 @@
+import { Certificate, HttpAgent, getDefaultAgent } from '@dfinity/agent';
 import TokenJson from './tokenlist.json';
+import encoding from 'text-encoding';
+import { Buffer } from 'buffer';
 
 interface TokenProperties {
   principal: string;
@@ -45,8 +48,36 @@ export class Token {
     return this._standard;
   }
 
+  async wasmHash(agent?: HttpAgent): Promise<string> {
+    const actualAgent = agent ?? getDefaultAgent();
+
+    const path = [
+      new encoding.TextEncoder().encode('canister'),
+      new encoding.TextEncoder().encode(this._principal),
+      new encoding.TextEncoder().encode('module_hash')
+    ];
+
+    const state = await actualAgent.readState(this._principal, {
+      paths: [path]
+    });
+
+    const cert = new Certificate(state, agent);
+    const verified = await cert.verify();
+    if (!verified) {
+      throw new Error('Failed to verify certificate');
+    }
+    const rawHash = cert.lookup(path);
+    
+    let hash = '';
+    if (rawHash) {
+      hash = Buffer.from(rawHash).toString('hex');
+    }
+    return hash;
+  }
+
   static fromJSON(json: string | JsonnableToken): Token {
     let token;
+
     if (typeof json === 'string') {
       token = JSON.parse(json);
     } else {
