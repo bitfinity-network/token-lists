@@ -1,1 +1,1 @@
-export { TokenList, Token } from './tokens';
+export * from './tokens';
