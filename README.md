@@ -12,31 +12,31 @@ The JSON schema ID is https://infinityswap.one/tokenlist.schema.json
 
 ### USAGE
 ```js
-    import { TokenList } from '@infinityswap/token-list'
+import { TokenList } from '@infinityswap/token-list'
 
-    function usage() {
-    
-      # get currently listed tokens
-      const list = await TokenList.create()
+function usage() {
 
-      # select TNK1 from the list
-      const tkn1 = list.find(token => token.symbol === 'TKN1');
-      
-      # access TKN1 metadata
-      tkn1.principal;
-      tkn1.name;
-      tkn1.symbol;
-      # ...etc
+  # get currently listed tokens
+  const list = await TokenList.create()
+
+  # select TNK1 from the list
+  const tkn1 = list.find(token => token.symbol === 'TKN1');
+  
+  # access TKN1 metadata
+  tkn1.principal;
+  tkn1.name;
+  tkn1.symbol;
+  # ...etc
 
 
-      # Load TKN1 canister specific info
-      await tkn1.getCanisterInfo();
-      
-      # access info such as wasm hash, canister controllers
-      tnk1.wasmHash;
-      tkn1.controllers;
-      
-    }
+  # Load TKN1 canister specific info
+  await tkn1.getCanisterInfo();
+  
+  # access info such as wasm hash, canister controllers
+  tnk1.wasmHash;
+  tkn1.controllers;
+  
+}
 ```
 
 
