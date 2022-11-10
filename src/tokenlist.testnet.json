@@ -1,0 +1,54 @@
+{
+    "name": "InfinitySwap Testnet Tokens",
+    "tokens": [
+        {
+            "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
+            "fee": 10000,
+            "decimals": 8,
+            "name": "ICP",
+            "symbol": "ICP",
+            "standard": "ICP"
+        },
+        {
+            "id": "y5vqc-nqaaa-aaaaj-aakhq-cai",
+            "fee": 10000,
+            "name": "Test ICP",
+            "symbol": "T-ICP",
+            "decimals": 8,
+            "standard": "ICP"
+        },
+        {
+            "id": "vtvcb-4yaaa-aaaaj-azqpq-cai",
+            "fee": 1,
+            "decimals": 8,
+            "name": "Token1",
+            "symbol": "TKN1",
+            "standard": "IS20"
+
+        },
+        {
+            "id": "qpoye-xqaaa-aaaaj-azqqa-cai",
+            "fee": 1,
+            "decimals": 8,
+            "name": "Token2",
+            "symbol": "TKN2",
+            "standard": "IS20"
+        },
+        {
+            "id": "qip6q-2iaaa-aaaaj-azqqq-cai",
+            "fee": 1,
+            "decimals": 8,
+            "name": "Token3",
+            "symbol": "TKN3",
+            "standard": "IS20"
+        },
+        {
+            "id": "qbmvm-maaaa-aaaaj-azqra-cai",
+            "fee": 1,
+            "decimals": 8,
+            "name": "Token4",
+            "symbol": "TKN4",
+            "standard": "IS20"
+        }
+    ]
+}
