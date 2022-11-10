@@ -1,8 +1,11 @@
 import axios from 'axios';
-import TokenJson from './tokenlist.json';
+import TokensJson from './tokenlist.json';
+import TestnetTokensJson from './tokenlist.testnet.json';
 
 const IC_API_BASE_URL = 'https://ic-api.internetcomputer.org';
 const TOKENLIST_URL =
+  'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/tokenlist.json';
+const TESTNET_TOKENLIST_URL =
   'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/tokenlist.json';
 
 interface TokenListJson {
@@ -18,10 +21,11 @@ interface CanisterInfo {
 }
 
 interface TokenProperties {
-  principal: string;
+  id: string;
   name: string;
   symbol: string;
   decimals: number;
+  fee: number;
   standard: string;
   canisterInfo?: CanisterInfo;
 }
@@ -29,16 +33,18 @@ interface TokenProperties {
 type JsonnableToken = TokenProperties;
 
 export class Token {
-  private _principal: string;
+  private _id: string;
   private _name: string;
+  private _fee: number;
   private _symbol: string;
   private _decimals: number;
   private _standard: string;
   private _canisterInfo?: CanisterInfo;
 
   constructor(props: TokenProperties) {
-    this._principal = props.principal;
+    this._id = props.id;
     this._name = props.name;
+    this._fee = props.fee;
     this._symbol = props.symbol;
     this._decimals = props.decimals;
     this._standard = props.standard;
@@ -49,8 +55,8 @@ export class Token {
     return this._name;
   }
 
-  get principal() {
-    return this._principal;
+  get id() {
+    return this._id;
   }
 
   get symbol() {
@@ -58,6 +64,10 @@ export class Token {
   }
 
   get decimals() {
+    return this._decimals;
+  }
+
+  get fee() {
     return this._decimals;
   }
 
@@ -73,7 +83,7 @@ export class Token {
   }
 
   async getCanisterInfo(): Promise<CanisterInfo> {
-    const url = `${IC_API_BASE_URL}/api/v3/canisters/${this.principal}`;
+    const url = `${IC_API_BASE_URL}/api/v3/canisters/${this._id}`;
     const { data } = await axios.get(url);
     const {
       canister_id: canisterId,
@@ -98,8 +108,9 @@ export class Token {
 
   toJSON(): JsonnableToken {
     return {
-      principal: this._principal,
+      id: this._id,
       name: this._name,
+      fee: this._fee,
       symbol: this._symbol,
       decimals: this._decimals,
       standard: this._standard,
@@ -130,12 +141,19 @@ export class TokenList {
     return this._tokens;
   }
 
-  static async create(): Promise<TokenList> {
-    const { data } = await axios.get<TokenListJson>(TOKENLIST_URL);
+  static async create(env: 'testnet' | 'prod'): Promise<TokenList> {
+    let url = TOKENLIST_URL;
+    let json: JsonableTokenList = TokensJson;
+    if (env === 'testnet') {
+      url = TESTNET_TOKENLIST_URL;
+      json = TestnetTokensJson;
+    }
+
+    const { data } = await axios.get<TokenListJson>(url);
 
     const tokens = data.tokens.map((token) => Token.fromJSON(token));
 
-    return new this(TokenJson.name, tokens);
+    return new this(json.name, tokens);
   }
 
   static fromJSON(json: string | JsonableTokenList): TokenList {

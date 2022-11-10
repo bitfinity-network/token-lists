@@ -16,7 +16,7 @@
             "type": "object",
             "description": "Metadata for a single token in the list",
             "properties": {
-                "principal": {
+                "id": {
                     "type": "string",
                     "description": "Principal id of a token",
                     "examples": [ "gear3-daaaa-aaaaj-ailpa-cai" ]
@@ -42,6 +42,12 @@
                     "maximum": 255,
                     "examples": [ 8 ]
                 },
+                "fee": {
+                    "type": "integer",
+                    "description": "The token fee",
+                    "minimum": 0,
+                    "examples": [ 1000 ]
+                },
                 "standard": {
                     "type": "string",
                     "description": "Token standard",
@@ -49,7 +55,7 @@
                 }
             },
             "required": [
-                "principal",
+                "id",
                 "name",
                 "symbol",
                 "decimals",

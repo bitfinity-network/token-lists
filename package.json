@@ -27,7 +27,7 @@
     "test": "jest --verbose",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand --ci",
-    "prepare": "husky install"
+    "prepare": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
