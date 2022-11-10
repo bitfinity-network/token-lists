@@ -32,6 +32,11 @@ interface TokenProperties {
 
 type JsonnableToken = TokenProperties;
 
+export interface JsonableTokenList {
+  name: string;
+  tokens: TokenProperties[];
+}
+
 export class Token {
   private _id: string;
   private _name: string;
@@ -117,11 +122,6 @@ export class Token {
       canisterInfo: this._canisterInfo
     };
   }
-}
-
-interface JsonableTokenList {
-  name: string;
-  tokens: TokenProperties[];
 }
 
 export class TokenList {

@@ -1,9 +1,9 @@
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import tokenList from './tokenlist.json';
 import schema from './tokenlist.schema.json';
+import { JsonableTokenList } from './tokens';
 
-export async function validate() {
+export async function validate(tokenList: JsonableTokenList) {
   const ajv = new Ajv({ allErrors: true, verbose: true });
   addFormats(ajv);
   const validator = ajv.compile(schema);
