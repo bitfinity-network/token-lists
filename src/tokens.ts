@@ -6,7 +6,7 @@ const IC_API_BASE_URL = 'https://ic-api.internetcomputer.org';
 const TOKENLIST_URL =
   'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/tokenlist.json';
 const TESTNET_TOKENLIST_URL =
-  'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/tokenlist.json';
+  'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/tokenlist.testnet.json';
 
 interface TokenListJson {
   name: string;
