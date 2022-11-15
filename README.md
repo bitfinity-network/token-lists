@@ -16,23 +16,23 @@ import { TokenList } from '@infinityswap/token-list'
 
 function usage() {
 
-  # get currently listed tokens
+  // get currently listed tokens
   const list = await TokenList.create()
 
-  # select TNK1 from the list
+  // select TNK1 from the list
   const tkn1 = list.find(token => token.symbol === 'TKN1');
   
-  # access TKN1 metadata
+  // access TKN1 metadata
   tkn1.principal;
   tkn1.name;
   tkn1.symbol;
-  # ...etc
+  // ...etc
 
 
-  # Load TKN1 canister specific info
+  // Load TKN1 canister specific info
   await tkn1.getCanisterInfo();
   
-  # access info such as wasm hash, canister controllers
+  // access info such as wasm hash, canister controllers
   tnk1.wasmHash;
   tkn1.controllers;
   
