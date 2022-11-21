@@ -141,7 +141,7 @@ export class TokenList {
     return this._tokens;
   }
 
-  static async create(env: 'testnet' | 'prod'): Promise<TokenList> {
+  static async create(env?: 'testnet' | 'prod'): Promise<TokenList> {
     let url = TOKENLIST_URL;
     let json: JsonableTokenList = TokensJson;
     if (env === 'testnet') {
