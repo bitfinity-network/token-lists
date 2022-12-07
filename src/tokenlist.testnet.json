@@ -18,7 +18,7 @@
             "standard": "ICP"
         },
         {
-            "id": "vtvcb-4yaaa-aaaaj-azqpq-cai",
+            "id": "ytnxf-4iaaa-aaaaj-azreq-cai",
             "fee": 1,
             "decimals": 8,
             "name": "Token1",
@@ -27,7 +27,7 @@
 
         },
         {
-            "id": "qpoye-xqaaa-aaaaj-azqqa-cai",
+            "id": "y2o4z-kaaaa-aaaaj-azrfa-cai",
             "fee": 1,
             "decimals": 8,
             "name": "Token2",
@@ -35,7 +35,7 @@
             "standard": "IS20"
         },
         {
-            "id": "qip6q-2iaaa-aaaaj-azqqq-cai",
+            "id": "y5p2n-hyaaa-aaaaj-azrfq-cai",
             "fee": 1,
             "decimals": 8,
             "name": "Token3",
@@ -43,7 +43,7 @@
             "standard": "IS20"
         },
         {
-            "id": "qbmvm-maaaa-aaaaj-azqra-cai",
+            "id": "yiila-gqaaa-aaaaj-azrga-cai",
             "fee": 1,
             "decimals": 8,
             "name": "Token4",
