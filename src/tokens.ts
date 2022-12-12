@@ -23,6 +23,7 @@ interface TokenProperties {
   decimals: number;
   fee: number;
   standard: string;
+  tags?: string[];
   index_canister?: string;
   canisterInfo?: CanisterInfo;
 }
@@ -47,57 +48,39 @@ const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
 );
 
 export class Token {
-  private _id: Principal;
-  private _name: string;
-  private _fee: number;
-  private _symbol: string;
-  private _decimals: number;
-  private _standard: string;
-  private _canisterInfo?: CanisterInfo;
+  id: Principal;
+  name: string;
+  fee: number;
+  symbol: string;
+  decimals: number;
+  standard: string;
+  indexCanister?: Principal;
+  tags?: string[];
+  canisterInfo?: CanisterInfo;
 
   constructor(props: TokenProperties) {
-    this._id = Principal.fromText(props.id);
-    this._name = props.name;
-    this._fee = props.fee;
-    this._symbol = props.symbol;
-    this._decimals = props.decimals;
-    this._standard = props.standard;
-    this._canisterInfo = props.canisterInfo;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get id() {
-    return this._id;
-  }
-
-  get symbol() {
-    return this._symbol;
-  }
-
-  get decimals() {
-    return this._decimals;
-  }
-
-  get fee() {
-    return this._decimals;
-  }
-
-  get standard() {
-    return this._standard;
+    this.id = Principal.fromText(props.id);
+    this.name = props.name;
+    this.fee = props.fee;
+    this.symbol = props.symbol;
+    this.decimals = props.decimals;
+    this.standard = props.standard;
+    this.tags = props.tags;
+    this.canisterInfo = props.canisterInfo;
+    this.indexCanister = props.index_canister
+      ? Principal.fromText(props.index_canister)
+      : undefined;
   }
 
   get wasmHash() {
-    return this._canisterInfo?.wasmHash;
+    return this.canisterInfo?.wasmHash;
   }
   get controllers() {
-    return this._canisterInfo?.controllers;
+    return this.canisterInfo?.controllers;
   }
 
   async getCanisterInfo(): Promise<CanisterInfo> {
-    const url = `${IC_API_BASE_URL}/api/v3/canisters/${this._id}`;
+    const url = `${IC_API_BASE_URL}/api/v3/canisters/${this.id.toText()}`;
     const { data } = await axios.get(url);
     const {
       canister_id: canisterId,
@@ -122,32 +105,26 @@ export class Token {
 
   toJSON(): JsonnableToken {
     return {
-      id: this._id.toText(),
-      name: this._name,
-      fee: this._fee,
-      symbol: this._symbol,
-      decimals: this._decimals,
-      standard: this._standard,
-      canisterInfo: this._canisterInfo
+      id: this.id.toText(),
+      name: this.name,
+      fee: this.fee,
+      symbol: this.symbol,
+      decimals: this.decimals,
+      standard: this.standard,
+      tags: this.tags,
+      index_canister: this.indexCanister?.toText(),
+      canisterInfo: this.canisterInfo
     };
   }
 }
 
 export class TokenList {
-  private _name: string;
-  private _tokens: Token[];
+  name: string;
+  tokens: Token[];
 
   constructor(name: string, tokens: Token[]) {
-    this._name = name;
-    this._tokens = tokens;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get tokens() {
-    return this._tokens;
+    this.name = name;
+    this.tokens = tokens;
   }
 
   static async create({
