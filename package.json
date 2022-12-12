@@ -50,9 +50,12 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
-    "@dfinity/agent": "^0.11.3",
-    "@dfinity/candid": "^0.11.3",
-    "@dfinity/principal": "^0.11.3",
+    "@dfinity/agent": "^0.14.1",
+    "@dfinity/candid": "^0.14.1",
+    "@dfinity/nns": "^0.10.0",
+    "@dfinity/principal": "^0.14.1",
+    "@dfinity/sns": "^0.0.7",
+    "@dfinity/utils": "^0.0.6",
     "ajv": "^8.11.0",
     "ajv-formats": "^2.1.1",
     "axios": "^0.27.2"

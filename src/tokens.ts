@@ -1,17 +1,13 @@
+import { SnsWasmCanister } from '@dfinity/nns';
 import axios from 'axios';
 import TokensJson from './tokenlist.json';
 import TestnetTokensJson from './tokenlist.testnet.json';
+import { HttpAgent } from '@dfinity/agent';
+import { initSnsWrapper } from '@dfinity/sns';
+import { Principal } from '@dfinity/principal';
+import { isDefined } from './utils';
 
 const IC_API_BASE_URL = 'https://ic-api.internetcomputer.org';
-const TOKENLIST_URL =
-  'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/tokenlist.json';
-const TESTNET_TOKENLIST_URL =
-  'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/tokenlist.testnet.json';
-
-interface TokenListJson {
-  name: string;
-  tokens: Token[];
-}
 
 interface CanisterInfo {
   canisterId: string;
@@ -27,6 +23,8 @@ interface TokenProperties {
   decimals: number;
   fee: number;
   standard: string;
+  tags?: string[];
+  index_canister?: string;
   canisterInfo?: CanisterInfo;
 }
 
@@ -37,58 +35,52 @@ export interface JsonableTokenList {
   tokens: TokenProperties[];
 }
 
+type Envs = 'testnet' | 'mainnet';
+
+interface TokenListCreateOptions {
+  env?: Envs;
+  host?: string;
+  snsWasmCanisterId?: Principal;
+}
+
+const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
+  'qaa6y-5yaaa-aaaaa-aaafa-cai'
+);
+
 export class Token {
-  private _id: string;
-  private _name: string;
-  private _fee: number;
-  private _symbol: string;
-  private _decimals: number;
-  private _standard: string;
-  private _canisterInfo?: CanisterInfo;
+  id: Principal;
+  name: string;
+  fee: number;
+  symbol: string;
+  decimals: number;
+  standard: string;
+  indexCanister?: Principal;
+  tags?: string[];
+  canisterInfo?: CanisterInfo;
 
   constructor(props: TokenProperties) {
-    this._id = props.id;
-    this._name = props.name;
-    this._fee = props.fee;
-    this._symbol = props.symbol;
-    this._decimals = props.decimals;
-    this._standard = props.standard;
-    this._canisterInfo = props.canisterInfo;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get id() {
-    return this._id;
-  }
-
-  get symbol() {
-    return this._symbol;
-  }
-
-  get decimals() {
-    return this._decimals;
-  }
-
-  get fee() {
-    return this._decimals;
-  }
-
-  get standard() {
-    return this._standard;
+    this.id = Principal.fromText(props.id);
+    this.name = props.name;
+    this.fee = props.fee;
+    this.symbol = props.symbol;
+    this.decimals = props.decimals;
+    this.standard = props.standard;
+    this.tags = props.tags;
+    this.canisterInfo = props.canisterInfo;
+    this.indexCanister = props.index_canister
+      ? Principal.fromText(props.index_canister)
+      : undefined;
   }
 
   get wasmHash() {
-    return this._canisterInfo?.wasmHash;
+    return this.canisterInfo?.wasmHash;
   }
   get controllers() {
-    return this._canisterInfo?.controllers;
+    return this.canisterInfo?.controllers;
   }
 
   async getCanisterInfo(): Promise<CanisterInfo> {
-    const url = `${IC_API_BASE_URL}/api/v3/canisters/${this._id}`;
+    const url = `${IC_API_BASE_URL}/api/v3/canisters/${this.id.toText()}`;
     const { data } = await axios.get(url);
     const {
       canister_id: canisterId,
@@ -113,47 +105,113 @@ export class Token {
 
   toJSON(): JsonnableToken {
     return {
-      id: this._id,
-      name: this._name,
-      fee: this._fee,
-      symbol: this._symbol,
-      decimals: this._decimals,
-      standard: this._standard,
-      canisterInfo: this._canisterInfo
+      id: this.id.toText(),
+      name: this.name,
+      fee: this.fee,
+      symbol: this.symbol,
+      decimals: this.decimals,
+      standard: this.standard,
+      tags: this.tags,
+      index_canister: this.indexCanister?.toText(),
+      canisterInfo: this.canisterInfo
     };
   }
 }
 
 export class TokenList {
-  private _name: string;
-  private _tokens: Token[];
+  name: string;
+  tokens: Token[];
 
   constructor(name: string, tokens: Token[]) {
-    this._name = name;
-    this._tokens = tokens;
+    this.name = name;
+    this.tokens = tokens;
   }
 
-  get name() {
-    return this._name;
-  }
+  static async create({
+    env,
+    host,
+    snsWasmCanisterId
+  }: TokenListCreateOptions = {}): Promise<TokenList> {
+    let tokensJson: JsonableTokenList = TokensJson;
+    let snsWasmId = snsWasmCanisterId;
+    let snsTokens: Token[] = [];
 
-  get tokens() {
-    return this._tokens;
-  }
-
-  static async create(env?: 'testnet' | 'prod'): Promise<TokenList> {
-    let url = TOKENLIST_URL;
-    let json: JsonableTokenList = TokensJson;
     if (env === 'testnet') {
-      url = TESTNET_TOKENLIST_URL;
-      json = TestnetTokensJson;
+      tokensJson = TestnetTokensJson;
+    } else {
+      snsWasmId = snsWasmCanisterId || MAINNET_SNS_WASM_CANISTER_ID;
+      snsTokens = await this.getSnsTokens({
+        host,
+        snsWasmCanisterId: snsWasmId
+      });
     }
 
-    const { data } = await axios.get<TokenListJson>(url);
+    const tokens = tokensJson.tokens.map((token) => Token.fromJSON(token));
 
-    const tokens = data.tokens.map((token) => Token.fromJSON(token));
+    return new this(tokensJson.name, [...tokens, ...snsTokens]);
+  }
 
-    return new this(json.name, tokens);
+  static async getSnsTokens({
+    host,
+    snsWasmCanisterId
+  }: {
+    host?: string;
+    snsWasmCanisterId?: Principal;
+  } = {}) {
+    const agent = host ? new HttpAgent({ host }) : undefined;
+    const snsWasm = SnsWasmCanister.create({
+      agent,
+      canisterId: snsWasmCanisterId
+    });
+
+    const snses = await snsWasm.listSnses({});
+    const promises = snses.map<Promise<TokenProperties>>((sns) => {
+      return (async () => {
+        const tokenMeta: Partial<TokenProperties> = {
+          id: sns.ledger_canister_id[0]?.toText(),
+          index_canister: sns.index_canister_id[0]?.toText()
+        };
+
+        const [snsRootCanisterId] = sns.root_canister_id;
+        if (!snsRootCanisterId) {
+          throw new Error('root_canister_id not found sns entry');
+        }
+
+        const snsWrapper = await initSnsWrapper({
+          rootOptions: {
+            canisterId: snsRootCanisterId
+          },
+          agent
+        });
+
+        const [, snsTokenMeta] = await snsWrapper.metadata({});
+        snsTokenMeta.forEach(([key, val]) => {
+          if (key.includes('decimals') && 'Nat' in val) {
+            tokenMeta.decimals = Number(val.Nat);
+          } else if (key.includes('symbol') && 'Text' in val) {
+            tokenMeta.symbol = val.Text;
+          } else if (key.includes('name') && 'Text' in val) {
+            tokenMeta.name = val.Text;
+          } else if (key.includes('fee') && 'Nat' in val) {
+            tokenMeta.fee = Number(val.Nat);
+          }
+          tokenMeta.standard = 'ICRC1';
+        });
+
+        return tokenMeta as TokenProperties;
+      })();
+    });
+
+    const results = (await Promise.allSettled<TokenProperties>(promises)).map(
+      (v) => {
+        if (v.status === 'fulfilled') {
+          return v.value;
+        }
+        return;
+      }
+    );
+    const snsTokens: TokenProperties[] = results.filter(isDefined);
+    return snsTokens.map((t) => Token.fromJSON(t));
   }
 
   static fromJSON(json: string | JsonableTokenList): TokenList {

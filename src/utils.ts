@@ -21,3 +21,7 @@ export async function validate(tokenList: JsonableTokenList) {
 
   return false;
 }
+
+export function isDefined<T>(argument: T | undefined): argument is T {
+  return argument !== undefined
+}
