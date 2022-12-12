@@ -1,4 +1,13 @@
 {
     "name": "InfinitySwap Tokens",
-    "tokens": []
+    "tokens": [
+        {
+            "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
+            "fee": 10000,
+            "decimals": 8,
+            "name": "ICP",
+            "symbol": "ICP",
+            "standard": "ICP"
+        }
+    ]
 }

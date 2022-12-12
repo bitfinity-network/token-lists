@@ -52,6 +52,20 @@
                     "type": "string",
                     "description": "Token standard",
                     "examples": [ "IS20" ]
+                },
+                "tags": {
+                    "description": "Token standard",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "uniqueItems": true,
+                    "examples": [ "IS20" ]
+                },
+                "index_canister": {
+                    "type": "string",
+                    "description": "The index canister maps accounts to their transactions",
+                    "examples": [ "gear3-daaaa-aaaaj-ailpa-cai" ]
                 }
             },
             "required": [
