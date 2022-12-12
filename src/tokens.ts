@@ -135,6 +135,7 @@ export class TokenList {
     let tokensJson: JsonableTokenList = TokensJson;
     let snsWasmId = snsWasmCanisterId;
     let snsTokens: Token[] = [];
+
     if (env === 'testnet') {
       tokensJson = TestnetTokensJson;
     } else {
