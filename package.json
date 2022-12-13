@@ -28,8 +28,7 @@
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand --ci",
     "changeset": "changeset",
-    "prerelease": "yarn build",
-    "release": "changeset publish"
+    "release": "yarn build && changeset publish"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
