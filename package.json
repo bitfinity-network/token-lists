@@ -29,7 +29,7 @@
     "test:ci": "jest --runInBand --ci",
     "changeset": "changeset",
     "prerelease": "yarn build",
-    "release": "changeset publish --access public"
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
