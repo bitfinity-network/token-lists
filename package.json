@@ -1,7 +1,7 @@
 {
-  "name": "token-lists",
-  "version": "1.0.0",
-  "description": "The Token Lists specification",
+  "name": "@infinityjs/token-lists",
+  "version": "0.1.0",
+  "description": "InfinitySwap Token Lists specification",
   "author": {
     "name": "InfinitySwap",
     "email": "support@infinityswap.one",
@@ -27,7 +27,9 @@
     "test": "jest --verbose",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand --ci",
-    "prepare": "yarn build"
+    "changeset": "changeset",
+    "prerelease": "yarn build",
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -50,6 +52,8 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
+    "@changesets/changelog-github": "^0.4.7",
+    "@changesets/cli": "^2.25.2",
     "@dfinity/agent": "^0.14.1",
     "@dfinity/candid": "^0.14.1",
     "@dfinity/nns": "^0.10.0",
