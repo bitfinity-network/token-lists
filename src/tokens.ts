@@ -9,14 +9,14 @@ import { isDefined } from './utils';
 
 const IC_API_BASE_URL = 'https://ic-api.internetcomputer.org';
 
-interface CanisterInfo {
+export interface CanisterInfo {
   canisterId: string;
   controllers: string[];
   wasmHash: string;
   subnetId: string;
 }
 
-interface TokenProperties {
+export interface TokenProperties {
   id: string;
   name: string;
   symbol: string;
@@ -28,16 +28,16 @@ interface TokenProperties {
   canisterInfo?: CanisterInfo;
 }
 
-type JsonnableToken = TokenProperties;
+export type JsonnableToken = TokenProperties;
 
 export interface JsonableTokenList {
   name: string;
   tokens: TokenProperties[];
 }
 
-type Envs = 'testnet' | 'mainnet';
+export type Envs = 'testnet' | 'mainnet';
 
-interface TokenListCreateOptions {
+export interface TokenListCreateOptions {
   env?: Envs;
   host?: string;
   snsWasmCanisterId?: Principal;
