@@ -26,7 +26,6 @@ export interface TokenProperties {
   tags?: string[];
   index_canister?: string;
   canisterInfo?: CanisterInfo;
-  logo?: string;
 }
 
 export type JsonnableToken = TokenProperties;
@@ -58,7 +57,6 @@ export class Token {
   indexCanister?: Principal;
   tags?: string[];
   canisterInfo?: CanisterInfo;
-  logo?: string;
 
   constructor(props: TokenProperties) {
     this.id = Principal.fromText(props.id);
@@ -72,7 +70,6 @@ export class Token {
     this.indexCanister = props.index_canister
       ? Principal.fromText(props.index_canister)
       : undefined;
-    this.logo = props.logo;
   }
 
   get wasmHash() {
@@ -116,8 +113,7 @@ export class Token {
       standard: this.standard,
       tags: this.tags,
       index_canister: this.indexCanister?.toText(),
-      canisterInfo: this.canisterInfo,
-      logo: this.logo
+      canisterInfo: this.canisterInfo
     };
   }
 }
@@ -188,8 +184,7 @@ export class TokenList {
           agent
         });
 
-        const [snsMeta, snsTokenMeta] = await snsWrapper.metadata({});
-        tokenMeta.logo = snsMeta.logo[0];
+        const [, snsTokenMeta] = await snsWrapper.metadata({});
         snsTokenMeta.forEach(([key, val]) => {
           if (key.includes('decimals') && 'Nat' in val) {
             tokenMeta.decimals = Number(val.Nat);
