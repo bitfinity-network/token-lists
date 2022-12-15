@@ -9,7 +9,6 @@ on:
 
 jobs:
   tests:
-    if: ${{ github.ref == 'refs/heads/main' }}
     name: Tests
     runs-on: ubuntu-latest
     steps:
