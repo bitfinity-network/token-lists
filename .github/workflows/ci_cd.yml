@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 16.x
           registry-url: 'https://registry.npmjs.org'
-      -run: cat .npmrc
+      - run: cat .npmrc
       # - name: Install Dependencies
       #   run: yarn install --frozen-lockfile
       # - name: Create Release Pull Request or Publish to npm
