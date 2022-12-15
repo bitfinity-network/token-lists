@@ -2,7 +2,11 @@
   "name": "@infinityswapofficial/token-lists",
   "version": "0.1.1",
   "description": "InfinitySwap Token Lists specification",
-  "author": "InfinitySwap <support@infinityswap.one> (https://infinityswap.one)",
+  "author": {
+    "name": "InfinitySwap",
+    "email": "support@infinityswap.one",
+    "url": "https://infinityswap.one"
+  },
   "type": "module",
   "source": "src/index.ts",
   "exports": {
