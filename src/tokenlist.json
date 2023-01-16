@@ -2,12 +2,12 @@
     "name": "InfinitySwap Tokens",
     "tokens": [
         {
-            "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
-            "fee": 10000,
-            "decimals": 8,
-            "name": "ICP",
-            "symbol": "ICP",
-            "standard": "ICP"
+            "id": "bni22-wyaaa-aaaag-abdra-cai",
+            "fee": 100,
+            "decimals": 6,
+            "name": "IC INU",
+            "symbol": "INU",
+            "standard": "ICRC-1"
         }
     ]
 }
