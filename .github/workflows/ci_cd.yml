@@ -34,6 +34,7 @@ jobs:
           node-version: '18.x'
       - name: Run Script
         run: |
+          yarn install --frozen-lockfile
           chmod +x ./run.sh
           ./run.sh
           git config user.name github-actions
