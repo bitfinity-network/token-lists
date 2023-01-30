@@ -1,13 +1,14 @@
 {
-    "name": "InfinitySwap Tokens",
-    "tokens": [
-        {
-            "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
-            "fee": 10000,
-            "decimals": 8,
-            "name": "ICP",
-            "symbol": "ICP",
-            "standard": "ICP"
-        }
-    ]
+  "name": "InfinitySwap Tokens",
+  "tokens": [
+    {
+      "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/blob/main/src/logos/icp.svg",
+      "fee": 10000,
+      "decimals": 8,
+      "name": "ICP",
+      "symbol": "ICP",
+      "standard": "ICP"
+    }
+  ]
 }

@@ -142,14 +142,14 @@ export class TokenList {
 
     if (env === 'testnet') {
       tokensJson = TestnetTokensJson;
-    } else {
+    }
+    if (snsWasmCanisterId) {
       snsWasmId = snsWasmCanisterId || MAINNET_SNS_WASM_CANISTER_ID;
       snsTokens = await this.getSnsTokens({
         host,
         snsWasmCanisterId: snsWasmId
       });
     }
-
     const tokens = tokensJson.tokens.map((token) => Token.fromJSON(token));
 
     return new this(tokensJson.name, [...tokens, ...snsTokens]);
