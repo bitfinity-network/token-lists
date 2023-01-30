@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -38,13 +40,16 @@ jobs:
           yarn install --frozen-lockfile
           chmod +x ./run.sh
           ./run.sh
+
+        shell: bash
+      - name: Commit Update
+        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add .
           git commit -m "generated"
-          git push origin ${GITHUB_REF##*/}
-        shell: bash
-
+          git push
   release:
     if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
