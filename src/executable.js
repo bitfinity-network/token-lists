@@ -47,7 +47,7 @@ class TokenList {
         }
         return {
           ...sns,
-          logo: `https://raw.githubusercontent.com/infinity-swap/token-lists/blob/main/src/${logoPath}`
+          logo: `https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/${logoPath}`
         };
       })();
     });
