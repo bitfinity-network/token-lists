@@ -38,7 +38,11 @@ const updateTokenListJson = async (data, path) => {
 
 class TokenList {
   static async create() {
-    let snsTokens = await this.getSnsTokens();
+    const snsTokens = await this.getSnsTokens();
+    const snsTokensWithLogos = await this.generateSnsTokenLogos(snsTokens);
+    this.updateTokenListFile(snsTokensWithLogos);
+  }
+  static async generateSnsTokenLogos(snsTokens) {
     const promises = snsTokens.map((sns) => {
       return (async () => {
         let logoPath = `logos/${sns.symbol.toLowerCase()}.png`;
@@ -51,12 +55,15 @@ class TokenList {
         };
       })();
     });
-    snsTokens = (await Promise.allSettled(promises)).map((v) => {
+    const results = (await Promise.allSettled(promises)).map((v) => {
       if (v.status === 'fulfilled') {
         return v.value;
       }
       return;
     });
+    return results;
+  }
+  static async updateTokenListFile(snsTokens) {
     const icpToken = TokensJson.tokens.find(
       (token) => token.name.toLowerCase() === ICP_SYMBOL.toLowerCase()
     );
