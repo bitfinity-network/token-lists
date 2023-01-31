@@ -3,7 +3,7 @@
   "tokens": [
     {
       "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icp.svg",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/src/logos/icp.svg",
       "fee": 10000,
       "decimals": 8,
       "name": "ICP",
