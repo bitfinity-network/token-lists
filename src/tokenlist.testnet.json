@@ -1,54 +1,53 @@
 {
-    "name": "InfinitySwap Testnet Tokens",
-    "tokens": [
-        {
-            "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
-            "fee": 10000,
-            "decimals": 8,
-            "name": "ICP",
-            "symbol": "ICP",
-            "standard": "ICP"
-        },
-        {
-            "id": "y5vqc-nqaaa-aaaaj-aakhq-cai",
-            "fee": 10000,
-            "name": "Test ICP",
-            "symbol": "T-ICP",
-            "decimals": 8,
-            "standard": "ICP"
-        },
-        {
-            "id": "ytnxf-4iaaa-aaaaj-azreq-cai",
-            "fee": 1,
-            "decimals": 8,
-            "name": "Token1",
-            "symbol": "TKN1",
-            "standard": "IS20"
-
-        },
-        {
-            "id": "y2o4z-kaaaa-aaaaj-azrfa-cai",
-            "fee": 1,
-            "decimals": 8,
-            "name": "Token2",
-            "symbol": "TKN2",
-            "standard": "IS20"
-        },
-        {
-            "id": "y5p2n-hyaaa-aaaaj-azrfq-cai",
-            "fee": 1,
-            "decimals": 8,
-            "name": "Token3",
-            "symbol": "TKN3",
-            "standard": "IS20"
-        },
-        {
-            "id": "yiila-gqaaa-aaaaj-azrga-cai",
-            "fee": 1,
-            "decimals": 8,
-            "name": "Token4",
-            "symbol": "TKN4",
-            "standard": "IS20"
-        }
-    ]
+  "name": "InfinitySwap Testnet Tokens",
+  "tokens": [
+    {
+      "id": "ryjl3-tyaaa-aaaaa-aaaba-cai",
+      "fee": 10000,
+      "decimals": 8,
+      "name": "ICP",
+      "symbol": "ICP",
+      "standard": "ICP"
+    },
+    {
+      "id": "y5vqc-nqaaa-aaaaj-aakhq-cai",
+      "fee": 10000,
+      "name": "Test ICP",
+      "symbol": "T-ICP",
+      "decimals": 8,
+      "standard": "ICP"
+    },
+    {
+      "id": "ytnxf-4iaaa-aaaaj-azreq-cai",
+      "fee": 1,
+      "decimals": 8,
+      "name": "Token1",
+      "symbol": "TKN1",
+      "standard": "IS20"
+    },
+    {
+      "id": "y2o4z-kaaaa-aaaaj-azrfa-cai",
+      "fee": 1,
+      "decimals": 8,
+      "name": "Token2",
+      "symbol": "TKN2",
+      "standard": "IS20"
+    },
+    {
+      "id": "y5p2n-hyaaa-aaaaj-azrfq-cai",
+      "fee": 1,
+      "decimals": 8,
+      "name": "Token3",
+      "symbol": "TKN3",
+      "standard": "IS20"
+    },
+    {
+      "id": "yiila-gqaaa-aaaaj-azrga-cai",
+      "fee": 1,
+      "decimals": 8,
+      "name": "Token4",
+      "symbol": "TKN4",
+      "standard": "IS20"
+    }
+  ]
 }

@@ -1,7 +1,14 @@
 import { SnsWasmCanister } from '@dfinity/nns';
 import { Principal } from '@dfinity/principal';
 import { initSnsWrapper } from '@dfinity/sns';
+import * as relativePath from 'path';
 import fs from 'fs';
+
+const __dirname = relativePath
+  .dirname(import.meta.url)
+  .split('/')
+  .slice(0, -1)
+  .join('/');
 
 const loadJSON = (path) =>
   JSON.parse(fs.readFileSync(new URL(path, import.meta.url)));
@@ -16,7 +23,7 @@ const TokensJson = loadJSON('./tokenlist.json');
 const generateImage = async (base64String, path) => {
   let base64Image = base64String.split(';base64,').pop();
   fs.writeFile(
-    new URL(path, import.meta.url),
+    new URL(path, __dirname + '/'),
     base64Image,
     { encoding: 'base64', recursive: true },
     function (err) {
@@ -38,7 +45,11 @@ const updateTokenListJson = async (data, path) => {
 
 class TokenList {
   static async create() {
-    let snsTokens = await this.getSnsTokens();
+    const snsTokens = await this.getSnsTokens();
+    const snsTokensWithLogos = await this.generateSnsTokenLogos(snsTokens);
+    this.updateTokenListFile(snsTokensWithLogos);
+  }
+  static async generateSnsTokenLogos(snsTokens) {
     const promises = snsTokens.map((sns) => {
       return (async () => {
         let logoPath = `logos/${sns.symbol.toLowerCase()}.png`;
@@ -51,12 +62,15 @@ class TokenList {
         };
       })();
     });
-    snsTokens = (await Promise.allSettled(promises)).map((v) => {
+    const results = (await Promise.allSettled(promises)).map((v) => {
       if (v.status === 'fulfilled') {
         return v.value;
       }
       return;
     });
+    return results;
+  }
+  static async updateTokenListFile(snsTokens) {
     const icpToken = TokensJson.tokens.find(
       (token) => token.name.toLowerCase() === ICP_SYMBOL.toLowerCase()
     );

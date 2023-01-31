@@ -1,5 +1,5 @@
 //default babel config
-const config = {}
+const config = {};
 
 //babel config for Jest tests
 const jestConfig = {
@@ -16,6 +16,6 @@ const jestConfig = {
   ],
   ignore: ['node_modules'],
   sourceMaps: 'inline'
-}
+};
 
-module.exports = process.env.NODE_ENV === 'test' ? jestConfig : config
+module.exports = process.env.NODE_ENV === 'test' ? jestConfig : config;
