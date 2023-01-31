@@ -24,6 +24,7 @@
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand --ci",
     "changeset": "changeset",
+    "prettier": "prettier --write .",
     "release": "yarn build && changeset publish"
   },
   "devDependencies": {
@@ -44,7 +45,7 @@
     "jest-watch-typeahead": "^1.1.0",
     "lint-staged": "^13.0.2",
     "microbundle": "^0.15.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.3"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.7",

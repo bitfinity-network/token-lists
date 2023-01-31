@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "infinity-swap/token-lists" }],
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "infinity-swap/token-lists" }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],

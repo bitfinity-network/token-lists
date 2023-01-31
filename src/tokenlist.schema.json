@@ -1,83 +1,77 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://infinityswap.one/tokenlist.schema.json",
-    "title": "InfinitySwap Token List",
-    "description": "Schema for list of tokens supported by InfinitySwap",
-    "type": "object",
-    "properties": {
-      "name": {
-        "description": "The name of the token list",
-        "type": "string"
-      },
-      "tokens": {
-        "type": "array",
-        "description": "list of tokens in the list",
-        "items": {
-            "type": "object",
-            "description": "Metadata for a single token in the list",
-            "properties": {
-                "id": {
-                    "type": "string",
-                    "description": "Principal id of a token",
-                    "examples": [ "gear3-daaaa-aaaaj-ailpa-cai" ]
-                },
-                "name": {
-                    "type": "string",
-                    "description": "Name of the token",
-                    "minLength": 1,
-                    "maxLength": 40,
-                    "examples": [ "Token 1" ]
-                },
-                "symbol": {
-                    "type": "string",
-                    "description": "Symbol of the token",
-                    "minLength": 1,
-                    "maxLength": 20,
-                    "examples": ["TKN1"]
-                },
-                "decimals": {
-                    "type": "integer",
-                    "description": "The number of decimals for the token balance",
-                    "minimum": 0,
-                    "maximum": 255,
-                    "examples": [ 8 ]
-                },
-                "fee": {
-                    "type": "integer",
-                    "description": "The token fee",
-                    "minimum": 0,
-                    "examples": [ 1000 ]
-                },
-                "standard": {
-                    "type": "string",
-                    "description": "Token standard",
-                    "examples": [ "IS20" ]
-                },
-                "tags": {
-                    "description": "Token standard",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "uniqueItems": true,
-                    "examples": [ "IS20" ]
-                },
-                "index_canister": {
-                    "type": "string",
-                    "description": "The index canister maps accounts to their transactions",
-                    "examples": [ "gear3-daaaa-aaaaj-ailpa-cai" ]
-                }
-            },
-            "required": [
-                "id",
-                "name",
-                "symbol",
-                "decimals",
-                "standard"
-            ]
-        },
-        "minItems": 1
-      }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://infinityswap.one/tokenlist.schema.json",
+  "title": "InfinitySwap Token List",
+  "description": "Schema for list of tokens supported by InfinitySwap",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the token list",
+      "type": "string"
     },
-    "required": [ "name", "tokens" ]
+    "tokens": {
+      "type": "array",
+      "description": "list of tokens in the list",
+      "items": {
+        "type": "object",
+        "description": "Metadata for a single token in the list",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Principal id of a token",
+            "examples": ["gear3-daaaa-aaaaj-ailpa-cai"]
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the token",
+            "minLength": 1,
+            "maxLength": 40,
+            "examples": ["Token 1"]
+          },
+          "symbol": {
+            "type": "string",
+            "description": "Symbol of the token",
+            "minLength": 1,
+            "maxLength": 20,
+            "examples": ["TKN1"]
+          },
+          "decimals": {
+            "type": "integer",
+            "description": "The number of decimals for the token balance",
+            "minimum": 0,
+            "maximum": 255,
+            "examples": [8]
+          },
+          "fee": {
+            "type": "integer",
+            "description": "The token fee",
+            "minimum": 0,
+            "examples": [1000]
+          },
+          "standard": {
+            "type": "string",
+            "description": "Token standard",
+            "examples": ["IS20"]
+          },
+          "tags": {
+            "description": "Token standard",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true,
+            "examples": ["IS20"]
+          },
+          "index_canister": {
+            "type": "string",
+            "description": "The index canister maps accounts to their transactions",
+            "examples": ["gear3-daaaa-aaaaj-ailpa-cai"]
+          }
+        },
+        "required": ["id", "name", "symbol", "decimals", "standard"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["name", "tokens"]
 }
