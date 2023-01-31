@@ -1,11 +1,7 @@
-name: CI
+name: Redeploy Everyday
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  schedule:
+    - cron: '0 12 * * *'
 
 jobs:
   tests:
@@ -56,7 +52,7 @@ jobs:
           fi
 
   release:
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     needs: tests
     steps:
