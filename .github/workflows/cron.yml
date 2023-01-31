@@ -39,13 +39,19 @@ jobs:
 
         shell: bash
 
+      - name: Commit Tokenlist Update
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Updated TokenList file
+          branch: ${{ github.head_ref }}
+
       - name: Run Prettier
         run: npm run prettier
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Update TokenList and formatting changes
+          commit_message: Applied formatting changes
           branch: ${{ github.head_ref }}
 
   release:
