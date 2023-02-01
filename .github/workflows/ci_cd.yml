@@ -52,7 +52,7 @@ jobs:
           git config user.email github-actions@github.com
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           if [ -n "$(git status --porcelain)" ]; then
-            git checkout "Automated-TokenList-Update"
+            git checkout -b "Automated-TokenList-Update"
             git add .
             git commit -m "Updated TokenList"
             git push origin "Automated-TokenList-Update"
