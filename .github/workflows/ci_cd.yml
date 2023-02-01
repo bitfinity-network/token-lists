@@ -60,6 +60,8 @@ jobs:
           else 
             echo "Repo is clean"
           fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     if: ${{ github.event_name == 'push' }}
