@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.1.3
+
+### Patch Changes
+
+- [#28](https://github.com/infinity-swap/token-lists/pull/28) [`2e66b53`](https://github.com/infinity-swap/token-lists/commit/2e66b53e30a5f446766f0045feccb83ad4b05269) Thanks [@github-actions](https://github.com/apps/github-actions)! - Updated tokenlist with sns token
+
 ## 0.1.2
 
 ### Patch Changes
