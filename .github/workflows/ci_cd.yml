@@ -59,7 +59,7 @@ jobs:
             git add .
             git commit -m "Updated TokenList" ||echo  "Branch is up to date"
             git push -u origin "Automated-TokenList-Update"  
-            gh pr create -B Automated-TokenList-Update -H main --title 'TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release'
+            gh pr create -B main -H Automated-TokenList-Update --title 'TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release' || echo "PR already exists"
           else 
             echo "Repo is clean"
           fi
