@@ -54,7 +54,7 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git pull
 
-            git checkout -b "Automated-TokenList-Update
+            git checkout -b "Automated-TokenList-Update"
             git add .
             git commit -m "Updated TokenList"
             git push -u origin "Automated-TokenList-Update"
