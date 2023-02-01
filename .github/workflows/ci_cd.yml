@@ -53,13 +53,12 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           if [ -n "$(git status --porcelain)" ]; then
             git pull
-            git stash
-            git checkout "Automated-TokenList-Update"
+            git checkout -f "Automated-TokenList-Update"
             ./run.sh
             npm run prettier
             git add .
             git commit -m "Updated TokenList"
-            git push -u origin "Automated-TokenList-Update"
+            git push -u origin "Automated-TokenList-Update"  
             gh pr create -B Automated-TokenList-Update -H main --title 'TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release'
           else 
             echo "Repo is clean"
