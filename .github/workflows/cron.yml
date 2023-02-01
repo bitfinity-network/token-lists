@@ -26,33 +26,41 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
           cache: 'yarn'
+
       - name: Run Script
         run: |
           yarn install --frozen-lockfile
           chmod +x ./run.sh
           ./run.sh
+          npm run prettier
 
         shell: bash
 
-      - name: Commit Tokenlist Update
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Updated TokenList file
-          branch: ${{ github.head_ref }}
-
-      - name: Run Prettier
-        run: npm run prettier
-
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Applied formatting changes
-          branch: ${{ github.head_ref }}
+      - name: Commit Update
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          if [ -n "$(git status --porcelain)" ]; then
+            git pull
+            git checkout -f "Automated-TokenList-Update"
+            ./run.sh
+            npm run prettier
+            git add .
+            git commit -m "Updated TokenList" ||echo  "Branch is up to date"
+            git push -u origin "Automated-TokenList-Update"  
+            gh pr create -B Automated-TokenList-Update -H main --title 'TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release'
+          else 
+            echo "Repo is clean"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     if: ${{ github.ref == 'refs/heads/main' }}

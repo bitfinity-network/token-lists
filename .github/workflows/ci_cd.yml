@@ -52,14 +52,19 @@ jobs:
           git config user.email github-actions@github.com
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           if [ -n "$(git status --porcelain)" ]; then
-            git checkout -b "Automated-TokenList-Update"
+            git pull
+            git checkout -f "Automated-TokenList-Update"
+            ./run.sh
+            npm run prettier
             git add .
-            git commit -m "Updated TokenList"
-            git push origin "Automated-TokenList-Update"
+            git commit -m "Updated TokenList" ||echo  "Branch is up to date"
+            git push -u origin "Automated-TokenList-Update"  
             gh pr create -B Automated-TokenList-Update -H main --title 'TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release'
           else 
             echo "Repo is clean"
           fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     if: ${{ github.event_name == 'push' }}
