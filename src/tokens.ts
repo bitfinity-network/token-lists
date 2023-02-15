@@ -1,13 +1,14 @@
 import { SnsWasmCanister } from '@dfinity/nns';
 import axios from 'axios';
-import TokensJson from './tokenlist.json';
-import TestnetTokensJson from './tokenlist.testnet.json';
 import { HttpAgent } from '@dfinity/agent';
 import { initSnsWrapper } from '@dfinity/sns';
 import { Principal } from '@dfinity/principal';
 import { isDefined } from './utils';
 
 const IC_API_BASE_URL = 'https://ic-api.internetcomputer.org';
+export const TOKEN_LIST_BASE_URL = "https://raw.githubusercontent.com/infinity-swap/token-lists/main/src"
+export const TOKENS_JSON_LIST_URL = `${TOKEN_LIST_BASE_URL}/tokenlist.json`
+export const TEXT_TOKENS_JSON_LIST_URL = `${TOKEN_LIST_BASE_URL}/tokenlist.testnet.json`
 
 export interface CanisterInfo {
   canisterId: string;
@@ -47,6 +48,8 @@ export interface TokenListCreateOptions {
 const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
   'qaa6y-5yaaa-aaaaa-aaafa-cai'
 );
+
+
 
 export class Token {
   id: Principal;
@@ -131,17 +134,24 @@ export class TokenList {
     this.tokens = tokens;
   }
 
+  static async init() {
+    const tokenListResponse = await axios.get(TOKENS_JSON_LIST_URL);
+    const testTokenListResponse = await axios.get(TEXT_TOKENS_JSON_LIST_URL);
+    return { dynamicTokens: tokenListResponse?.data, dynamicTestTokens: testTokenListResponse?.data }
+  }
+
   static async create({
     env,
     host,
     snsWasmCanisterId
   }: TokenListCreateOptions = {}): Promise<TokenList> {
-    let tokensJson: JsonableTokenList = TokensJson;
+    const { dynamicTokens, dynamicTestTokens } = await this.init()
+    let tokensJson: JsonableTokenList = dynamicTokens;
     let snsWasmId = snsWasmCanisterId;
     let snsTokens: Token[] = [];
 
     if (env === 'testnet') {
-      tokensJson = TestnetTokensJson;
+      tokensJson = dynamicTestTokens;
     }
     if (snsWasmCanisterId) {
       snsWasmId = snsWasmCanisterId || MAINNET_SNS_WASM_CANISTER_ID;
