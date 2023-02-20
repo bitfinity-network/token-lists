@@ -134,14 +134,18 @@ export class TokenList {
   }
 
   static async init() {
-    const URLS = [TOKENS_JSON_LIST_URL, TEST_TOKENS_JSON_LIST_URL];
-    const fetchURL = (url: string) => axios.get(url);
-    const promises = URLS.map(fetchURL);
-    const result = await Promise.all(promises);
-    return {
-      dynamicTokens: result[0]?.data,
-      dynamicTestTokens: result[0]?.data
-    };
+    try {
+      const URLS = [TOKENS_JSON_LIST_URL, TEST_TOKENS_JSON_LIST_URL];
+      const fetchURL = (url: string) => axios.get(url);
+      const promises = URLS.map(fetchURL);
+      const result = await Promise.all(promises);
+      return {
+        dynamicTokens: result[0]?.data,
+        dynamicTestTokens: result[0]?.data
+      };
+    } catch (_) {
+      return {};
+    }
   }
 
   static async create({
