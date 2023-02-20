@@ -6,9 +6,10 @@ import { Principal } from '@dfinity/principal';
 import { isDefined } from './utils';
 
 const IC_API_BASE_URL = 'https://ic-api.internetcomputer.org';
-export const TOKEN_LIST_BASE_URL = "https://raw.githubusercontent.com/infinity-swap/token-lists/main/src"
-export const TOKENS_JSON_LIST_URL = `${TOKEN_LIST_BASE_URL}/tokenlist.json`
-export const TEXT_TOKENS_JSON_LIST_URL = `${TOKEN_LIST_BASE_URL}/tokenlist.testnet.json`
+export const TOKEN_LIST_BASE_URL =
+  'https://raw.githubusercontent.com/infinity-swap/token-lists/main/src';
+export const TOKENS_JSON_LIST_URL = `${TOKEN_LIST_BASE_URL}/tokenlist.json`;
+export const TEST_TOKENS_JSON_LIST_URL = `${TOKEN_LIST_BASE_URL}/tokenlist.testnet.json`;
 
 export interface CanisterInfo {
   canisterId: string;
@@ -48,8 +49,6 @@ export interface TokenListCreateOptions {
 const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
   'qaa6y-5yaaa-aaaaa-aaafa-cai'
 );
-
-
 
 export class Token {
   id: Principal;
@@ -135,9 +134,14 @@ export class TokenList {
   }
 
   static async init() {
-    const tokenListResponse = await axios.get(TOKENS_JSON_LIST_URL);
-    const testTokenListResponse = await axios.get(TEXT_TOKENS_JSON_LIST_URL);
-    return { dynamicTokens: tokenListResponse?.data, dynamicTestTokens: testTokenListResponse?.data }
+    const URLS = [TOKENS_JSON_LIST_URL, TEST_TOKENS_JSON_LIST_URL];
+    const fetchURL = (url: string) => axios.get(url);
+    const promises = URLS.map(fetchURL);
+    const result = await Promise.all(promises);
+    return {
+      dynamicTokens: result[0]?.data,
+      dynamicTestTokens: result[0]?.data
+    };
   }
 
   static async create({
@@ -145,7 +149,7 @@ export class TokenList {
     host,
     snsWasmCanisterId
   }: TokenListCreateOptions = {}): Promise<TokenList> {
-    const { dynamicTokens, dynamicTestTokens } = await this.init()
+    const { dynamicTokens, dynamicTestTokens } = await this.init();
     let tokensJson: JsonableTokenList = dynamicTokens;
     let snsWasmId = snsWasmCanisterId;
     let snsTokens: Token[] = [];
