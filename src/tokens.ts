@@ -1,5 +1,5 @@
 import { SnsWasmCanister } from '@dfinity/nns';
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 import { HttpAgent } from '@dfinity/agent';
 import { initSnsWrapper } from '@dfinity/sns';
 import { Principal } from '@dfinity/principal';
@@ -46,9 +46,8 @@ export interface TokenListCreateOptions {
   snsWasmCanisterId?: Principal;
 }
 
-export interface InitReturnType {
-  dynamicTokens: TokenList;
-  dynamicTestTokens: TokenList;
+export interface GetDynamicTokensParams {
+  env?: Envs;
 }
 
 const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
@@ -138,21 +137,21 @@ export class TokenList {
     this.tokens = tokens;
   }
 
-  static async init(): Promise<InitReturnType> {
+  static async getDynamicTokens({env}: GetDynamicTokensParams): Promise<TokenList> {
     try {
-      const URLS: string[] = [TOKENS_JSON_LIST_URL, TEST_TOKENS_JSON_LIST_URL];
-      const fetchURL = (url: string) => axios.get<TokenList>(url);
-      const promises = URLS.map(fetchURL);
-      const result = await Promise.all<AxiosResponse<TokenList>>(promises);
-      return {
-        dynamicTokens: result[0]?.data,
-        dynamicTestTokens: result[1]?.data
-      };
-    } catch (_) {
-      return {
-        dynamicTokens: { name: '', tokens: [] },
-        dynamicTestTokens: { name: '', tokens: [] }
-      };
+      let url;
+
+      if (env === 'testnet') {
+        url = TEST_TOKENS_JSON_LIST_URL;
+      } else {
+        url = TOKENS_JSON_LIST_URL;
+      }
+
+      const result = await axios.get(url);
+
+      return result.data;
+    } catch (err) {
+      throw new Error(`Fetching tokens problem: ${err instanceof Error ? err.message : ' unknown'}`);
     }
   }
 
@@ -161,13 +160,11 @@ export class TokenList {
     host,
     snsWasmCanisterId
   }: TokenListCreateOptions = {}): Promise<TokenList> {
-    const { dynamicTokens, dynamicTestTokens } = await this.init();
-    let tokenList: TokenList = dynamicTokens;
+    const tokenList: TokenList = await this.getDynamicTokens({ env });
+
     let snsWasmId = snsWasmCanisterId;
     let snsTokens: Token[] = [];
-    if (env === 'testnet') {
-      tokenList = dynamicTestTokens;
-    }
+
     if (snsWasmCanisterId) {
       snsWasmId = snsWasmCanisterId || MAINNET_SNS_WASM_CANISTER_ID;
       snsTokens = await this.getSnsTokens({
@@ -175,6 +172,7 @@ export class TokenList {
         snsWasmCanisterId: snsWasmId
       });
     }
+
     const tokens: Token[] = tokenList.tokens;
 
     return new this(tokenList.name, [...tokens, ...snsTokens]);
@@ -194,42 +192,40 @@ export class TokenList {
     });
 
     const snses = await snsWasm.listSnses({});
-    const promises = snses.map<Promise<TokenProperties>>((sns) => {
-      return (async () => {
-        const tokenMeta: Partial<TokenProperties> = {
-          id: sns.ledger_canister_id[0]?.toText(),
-          index_canister: sns.index_canister_id[0]?.toText()
-        };
+    const promises = snses.map<Promise<TokenProperties>>(async (sns) => {
+      const tokenMeta: Partial<TokenProperties> = {
+        id: sns.ledger_canister_id[0]?.toText(),
+        index_canister: sns.index_canister_id[0]?.toText()
+      };
 
-        const [snsRootCanisterId] = sns.root_canister_id;
-        if (!snsRootCanisterId) {
-          throw new Error('root_canister_id not found sns entry');
+      const [snsRootCanisterId] = sns.root_canister_id;
+      if (!snsRootCanisterId) {
+        throw new Error('root_canister_id not found sns entry');
+      }
+
+      const snsWrapper = await initSnsWrapper({
+        rootOptions: {
+          canisterId: snsRootCanisterId
+        },
+        agent
+      });
+
+      const [snsMeta, snsTokenMeta] = await snsWrapper.metadata({});
+      tokenMeta.logo = snsMeta.logo[0];
+      snsTokenMeta.forEach(([key, val]) => {
+        if (key.includes('decimals') && 'Nat' in val) {
+          tokenMeta.decimals = Number(val.Nat);
+        } else if (key.includes('symbol') && 'Text' in val) {
+          tokenMeta.symbol = val.Text;
+        } else if (key.includes('name') && 'Text' in val) {
+          tokenMeta.name = val.Text;
+        } else if (key.includes('fee') && 'Nat' in val) {
+          tokenMeta.fee = Number(val.Nat);
         }
+        tokenMeta.standard = 'ICRC1';
+      });
 
-        const snsWrapper = await initSnsWrapper({
-          rootOptions: {
-            canisterId: snsRootCanisterId
-          },
-          agent
-        });
-
-        const [snsMeta, snsTokenMeta] = await snsWrapper.metadata({});
-        tokenMeta.logo = snsMeta.logo[0];
-        snsTokenMeta.forEach(([key, val]) => {
-          if (key.includes('decimals') && 'Nat' in val) {
-            tokenMeta.decimals = Number(val.Nat);
-          } else if (key.includes('symbol') && 'Text' in val) {
-            tokenMeta.symbol = val.Text;
-          } else if (key.includes('name') && 'Text' in val) {
-            tokenMeta.name = val.Text;
-          } else if (key.includes('fee') && 'Nat' in val) {
-            tokenMeta.fee = Number(val.Nat);
-          }
-          tokenMeta.standard = 'ICRC1';
-        });
-
-        return tokenMeta as TokenProperties;
-      })();
+      return tokenMeta as TokenProperties;
     });
 
     const results = (await Promise.allSettled<TokenProperties>(promises)).map(
