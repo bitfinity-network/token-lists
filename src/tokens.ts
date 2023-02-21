@@ -50,7 +50,7 @@ export interface GetDynamicTokensParams {
   env?: Envs;
 }
 
-const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
+export const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
   'qaa6y-5yaaa-aaaaa-aaafa-cai'
 );
 
@@ -161,10 +161,6 @@ export class TokenList {
     snsWasmCanisterId
   }: TokenListCreateOptions = {}): Promise<TokenList> {
     const tokenList: TokenList = await this.getDynamicTokens({ env });
-
-    if (!snsWasmCanisterId && env === 'mainnet') {
-      snsWasmCanisterId = MAINNET_SNS_WASM_CANISTER_ID;
-    }
 
     let snsTokens: Token[] = [];
 
