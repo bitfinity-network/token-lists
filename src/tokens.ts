@@ -162,20 +162,20 @@ export class TokenList {
   }: TokenListCreateOptions = {}): Promise<TokenList> {
     const tokenList: TokenList = await this.getDynamicTokens({ env });
 
-    let snsWasmId = snsWasmCanisterId;
+    if (!snsWasmCanisterId && env === 'mainnet') {
+      snsWasmCanisterId = MAINNET_SNS_WASM_CANISTER_ID;
+    }
+
     let snsTokens: Token[] = [];
 
     if (snsWasmCanisterId) {
-      snsWasmId = snsWasmCanisterId || MAINNET_SNS_WASM_CANISTER_ID;
       snsTokens = await this.getSnsTokens({
         host,
-        snsWasmCanisterId: snsWasmId
+        snsWasmCanisterId
       });
     }
 
-    const tokens: Token[] = tokenList.tokens;
-
-    return new this(tokenList.name, [...tokens, ...snsTokens]);
+    return new this(tokenList.name, [...tokenList.tokens, ...snsTokens]);
   }
 
   static async getSnsTokens({
