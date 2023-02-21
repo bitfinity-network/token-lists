@@ -1,5 +1,13 @@
 # @infinityswapofficial/token-lists
 
+## 0.1.4
+
+### Patch Changes
+
+- [#32](https://github.com/infinity-swap/token-lists/pull/32) [`0103dc1`](https://github.com/infinity-swap/token-lists/commit/0103dc1e082ee83f90009b47f803b613e3a8ed83) Thanks [@AndyOsei](https://github.com/AndyOsei)! - Update dfinity related packages
+
+- [#30](https://github.com/infinity-swap/token-lists/pull/30) [`87fb350`](https://github.com/infinity-swap/token-lists/commit/87fb350213daad86c9009d84b6440459993d7555) Thanks [@Leleking](https://github.com/Leleking)! - updated token-list path
+
 ## 0.1.3
 
 ### Patch Changes
