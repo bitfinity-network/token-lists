@@ -1,5 +1,5 @@
 import { SnsWasmCanister } from '@dfinity/nns';
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 import { HttpAgent } from '@dfinity/agent';
 import { initSnsWrapper } from '@dfinity/sns';
 import { Principal } from '@dfinity/principal';
@@ -44,6 +44,11 @@ export interface TokenListCreateOptions {
   env?: Envs;
   host?: string;
   snsWasmCanisterId?: Principal;
+}
+
+export interface InitReturnType {
+  dynamicTokens: TokenList;
+  dynamicTestTokens: TokenList;
 }
 
 const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
@@ -133,18 +138,21 @@ export class TokenList {
     this.tokens = tokens;
   }
 
-  static async init() {
+  static async init(): Promise<InitReturnType> {
     try {
-      const URLS = [TOKENS_JSON_LIST_URL, TEST_TOKENS_JSON_LIST_URL];
-      const fetchURL = (url: string) => axios.get(url);
+      const URLS: string[] = [TOKENS_JSON_LIST_URL, TEST_TOKENS_JSON_LIST_URL];
+      const fetchURL = (url: string) => axios.get<TokenList>(url);
       const promises = URLS.map(fetchURL);
-      const result = await Promise.all(promises);
+      const result = await Promise.all<AxiosResponse<TokenList>>(promises);
       return {
         dynamicTokens: result[0]?.data,
-        dynamicTestTokens: result[0]?.data
+        dynamicTestTokens: result[1]?.data
       };
     } catch (_) {
-      return {};
+      return {
+        dynamicTokens: { name: '', tokens: [] },
+        dynamicTestTokens: { name: '', tokens: [] }
+      };
     }
   }
 
@@ -154,12 +162,11 @@ export class TokenList {
     snsWasmCanisterId
   }: TokenListCreateOptions = {}): Promise<TokenList> {
     const { dynamicTokens, dynamicTestTokens } = await this.init();
-    let tokensJson: JsonableTokenList = dynamicTokens;
+    let tokenList: TokenList = dynamicTokens;
     let snsWasmId = snsWasmCanisterId;
     let snsTokens: Token[] = [];
-
     if (env === 'testnet') {
-      tokensJson = dynamicTestTokens;
+      tokenList = dynamicTestTokens;
     }
     if (snsWasmCanisterId) {
       snsWasmId = snsWasmCanisterId || MAINNET_SNS_WASM_CANISTER_ID;
@@ -168,9 +175,9 @@ export class TokenList {
         snsWasmCanisterId: snsWasmId
       });
     }
-    const tokens = tokensJson.tokens.map((token) => Token.fromJSON(token));
+    const tokens: Token[] = tokenList.tokens;
 
-    return new this(tokensJson.name, [...tokens, ...snsTokens]);
+    return new this(tokenList.name, [...tokens, ...snsTokens]);
   }
 
   static async getSnsTokens({
