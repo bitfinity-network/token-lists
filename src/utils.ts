@@ -1,7 +1,8 @@
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
+import MainnetTokenList from './tokenlist.json';
 import schema from './tokenlist.schema.json';
-import { JsonableTokenList } from './tokens';
+import { JsonableTokenList, Token } from './tokens';
 
 export async function validate(tokenList: JsonableTokenList) {
   const ajv = new Ajv({ allErrors: true, verbose: true });
@@ -19,6 +20,25 @@ export async function validate(tokenList: JsonableTokenList) {
     });
   }
 
+  return false;
+}
+
+export async function validateTokensObject(tokens: Token[]) {
+  if (MainnetTokenList.tokens.length) {
+    const mainnetSampleToken = Token.fromJSON(MainnetTokenList.tokens[0]);
+    let valid = true;
+    const sampleObjKeys = Object.keys(mainnetSampleToken).sort();
+    for (const token of tokens) {
+      if (
+        JSON.stringify(Object.keys(token).sort()) !==
+        JSON.stringify(sampleObjKeys)
+      ) {
+        valid = false;
+        break;
+      }
+    }
+    return valid;
+  }
   return false;
 }
 
