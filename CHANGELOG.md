@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.1.5
+
+### Patch Changes
+
+- [#34](https://github.com/infinity-swap/token-lists/pull/34) [`a167025`](https://github.com/infinity-swap/token-lists/commit/a167025ec75e2c70cf1475f5a41998e8551d17ff) Thanks [@alexshelkov](https://github.com/alexshelkov)! - updated with dynamic tokens
+
 ## 0.1.4
 
 ### Patch Changes
