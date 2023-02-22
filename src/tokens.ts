@@ -137,7 +137,7 @@ export class TokenList {
     this.tokens = tokens;
   }
 
-  static async getDynamicTokens({env}: GetDynamicTokensParams): Promise<TokenList> {
+  static async getDynamicTokens({env}: GetDynamicTokensParams): Promise<JsonableTokenList> {
     try {
       let url;
 
@@ -160,7 +160,7 @@ export class TokenList {
     host,
     snsWasmCanisterId
   }: TokenListCreateOptions = {}): Promise<TokenList> {
-    const tokenList: TokenList = await this.getDynamicTokens({ env });
+    const tokenList = await this.getDynamicTokens({ env });
 
     let snsTokens: Token[] = [];
 
@@ -171,7 +171,7 @@ export class TokenList {
       });
     }
 
-    return new this(tokenList.name, [...tokenList.tokens, ...snsTokens]);
+    return new this(tokenList.name, [...tokenList.tokens.map(t => Token.fromJSON(t)), ...snsTokens]);
   }
 
   static async getSnsTokens({
