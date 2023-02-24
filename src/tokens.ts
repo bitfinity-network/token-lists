@@ -120,9 +120,14 @@ export class Token {
       symbol: this.symbol,
       decimals: this.decimals,
       standard: this.standard,
-      tags: this.tags,
-      index_canister: this.indexCanister?.toText(),
-      canisterInfo: this.canisterInfo,
+      tags: this.tags || [],
+      index_canister: this.indexCanister?.toText() || '',
+      canisterInfo: this.canisterInfo || {
+        canisterId: '',
+        controllers: [],
+        wasmHash: '',
+        subnetId: ''
+      },
       logo: this.logo
     };
   }
@@ -137,7 +142,9 @@ export class TokenList {
     this.tokens = tokens;
   }
 
-  static async getDynamicTokens({env}: GetDynamicTokensParams): Promise<JsonableTokenList> {
+  static async getDynamicTokens({
+    env
+  }: GetDynamicTokensParams): Promise<JsonableTokenList> {
     try {
       let url;
 
@@ -151,7 +158,11 @@ export class TokenList {
 
       return result.data;
     } catch (err) {
-      throw new Error(`Fetching tokens problem: ${err instanceof Error ? err.message : ' unknown'}`);
+      throw new Error(
+        `Fetching tokens problem: ${
+          err instanceof Error ? err.message : ' unknown'
+        }`
+      );
     }
   }
 
@@ -171,7 +182,10 @@ export class TokenList {
       });
     }
 
-    return new this(tokenList.name, [...tokenList.tokens.map(t => Token.fromJSON(t)), ...snsTokens]);
+    return new this(tokenList.name, [
+      ...tokenList.tokens.map((t) => Token.fromJSON(t)),
+      ...snsTokens
+    ]);
   }
 
   static async getSnsTokens({
