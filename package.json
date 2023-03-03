@@ -14,7 +14,7 @@
   },
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
-  "module": "./dist/index.module.mjs",
+  "module": "./dist/index.js",
   "unpkg": "./dist/index.umd.js",
   "repository": "https://github.com/infinity-swap/token-lists",
   "license": "MIT",
