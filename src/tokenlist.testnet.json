@@ -48,6 +48,13 @@
       "name": "Token4",
       "symbol": "TKN4",
       "standard": "IS20"
+    },
+    {
+      "id": "r7inp-6aaaa-aaaaa-aaabq-cai",
+      "symbol": "IS20",
+      "name": "IS20",
+      "decimals": 3,
+      "fee": 1000
     }
   ]
 }
