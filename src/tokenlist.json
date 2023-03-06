@@ -29,6 +29,15 @@
       "name": "CHAT",
       "symbol": "CHAT",
       "fee": 100000
+},
+{
+      "id": "qfr6e-biaaa-aaaak-qafuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/stICP.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "StakedICP",
+      "symbol": "stICP",
+      "fee": 1000
     }
   ]
 }
