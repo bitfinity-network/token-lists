@@ -137,7 +137,9 @@ export class TokenList {
     this.tokens = tokens;
   }
 
-  static async getDynamicTokens({env}: GetDynamicTokensParams): Promise<JsonableTokenList> {
+  static async getDynamicTokens({
+    env
+  }: GetDynamicTokensParams): Promise<JsonableTokenList> {
     try {
       let url;
 
@@ -151,7 +153,11 @@ export class TokenList {
 
       return result.data;
     } catch (err) {
-      throw new Error(`Fetching tokens problem: ${err instanceof Error ? err.message : ' unknown'}`);
+      throw new Error(
+        `Fetching tokens problem: ${
+          err instanceof Error ? err.message : ' unknown'
+        }`
+      );
     }
   }
 
@@ -171,7 +177,10 @@ export class TokenList {
       });
     }
 
-    return new this(tokenList.name, [...tokenList.tokens.map(t => Token.fromJSON(t)), ...snsTokens]);
+    return new this(tokenList.name, [
+      ...tokenList.tokens.map((t) => Token.fromJSON(t)),
+      ...snsTokens
+    ]);
   }
 
   static async getSnsTokens({

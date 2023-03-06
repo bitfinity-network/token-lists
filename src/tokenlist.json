@@ -21,13 +21,14 @@
       "fee": 1000
     },
     {
-      "id": "qfr6e-biaaa-aaaak-qafuq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/stICP.png",
+      "id": "2ouva-viaaa-aaaaq-aaamq-cai",
+      "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
       "decimals": 8,
       "standard": "ICRC1",
-      "name": "StakedICP",
-      "symbol": "stICP",
-      "fee": 1000
+      "name": "CHAT",
+      "symbol": "CHAT",
+      "fee": 100000
     }
   ]
 }
