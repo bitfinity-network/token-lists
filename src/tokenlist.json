@@ -38,6 +38,15 @@
       "name": "CHAT",
       "symbol": "CHAT",
       "fee": 100000
+    },
+    {
+      "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
+      "logo": "https://storageapi.fleek.co/fleek-team-bucket/logos/ogy.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "Origyn",
+      "symbol": "OGY",
+      "fee": 200000
     }
   ]
 }
