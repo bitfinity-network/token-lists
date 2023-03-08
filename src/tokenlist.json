@@ -41,7 +41,7 @@
     },
     {
       "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
-      "logo": "https://storageapi.fleek.co/fleek-team-bucket/logos/ogy.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
       "decimals": 8,
       "standard": "ICRC1",
       "name": "Origyn",
