@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.1.6
+
+### Patch Changes
+
+- [#38](https://github.com/infinity-swap/token-lists/pull/38) [`8f05bda`](https://github.com/infinity-swap/token-lists/commit/8f05bdaad067a1859eaa427c66414557707688c1) Thanks [@Leleking](https://github.com/Leleking)! - changed main entrypoint
+
 ## 0.1.5
 
 ### Patch Changes
