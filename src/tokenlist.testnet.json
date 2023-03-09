@@ -48,6 +48,22 @@
       "name": "Token4",
       "symbol": "TKN4",
       "standard": "IS20"
+    },
+    {
+      "id": "yiila-gqaaa-aaaaj-azrga-cai",
+      "fee": 1,
+      "decimals": 8,
+      "name": "Token4",
+      "symbol": "TKN4",
+      "standard": "IS20"
+    },
+    {
+      "id": "tmxop-wyaaa-aaaaa-aaapa-cai",
+      "fee": 10000,
+      "decimals": 8,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "standard": "BTC"
     }
   ]
 }
