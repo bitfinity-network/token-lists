@@ -26,7 +26,6 @@ describe('Validate token lists', () => {
 
   test('toJSON should return an object of type TokenProperties', async () => {
     const list = await TokenList.create({ env: 'mainnet' });
-    console.log(list.tokens[0].toJSON());
     await expect(list.tokens[0].toJSON()).toMatchObject<
       Partial<JsonnableToken>
     >({
