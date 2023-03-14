@@ -63,6 +63,14 @@
       "decimals": 8,
       "fee": 1000,
       "standard": "ICRC1"
+    },
+    { 
+      "id": "mc6ru-gyaaa-aaaar-qaaaq-cai",
+      "fee": 10000,
+      "decimals": 8,
+      "name": "Test Bitcoin",
+      "symbol": "T-BTC",
+      "standard": "BTC"
     }
   ]
 }

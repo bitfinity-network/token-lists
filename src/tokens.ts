@@ -120,9 +120,14 @@ export class Token {
       symbol: this.symbol,
       decimals: this.decimals,
       standard: this.standard,
-      tags: this.tags,
-      index_canister: this.indexCanister?.toText(),
-      canisterInfo: this.canisterInfo,
+      tags: this.tags || [],
+      index_canister: this.indexCanister?.toText() || '',
+      canisterInfo: this.canisterInfo || {
+        canisterId: '',
+        controllers: [],
+        wasmHash: '',
+        subnetId: ''
+      },
       logo: this.logo
     };
   }
