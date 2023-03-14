@@ -1,4 +1,4 @@
-name: Faucet
+name: Faucet Tokens
 on:
   repository_dispatch:
     types: [sync-contracts]
@@ -43,9 +43,6 @@ jobs:
           else 
             echo "Repo is clean"
           fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   release:
     runs-on: ubuntu-latest
     steps:
