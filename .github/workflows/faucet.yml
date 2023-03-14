@@ -2,10 +2,6 @@ name: Faucet Tokens
 on:
   repository_dispatch:
     types: [sync-contracts]
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
   
 jobs:
   update_list:
