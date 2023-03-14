@@ -32,9 +32,10 @@ const fetchTokensFromGc = async () => {
     });
     const tokens = [];
     Object.keys(response.data.tokens).forEach((i) => {
+      console.log(i);
       tokens.push({
         ...response.data.tokens[i],
-        logo: `https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png`
+        logo: `https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/${i}.png`
       });
     });
     return tokens;
