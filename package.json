@@ -62,6 +62,8 @@
     "@dfinity/utils": "^0.0.12",
     "ajv": "^8.11.0",
     "ajv-formats": "^2.1.1",
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.1"
   }
 }
