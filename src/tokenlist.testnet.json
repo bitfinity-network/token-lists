@@ -48,6 +48,14 @@
       "name": "Token4",
       "symbol": "TKN4",
       "standard": "IS20"
+    },
+    {
+      "id": "mc6ru-gyaaa-aaaar-qaaaq-cai",
+      "fee": 10000,
+      "decimals": 8,
+      "name": "Test Bitcoin",
+      "symbol": "T-BTC",
+      "standard": "BTC"
     }
   ]
 }
