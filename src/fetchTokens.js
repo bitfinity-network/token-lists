@@ -2,14 +2,16 @@ import fs from 'fs';
 import axios from 'axios';
 import icrc1IDL from './ic/idl/icrc1.did.js';
 import { Actor, HttpAgent } from '@dfinity/agent';
-import fetch from 'node-fetch';
+import fetch, { Headers } from 'node-fetch';
 global.fetch = fetch;
+global.Headers = Headers;
 import dotenv from 'dotenv';
 dotenv.config();
 
-const tokenFilePath = process.env.IC_ENVIRON === 'local' || process.env.IC_ENVIRON === 'testnet'
-? './tokenlist.testnet.json'
-: './tokenlist.json'
+const tokenFilePath =
+  process.env.IC_ENVIRON === 'local' || process.env.IC_ENVIRON === 'testnet'
+    ? './tokenlist.testnet.json'
+    : './tokenlist.json';
 
 const loadJSON = (path) =>
   JSON.parse(fs.readFileSync(new URL(path, import.meta.url)));
@@ -31,14 +33,17 @@ const updateTokenList = (tokens) => {
   tokens.forEach((token) => {
     const foundIndex = TokensJson.tokens.findIndex((i) => i.id === token.id);
     if (foundIndex >= 0) {
-      TokensJson.tokens[foundIndex] = { ...TokensJson.tokens[foundIndex], ...token };
+      TokensJson.tokens[foundIndex] = {
+        ...TokensJson.tokens[foundIndex],
+        ...token
+      };
     } else {
       TokensJson.tokens.push(token);
     }
-  })
+  });
 
   updateTokenListJson(TokensJson, tokenFilePath);
-}
+};
 
 const fetchTokenIdsFromEvmCanister = async () => {
   try {
@@ -57,13 +62,16 @@ const fetchTokenIdsFromEvmCanister = async () => {
         }
       }
     );
-    return response.data.result.map((i) => i.ic_token.principal);
+    return response.data.result.map((i) => ({
+      principal: i.ic_token.principal,
+      standard: i.ic_token.standard
+    }));
   } catch (error) {
     console.log(error);
   }
 };
 
-const fetchMetadata = async (tokenIds) => {
+const fetchMetadata = async (tokenData) => {
   const agent = new HttpAgent({
     host: process.env.IC_HOST
   });
@@ -71,12 +79,12 @@ const fetchMetadata = async (tokenIds) => {
     await agent.fetchRootKey();
   }
 
-  const promises = tokenIds.map((i) => {
+  const promises = tokenData.map((i) => {
     return (async () => {
-      const meta = { id: i };
+      const meta = { id: i.principal };
       const actor = Actor.createActor(icrc1IDL, {
         agent,
-        canisterId: i
+        canisterId: i.principal
       });
       const data = await actor.icrc1_metadata();
       data.forEach((entry) => {
@@ -90,7 +98,7 @@ const fetchMetadata = async (tokenIds) => {
           meta.fee = Number(entry[1].Nat);
         }
       });
-
+      meta.standard = i.standard;
       return meta;
     })();
   });
@@ -100,7 +108,7 @@ const fetchMetadata = async (tokenIds) => {
 };
 
 (async () => {
-  const tokenIds = await fetchTokenIdsFromEvmCanister();
-  const tokens = await fetchMetadata(tokenIds);
+  const tokenData = await fetchTokenIdsFromEvmCanister();
+  const tokens = await fetchMetadata(tokenData);
   updateTokenList(tokens);
 })();
