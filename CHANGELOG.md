@@ -1,5 +1,19 @@
 # @infinityswapofficial/token-lists
 
+## 0.2.0
+
+### Minor Changes
+
+- [#46](https://github.com/infinity-swap/token-lists/pull/46) [`a2cfe42`](https://github.com/infinity-swap/token-lists/commit/a2cfe42d4a863bba1b9498302f62e0aed0e814c5) Thanks [@EstherOA](https://github.com/EstherOA)! - added Origyn token
+
+- [#49](https://github.com/infinity-swap/token-lists/pull/49) [`d393ed9`](https://github.com/infinity-swap/token-lists/commit/d393ed98e694bc228b8faf4ceeb1d1815cee134d) Thanks [@EstherOA](https://github.com/EstherOA)! - launch BTC for testnet
+
+### Patch Changes
+
+- [#54](https://github.com/infinity-swap/token-lists/pull/54) [`b0ba0d5`](https://github.com/infinity-swap/token-lists/commit/b0ba0d5c222af1ad6bfe2f0b863fe5763ee8cf1a) Thanks [@EstherOA](https://github.com/EstherOA)! - update Test-BTC symbol
+
+- [#41](https://github.com/infinity-swap/token-lists/pull/41) [`e12d86a`](https://github.com/infinity-swap/token-lists/commit/e12d86a8d3b324186a4e96311fd091ac68ec190f) Thanks [@Leleking](https://github.com/Leleking)! - updated build entrypoint
+
 ## 0.1.6
 
 ### Patch Changes
