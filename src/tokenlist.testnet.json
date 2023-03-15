@@ -54,7 +54,7 @@
       "fee": 10000,
       "decimals": 8,
       "name": "Test Bitcoin",
-      "symbol": "T-BTC",
+      "symbol": "Test-BTC",
       "standard": "BTC"
     }
   ]
