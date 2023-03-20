@@ -21,6 +21,10 @@ jobs:
           yarn install --frozen-lockfile
           node src/fetchTokens.js
           npm run prettier
+        env: 
+          IC_ENVIRON: ${{ secrets.IC_ENVIRON }}
+          IC_HOST: ${{ secrets.IC_HOST }}
+          IC_HTTP: ${{ secrets.IC_HTTP }}
         shell: bash
 
       - name: Commit Update

@@ -21,6 +21,10 @@ jobs:
           node src/fetchFaucetTokens.js
           npm run prettier
         shell: bash
+        env: 
+          IC_ENVIRON: ${{ secrets.IC_ENVIRON }}
+          IC_HOST: ${{ secrets.IC_HOST }}
+          IC_HTTP: ${{ secrets.IC_HTTP }}
 
       - name: Commit Update
         run: |
