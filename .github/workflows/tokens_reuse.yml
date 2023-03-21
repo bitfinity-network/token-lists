@@ -1,11 +1,10 @@
-name: Faucet Tokens
+name: Fetch & Update Tokens
 on:
-  repository_dispatch:
-    types: [sync-contracts]
-  
+  workflow_call:
+
 jobs:
   update_list:
-    name: Fetch & Update Faucet Tokens
+    name: Fetch & Update Tokens
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,13 +17,9 @@ jobs:
       - name: Run Script
         run: |
           yarn install --frozen-lockfile
-          node src/fetchFaucetTokens.js
+          node src/fetchTokens.js
           npm run prettier
         shell: bash
-        env: 
-          IC_ENVIRON: ${{ secrets.IC_ENVIRON }}
-          IC_HOST: ${{ secrets.IC_HOST }}
-          IC_HTTP: ${{ secrets.IC_HTTP }}
 
       - name: Commit Update
         run: |
@@ -33,17 +28,19 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           if [ -n "$(git status --porcelain)" ]; then
             git pull
-            git checkout -f "Automated-FaucetToken-Fetch-Update"
+            git checkout -f "Automated-TokenList-Fetch-Update"
             ./run.sh
             npm run prettier
             git add .
-            git commit -m "Updated EVM TokenList" || echo  "Branch is up to date"
-            git push -u origin "Automated-FaucetToken-Fetch-Update"  
-            gh pr create -B main -H Automated-FaucetToken-Fetch-Update --title 'EVM TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release' || echo "PR already exists"
+            git commit -m "Updated TokenList" || echo  "Branch is up to date"
+            git push -u origin "Automated-TokenList-Fetch-Update"  
+            gh pr create -B main -H Automated-TokenList-Fetch-Update --title 'TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release' || echo "PR already exists"
           else 
             echo "Repo is clean"
           fi
+
   release:
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     needs: update_list
     steps:

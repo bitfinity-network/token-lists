@@ -9,7 +9,7 @@ import { loadJSON, updateTokenListJson } from './helpers.js';
 dotenv.config();
 
 const tokenFilePath =
-  process.env.IC_ENVIRON === 'local' || process.env.IC_ENVIRON === 'testnet'
+  process.env.IC_ENVIRON === 'testnet'
     ? './tokenlist.testnet.json'
     : './tokenlist.json';
 

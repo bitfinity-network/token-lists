@@ -4,9 +4,9 @@ dotenv.config();
 import { updateTokenListJson } from './helpers.js';
 
 const tokenFilePath =
-  process.env.IC_ENVIRON === 'local' || process.env.IC_ENVIRON === 'testnet'
-    ? './evm.tokenlist.json'
-    : './evm.tokenlist.testnet.json';
+  process.env.IC_ENVIRON === 'testnet'
+    ? './evm.tokenlist.testnet.json'
+    : './evm.tokenlist.json';
 
 const FAUCET_TOKEN_URL =
   'https://storage.googleapis.com/evmc/Addresses/logs/tokenAddresses.json';
