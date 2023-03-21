@@ -54,7 +54,8 @@
       "symbol": "IS20",
       "name": "IS20",
       "decimals": 8,
-      "fee": 1000
+      "fee": 1000,
+      "standard": "IS20"
     },
     {
       "id": "4lgso-eyaaa-aaaak-aegdq-cai",
