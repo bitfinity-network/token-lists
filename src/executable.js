@@ -2,7 +2,7 @@ import { SnsWasmCanister } from '@dfinity/nns';
 import { Principal } from '@dfinity/principal';
 import { initSnsWrapper } from '@dfinity/sns';
 import fs from 'fs';
-import { generateImage, loadJSON } from './helpers';
+import { generateImage, loadJSON } from './helpers.js';
 
 const ICP_SYMBOL = 'ICP';
 const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
