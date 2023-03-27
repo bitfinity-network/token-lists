@@ -51,11 +51,12 @@
     },
     {
       "id": "mc6ru-gyaaa-aaaar-qaaaq-cai",
-      "fee": 10000,
+      "fee": 10,
       "decimals": 8,
       "name": "Test Bitcoin",
       "symbol": "Test-BTC",
-      "standard": "BTC"
+      "standard": "BTC",
+      "index_canister": "mm444-5iaaa-aaaar-qaabq-cai"
     }
   ]
 }
