@@ -1,5 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
+import { FAUCET_TOKEN_URL, HEADERS_CONFIG, TOKEN_LOGO_PATH } from './contants.js';
 dotenv.config();
 import { updateTokenListJson } from './helpers.js';
 
@@ -8,22 +9,17 @@ const tokenFilePath =
     ? './evm.tokenlist.testnet.json'
     : './evm.tokenlist.json';
 
-const FAUCET_TOKEN_URL =
-  'https://storage.googleapis.com/evmc/Addresses/logs/tokenAddresses.json';
 
 const fetchTokensFromGc = async () => {
   try {
     const response = await axios.get(FAUCET_TOKEN_URL, {
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      }
+      headers: HEADERS_CONFIG
     });
     const tokens = [];
     Object.keys(response.data.tokens).forEach((i) => {
       tokens.push({
         ...response.data.tokens[i],
-        logo: `https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/${i}.png`
+        logo: `${TOKEN_LOGO_PATH}${i}.png`
       });
     });
     return tokens;

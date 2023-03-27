@@ -6,6 +6,7 @@ global.fetch = fetch;
 global.Headers = Headers;
 import dotenv from 'dotenv';
 import { loadJSON, updateTokenListJson } from './helpers.js';
+import { HEADERS_CONFIG } from './contants.js';
 dotenv.config();
 
 const tokenFilePath =
@@ -42,10 +43,7 @@ const fetchTokenIdsFromEvmCanister = async () => {
         id: 1
       },
       {
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        }
+        headers: HEADERS_CONFIG
       }
     );
     return response.data.result.map((i) => ({
