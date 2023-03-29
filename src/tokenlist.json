@@ -47,6 +47,14 @@
       "name": "Origyn",
       "symbol": "OGY",
       "fee": 200000
+    },
+    {
+      "id": "4lgso-eyaaa-aaaak-aegdq-cai",
+      "symbol": "IS20",
+      "name": "IS20",
+      "decimals": 8,
+      "fee": 1000,
+      "standard": "ICRC1"
     }
   ]
 }

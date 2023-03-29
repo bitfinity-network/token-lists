@@ -1,17 +1,8 @@
 import { SnsWasmCanister } from '@dfinity/nns';
 import { Principal } from '@dfinity/principal';
 import { initSnsWrapper } from '@dfinity/sns';
-import * as relativePath from 'path';
 import fs from 'fs';
-
-const __dirname = relativePath
-  .dirname(import.meta.url)
-  .split('/')
-  .slice(0, -1)
-  .join('/');
-
-const loadJSON = (path) =>
-  JSON.parse(fs.readFileSync(new URL(path, import.meta.url)));
+import { generateImage, loadJSON } from './helpers.js';
 
 const ICP_SYMBOL = 'ICP';
 const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
@@ -19,18 +10,6 @@ const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
 );
 
 const TokensJson = loadJSON('./tokenlist.json');
-
-const generateImage = async (base64String, path) => {
-  let base64Image = base64String.split(';base64,').pop();
-  fs.writeFile(
-    new URL(path, __dirname + '/'),
-    base64Image,
-    { encoding: 'base64', recursive: true },
-    function (err) {
-      console.log('File created');
-    }
-  );
-};
 
 const updateTokenListJson = async (data, path) => {
   fs.writeFile(
