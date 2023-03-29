@@ -1,4 +1,4 @@
-name: Faucet reuse
+name: Fetch & Update Faucet
 on:
   workflow_call:
 

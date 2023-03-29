@@ -6,7 +6,7 @@ global.fetch = fetch;
 global.Headers = Headers;
 import dotenv from 'dotenv';
 import { loadJSON, updateTokenListJson } from './helpers.js';
-import { HEADERS_CONFIG } from './contants.js';
+import { HEADERS_CONFIG } from './constants.js';
 dotenv.config();
 
 const tokenFilePath =
@@ -72,14 +72,15 @@ const fetchMetadata = async (tokenData) => {
       });
       const data = await actor.icrc1_metadata();
       data.forEach((entry) => {
-        if (entry[0].includes('decimals')) {
-          meta.decimals = Number(entry[1].Nat);
-        } else if (entry[0].includes('symbol')) {
-          meta.symbol = entry[1].Text;
-        } else if (entry[0].includes('name')) {
-          meta.name = entry[1].Text;
-        } else if (entry[0].includes('fee')) {
-          meta.fee = Number(entry[1].Nat);
+        const [first, second] = entry;
+        if (first.includes('decimals')) {
+          meta.decimals = Number(second.Nat);
+        } else if (first.includes('symbol')) {
+          meta.symbol = second.Text;
+        } else if (first.includes('name')) {
+          meta.name = second.Text;
+        } else if (first.includes('fee')) {
+          meta.fee = Number(second.Nat);
         }
       });
       meta.standard = i.standard;

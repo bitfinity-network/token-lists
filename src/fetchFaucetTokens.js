@@ -1,6 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
-import { FAUCET_TOKEN_URL, HEADERS_CONFIG, TOKEN_LOGO_PATH } from './contants.js';
+import { FAUCET_TOKEN_URL, HEADERS_CONFIG, TOKEN_LOGO_PATH } from './constants.js';
 dotenv.config();
 import { updateTokenListJson } from './helpers.js';
 

@@ -9,6 +9,7 @@ export const updateTokenListJson = async (data, path) => {
   fs.writeFile(
     new URL(path, import.meta.url),
     JSON.stringify(data),
+    "\t",
     function (err) {
       if (err) throw err;
       console.log('complete');

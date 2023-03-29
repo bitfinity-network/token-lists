@@ -1,4 +1,4 @@
-name: Faucet Tokens Testnet
+name: Fetch Faucet Testnet
 on:
   repository_dispatch:
     types: [sync-contracts]
@@ -10,4 +10,4 @@ env:
 
 jobs:
   call-workflow:
-    uses: infinity-swap/token-lists/.github/workflows/faucet_reuse.yml
+    uses: infinity-swap/token-lists/.github/workflows/fetch_faucet.yml
