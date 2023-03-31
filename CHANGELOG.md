@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.3.0
+
+### Minor Changes
+
+- [#56](https://github.com/infinity-swap/token-lists/pull/56) [`94ace3d`](https://github.com/infinity-swap/token-lists/commit/94ace3df134fb4ac7b7096a81bbf3eab3202cf13) Thanks [@EstherOA](https://github.com/EstherOA)! - added bitcoin mainnet token
+
 ## 0.2.0
 
 ### Minor Changes
