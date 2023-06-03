@@ -39,6 +39,16 @@
       "name": "SONIC",
       "symbol": "SOC",
       "fee": 100000
+    },
+    {
+      "id": "73mez-iiaaa-aaaaq-aaasq-cai",
+      "index_canister": "7vojr-tyaaa-aaaaq-aaatq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/kinic.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "KINIC",
+      "symbol": "KINIC",
+      "fee": 100000
     }
   ]
 }
