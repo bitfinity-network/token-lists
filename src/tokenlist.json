@@ -49,6 +49,16 @@
       "name": "KINIC",
       "symbol": "KINIC",
       "fee": 100000
+    },
+    {
+      "id": "6rdgd-kyaaa-aaaaq-aaavq-cai",
+      "index_canister": "6dfr2-giaaa-aaaaq-aaawq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/hot.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "HotOrNot",
+      "symbol": "HOT",
+      "fee": 100000
     }
   ]
 }
