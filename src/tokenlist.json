@@ -59,6 +59,16 @@
       "name": "HotOrNot",
       "symbol": "HOT",
       "fee": 100000
+    },
+    {
+      "id": "4q2s2-oqaaa-aaaaq-aaaya-cai",
+      "index_canister": "46y7s-vaaaa-aaaaq-aaaza-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "GHOST",
+      "symbol": "GHOST",
+      "fee": 100000000
     }
   ]
 }
