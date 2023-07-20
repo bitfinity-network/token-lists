@@ -5,11 +5,12 @@ import * as relativePath from 'path';
 export const loadJSON = (path) =>
   JSON.parse(fs.readFileSync(new URL(path, import.meta.url), 'utf-8'));
 
-export const updateTokenListJson = async (data, path) => {
+export const updateTokenListJson = async (data, path, base = import.meta.url) => {
+  const newPath = new URL(path, base)
   fs.writeFile(
-    new URL(path, import.meta.url),
+    newPath,
     JSON.stringify(data),
-    "\t",
+    null,
     function (err) {
       if (err) throw err;
       console.log('complete');

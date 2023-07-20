@@ -1,8 +1,10 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
 import { FAUCET_TOKEN_URL, HEADERS_CONFIG, TOKEN_LOGO_PATH } from './constants.js';
-dotenv.config();
 import { updateTokenListJson } from './helpers.js';
+dotenv.config();
+
+
 
 const tokenFilePath =
   process.env.IC_ENVIRON === 'testnet'
@@ -22,6 +24,7 @@ const fetchTokensFromGc = async () => {
         logo: `${TOKEN_LOGO_PATH}${i}.png`
       });
     });
+
     return tokens;
   } catch (error) {
     console.log(error);
@@ -30,11 +33,9 @@ const fetchTokensFromGc = async () => {
 
 (async () => {
   const faucetTokens = await fetchTokensFromGc();
-  updateTokenListJson(
-    {
-      name: 'InfinitySwap Faucet Tokens',
-      tokens: faucetTokens
-    },
-    tokenFilePath
-  );
+  const data = {
+    name: 'InfinitySwap Faucet Tokens',
+    tokens: [...faucetTokens]
+  }
+  updateTokenListJson(data, tokenFilePath);
 })();
