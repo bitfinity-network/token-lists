@@ -1,61 +1,61 @@
 {
-    "name": "InfinitySwap Faucet Tokens",
-    "tokens": [
-      {
-        "address": "0x53611Ab037767647498EBd555C4CC339db4Ee617",
-        "name": "Cashium",
-        "symbol": "CSM",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      },
-      {
-        "address": "0x47C2579103f8ecD8cf0fF128869CdCF838352177",
-        "name": "Coinaro",
-        "symbol": "CNR",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      },
-      {
-        "address": "0x582bF0F5B6fdb9EA788a4Fc211d83b0aC6d5132b",
-        "name": "Coinverse",
-        "symbol": "CVS",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      },
-      {
-        "address": "0x6ef0184AEF0De2E176B30BEb79ebD1d6be6B1B62",
-        "name": "Coinbase",
-        "symbol": "CBS",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      },
-      {
-        "address": "0x2CF1dF9aB7b0467be009e13Fee94f6Dfcd160fB1",
-        "name": "Intellicoin",
-        "symbol": "ITC",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      },
-      {
-        "address": "0x048B0c91C15d7b11ab9Bc2bb4B8368d4ddD155F3",
-        "name": "Incoingnito",
-        "symbol": "ICG",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      },
-      {
-        "address": "0xC6Ad32B924927d5071BE7c16dA0F1Eb0c42699F6",
-        "name": "Arcoin",
-        "symbol": "ARC",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      },
-      {
-        "address": "0x87ccaC5BDf6cb5A1704142aFA1696ed2F51688D0",
-        "name": "Coinicious",
-        "symbol": "CNS",
-        "decimals": 18,
-        "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/faucet.png"
-      }
-    ]
-  }
+  "name": "InfinitySwap Faucet Tokens",
+  "tokens": [
+    {
+      "address": "0x3a961f066881D5fEfD3e8f9C2Fa9312e9DcfaDE1",
+      "name": "Cashium",
+      "symbol": "CSM",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Cashium.png"
+    },
+    {
+      "address": "0x960BCBbB2793d0CED37d5c53D8D0e419579402aD",
+      "name": "Coinaro",
+      "symbol": "CNR",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinaro.png"
+    },
+    {
+      "address": "0xb486f56205Bc39Bd748d316F00a70359D581C2F4",
+      "name": "Coinverse",
+      "symbol": "CVS",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinverse.png"
+    },
+    {
+      "address": "0x4aa6392683177E3f89b2a940794d5D30ad711d5B",
+      "name": "Coinovation",
+      "symbol": "COV",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinovation.png"
+    },
+    {
+      "address": "0xA8F171031f561cCBEc960fFda11a9fa43253749D",
+      "name": "Intellicoin",
+      "symbol": "ITC",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Intellicoin.png"
+    },
+    {
+      "address": "0x315024B2682976cfdef4bD0bCe1a58E6d9A25C43",
+      "name": "Incoingnito",
+      "symbol": "ICG",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Incoingnito.png"
+    },
+    {
+      "address": "0x0e3Fb250Aec7b5c4E73F9d92998218B7e53E1Ddf",
+      "name": "Arcoin",
+      "symbol": "ARC",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Arcoin.png"
+    },
+    {
+      "address": "0xfb5379aE3b73B0E517455AB6Fd3e01c51cCc6fe2",
+      "name": "Coinicious",
+      "symbol": "CNS",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinicious.png"
+    }
+  ]
+}
