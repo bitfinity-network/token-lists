@@ -21,15 +21,6 @@
       "fee": 1000
     },
     {
-      "id": "qfr6e-biaaa-aaaak-qafuq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/stICP.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "StakedICP",
-      "symbol": "stICP",
-      "fee": 1000
-    },
-    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -40,31 +31,54 @@
       "fee": 100000
     },
     {
-      "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
+      "id": "7ajy4-sqaaa-aaaaq-aaaqa-cai",
+      "index_canister": "7olvu-jaaaa-aaaaq-aaara-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/soc.png",
       "decimals": 8,
       "standard": "ICRC1",
-      "name": "Origyn",
-      "symbol": "OGY",
-      "fee": 200000
+      "name": "SONIC",
+      "symbol": "SOC",
+      "fee": 100000
     },
     {
-      "id": "mxzaz-hqaaa-aaaar-qaada-cai",
-      "index_canister": "n5wcd-faaaa-aaaar-qaaea-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/bitcoin.svg",
-      "fee": 10,
+      "id": "73mez-iiaaa-aaaaq-aaasq-cai",
+      "index_canister": "7vojr-tyaaa-aaaaq-aaatq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/kinic.png",
       "decimals": 8,
-      "name": "Bitcoin",
-      "symbol": "BTC",
-      "standard": "BTC"
+      "standard": "ICRC1",
+      "name": "KINIC",
+      "symbol": "KINIC",
+      "fee": 100000
     },
     {
-      "id": "4lgso-eyaaa-aaaak-aegdq-cai",
-      "symbol": "IS20",
-      "name": "IS20",
+      "id": "6rdgd-kyaaa-aaaaq-aaavq-cai",
+      "index_canister": "6dfr2-giaaa-aaaaq-aaawq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/hot.png",
       "decimals": 8,
-      "fee": 1000,
-      "standard": "ICRC1"
+      "standard": "ICRC1",
+      "name": "HotOrNot",
+      "symbol": "HOT",
+      "fee": 100000
+    },
+    {
+      "id": "4q2s2-oqaaa-aaaaq-aaaya-cai",
+      "index_canister": "46y7s-vaaaa-aaaaq-aaaza-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "GHOST",
+      "symbol": "GHOST",
+      "fee": 100000000
+    },
+    {
+      "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
+      "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "GHOST",
+      "symbol": "GHOST",
+      "fee": 100000000
     }
   ]
 }

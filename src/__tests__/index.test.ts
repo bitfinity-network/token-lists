@@ -15,11 +15,13 @@ describe('Validate token lists', () => {
   test('the mainnet tokens from create Tokenlist should be valid', async () => {
     const list = await TokenList.create({ env: 'mainnet' });
     await expect(list).toStrictEqual(new TokenList(list.name, list.tokens));
-    const sampleObjKeys = Object.keys(Token.fromJSON(MainnetTokenList.tokens[0]));
+    const sampleObjKeys = Object.keys(
+      Token.fromJSON(MainnetTokenList.tokens[0])
+    );
     const tokenList = list.tokens;
-    tokenList.forEach(token => {
+    tokenList.forEach((token) => {
       expect(token).not.toBeNull();
-      expect(typeof token).toBe("object");
+      expect(typeof token).toBe('object');
       expect(Object.keys(token)).toEqual(sampleObjKeys);
     });
   });
@@ -27,11 +29,13 @@ describe('Validate token lists', () => {
   test('the testnet tokens from create Tokenlist should be valid', async () => {
     const list = await TokenList.create({ env: 'testnet' });
     await expect(list).toStrictEqual(new TokenList(list.name, list.tokens));
-    const sampleObjKeys = Object.keys(Token.fromJSON(TestnetTokenList.tokens[0]));
+    const sampleObjKeys = Object.keys(
+      Token.fromJSON(TestnetTokenList.tokens[0])
+    );
     const tokenList = list.tokens;
-    tokenList.forEach(token => {
+    tokenList.forEach((token) => {
       expect(token).not.toBeNull();
-      expect(typeof token).toBe("object");
+      expect(typeof token).toBe('object');
       expect(Object.keys(token)).toEqual(sampleObjKeys);
     });
   });
