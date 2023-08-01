@@ -99,6 +99,16 @@
       "name": "EdgeMatrixComputing",
       "symbol": "EMC",
       "fee": 100000
+    },
+    {
+      "id": "wrett-waaaa-aaaaq-aabda-cai",
+      "index_canister": "x3lrj-uqaaa-aaaaq-aabea-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "Modclub",
+      "symbol": "MOD",
+      "fee": 10000
     }
   ]
 }
