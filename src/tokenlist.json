@@ -10,16 +10,7 @@
       "symbol": "ICP",
       "standard": "ICP"
     },
-    {
-      "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
-      "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sns1.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "SNS-1",
-      "symbol": "SNS1",
-      "fee": 1000
-    },
+    null,
     {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
@@ -30,16 +21,7 @@
       "symbol": "CHAT",
       "fee": 100000
     },
-    {
-      "id": "7ajy4-sqaaa-aaaaq-aaaqa-cai",
-      "index_canister": "7olvu-jaaaa-aaaaq-aaara-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/soc.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "SONIC",
-      "symbol": "SOC",
-      "fee": 100000
-    },
+    null,
     {
       "id": "73mez-iiaaa-aaaaq-aaasq-cai",
       "index_canister": "7vojr-tyaaa-aaaaq-aaatq-cai",
