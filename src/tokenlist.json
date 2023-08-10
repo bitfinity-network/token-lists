@@ -109,6 +109,16 @@
       "name": "Modclub",
       "symbol": "MOD",
       "fee": 10000
+    },
+    {
+      "id": "xsi2v-cyaaa-aaaaq-aabfq-cai",
+      "index_canister": "xaonm-oiaaa-aaaaq-aabgq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "Modclub",
+      "symbol": "MOD",
+      "fee": 10000
     }
   ]
 }
