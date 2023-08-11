@@ -21,6 +21,16 @@
       "fee": 1000
     },
     {
+      "id": "mxzaz-hqaaa-aaaar-qaada-cai",
+      "index_canister": "n5wcd-faaaa-aaaar-qaaea-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/bitcoin.svg",
+      "fee": 10,
+      "decimals": 8,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "standard": "BTC"
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
