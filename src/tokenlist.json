@@ -119,6 +119,16 @@
       "name": "Modclub",
       "symbol": "MOD",
       "fee": 10000
+    },
+    {
+      "id": "vtrom-gqaaa-aaaaq-aabia-cai",
+      "index_canister": "v5tde-5aaaa-aaaaq-aabja-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/boom.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "BoomDAO",
+      "symbol": "BOOM",
+      "fee": 100000
     }
   ]
 }
