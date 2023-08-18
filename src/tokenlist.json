@@ -129,6 +129,16 @@
       "name": "BoomDAO",
       "symbol": "BOOM",
       "fee": 100000
+    },
+    {
+      "id": "viusj-4iaaa-aaaaq-aabkq-cai",
+      "index_canister": "vgw7b-hyaaa-aaaaq-aablq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/seer.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "SEER",
+      "symbol": "SEER",
+      "fee": 100000
     }
   ]
 }
