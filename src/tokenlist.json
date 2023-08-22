@@ -139,6 +139,16 @@
       "name": "SEER",
       "symbol": "SEER",
       "fee": 100000
+    },
+    {
+      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
+      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cat.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "CatalyzeDAO",
+      "symbol": "CAT",
+      "fee": 100000
     }
   ]
 }
