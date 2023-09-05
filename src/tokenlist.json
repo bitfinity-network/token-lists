@@ -89,6 +89,15 @@
       "name": "GHOST",
       "symbol": "GHOST",
       "fee": 100000000
+    },
+    {
+      "id": "uwihq-liaaa-aaaal-qcbrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nobleblocks.png",
+      "fee": 10,
+      "decimals": 8,
+      "name": "NOBLEBLOCKS",
+      "symbol": "NOBL",
+      "standard": "ICRC1"
     }
   ]
 }
