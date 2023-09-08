@@ -98,6 +98,15 @@
       "name": "NOBLEBLOCKS",
       "symbol": "NOBL",
       "standard": "ICRC1"
+    },
+    {
+      "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
+      "fee": 10,
+      "decimals": 8,
+      "name": "ORIGYN",
+      "symbol": "OGY",
+      "standard": "ICRC1"
     }
   ]
 }
