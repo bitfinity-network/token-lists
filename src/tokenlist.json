@@ -149,6 +149,16 @@
       "name": "CatalyzeDAO",
       "symbol": "CAT",
       "fee": 100000
+    },
+    {
+      "id": "rffwt-piaaa-aaaaq-aabqq-cai",
+      "index_canister": "rlh33-uyaaa-aaaaq-aabrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icx.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "IC-X",
+      "symbol": "ICX",
+      "fee": 100000
     }
   ]
 }
