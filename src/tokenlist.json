@@ -159,6 +159,16 @@
       "name": "IC-X",
       "symbol": "ICX",
       "fee": 100000
+    },
+    {
+      "id": "rxdbk-dyaaa-aaaaq-aabtq-cai",
+      "index_canister": "q5mdq-biaaa-aaaaq-aabuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nua.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Nuance",
+      "symbol": "NUA",
+      "fee": 100000
     }
   ]
 }
