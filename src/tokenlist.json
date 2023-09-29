@@ -169,6 +169,16 @@
       "name": "Nuance",
       "symbol": "NUA",
       "fee": 100000
+    },
+    {
+      "id": "qbizb-wiaaa-aaaaq-aabwq-cai",
+      "index_canister": "qpkuj-nyaaa-aaaaq-aabxq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sonic.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Sonic",
+      "symbol": "SONIC",
+      "fee": 100000
     }
   ]
 }
