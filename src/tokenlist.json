@@ -70,7 +70,16 @@
       "symbol": "GHOST",
       "fee": 100000000
     },
-    null,
+    {
+      "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
+      "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "GHOST",
+      "symbol": "GHOST",
+      "fee": 100000000
+    },
     {
       "id": "5bqmf-wyaaa-aaaaq-aaa5q-cai",
       "index_canister": "5tw34-2iaaa-aaaaq-aaa6q-cai",
@@ -131,7 +140,16 @@
       "symbol": "SEER",
       "fee": 100000
     },
-    null,
+    {
+      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
+      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cat.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "CatalyzeDAO",
+      "symbol": "CAT",
+      "fee": 100000
+    },
     {
       "id": "rffwt-piaaa-aaaaq-aabqq-cai",
       "index_canister": "rlh33-uyaaa-aaaaq-aabrq-cai",
