@@ -92,12 +92,13 @@
     },
     {
       "id": "uwihq-liaaa-aaaal-qcbrq-cai",
+      "index_canister": "xazad-dqaaa-aaaap-abl5q-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nobleblocks.png",
-      "fee": 10,
       "decimals": 8,
+      "standard": "ICRC1",
       "name": "NOBLEBLOCKS",
       "symbol": "NOBL",
-      "standard": "ICRC1"
+      "fee": 10
     },
     {
       "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
