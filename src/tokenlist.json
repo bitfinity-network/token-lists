@@ -100,26 +100,8 @@
       "symbol": "EMC",
       "fee": 100000
     },
-    {
-      "id": "wrett-waaaa-aaaaq-aabda-cai",
-      "index_canister": "x3lrj-uqaaa-aaaaq-aabea-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "Modclub",
-      "symbol": "MOD",
-      "fee": 10000
-    },
-    {
-      "id": "xsi2v-cyaaa-aaaaq-aabfq-cai",
-      "index_canister": "xaonm-oiaaa-aaaaq-aabgq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "Modclub",
-      "symbol": "MOD",
-      "fee": 10000
-    },
+    null,
+    null,
     {
       "id": "vtrom-gqaaa-aaaaq-aabia-cai",
       "index_canister": "v5tde-5aaaa-aaaaq-aabja-cai",
@@ -170,15 +152,6 @@
       "symbol": "NUA",
       "fee": 100000
     },
-    {
-      "id": "qbizb-wiaaa-aaaaq-aabwq-cai",
-      "index_canister": "qpkuj-nyaaa-aaaaq-aabxq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sonic.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "Sonic",
-      "symbol": "SONIC",
-      "fee": 100000
-    }
+    null
   ]
 }
