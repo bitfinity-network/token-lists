@@ -1,0 +1,69 @@
+name: Fetch & Update Tokens
+on:
+  workflow_call:
+
+jobs:
+  update_list:
+    name: Fetch & Update Tokens
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: 'yarn'
+      - name: Run Script
+        run: |
+          yarn install --frozen-lockfile
+          node src/fetchTokens.js
+          npm run prettier
+        shell: bash
+
+      - name: Commit Update
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          if [ -n "$(git status --porcelain)" ]; then
+            git pull
+            git checkout -f "Automated-TokenList-Fetch-Update"
+            ./run.sh
+            npm run prettier
+            git add .
+            git commit -m "Updated TokenList" || echo  "Branch is up to date"
+            git push -u origin "Automated-TokenList-Fetch-Update"  
+            gh pr create -B main -H Automated-TokenList-Fetch-Update --title 'TokenList Updated' --body  'PR created by Github Actions. Review PR and add changeset to release' || echo "PR already exists"
+          else 
+            echo "Repo is clean"
+          fi
+
+  release:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    needs: update_list
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@v1
+        with:
+          publish: yarn release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
