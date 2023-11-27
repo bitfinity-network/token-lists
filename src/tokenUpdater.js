@@ -52,12 +52,16 @@ class TokenListUpdater {
     }
     static async updateTokenListFile(snsTokens) {
         const snsTokenNames = snsTokens.map((token) => token.name.toLowerCase());
-        const oldTokens = TokensJson.tokens.filter((token) => !snsTokenNames.includes(token.name.toLowerCase()));
+        const oldTokens = TokensJson.tokens.filter(
+            (token) => !snsTokenNames.includes(token.name.toLowerCase())
+        );
+        const tokens = [...oldTokens, ...snsTokens].filter(
+            (obj, index, self) => self.findIndex((o) => o.id === obj.id) === index
+        );
         const mainnetTokens = {
             name: TokensJson.name,
-            tokens: [...oldTokens, ...snsTokens]
+            tokens
         };
-        console.log('mainnetTokens', mainnetTokens);
         updateTokenListJson(mainnetTokens, './tokenlist.json');
     }
     static async getSnsTokens() {
