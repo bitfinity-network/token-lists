@@ -51,12 +51,16 @@ class TokenListUpdater {
     return results;
   }
   static async updateTokenListFile(snsTokens) {
-    const icpToken = TokensJson.tokens.find(
-      (token) => token.name.toLowerCase() === ICP_SYMBOL.toLowerCase()
-    );
+    const snsTokenNames = snsTokens.map((token) => token.name.toLowerCase());
+    const oldTokens = TokensJson.tokens.filter((token) => {
+      if (!snsTokenNames.includes(token.name)) {
+        return token;
+      }
+    });
+    console.log('old tokens', oldTokens);
     const mainnetTokens = {
       name: TokensJson.name,
-      tokens: [icpToken, ...snsTokens]
+      tokens: [...oldTokens, ...snsTokens]
     };
 
     console.log('mainnetTokens', mainnetTokens);
