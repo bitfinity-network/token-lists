@@ -11,16 +11,6 @@
       "standard": "ICP"
     },
     {
-      "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
-      "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sns1.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "SNS-1",
-      "symbol": "SNS1",
-      "fee": 1000
-    },
-    {
       "id": "mxzaz-hqaaa-aaaar-qaada-cai",
       "index_canister": "n5wcd-faaaa-aaaar-qaaea-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/bitcoin.svg",
@@ -29,6 +19,35 @@
       "name": "Bitcoin",
       "symbol": "BTC",
       "standard": "BTC"
+    },
+    {
+      "id": "uwihq-liaaa-aaaal-qcbrq-cai",
+      "index_canister": "xazad-dqaaa-aaaap-abl5q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nobleblocks.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "NOBLEBLOCKS",
+      "symbol": "NOBL",
+      "fee": 10
+    },
+    {
+      "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
+      "fee": 10,
+      "decimals": 8,
+      "name": "ORIGYN",
+      "symbol": "OGY",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
+      "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sns1.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "SNS-1",
+      "symbol": "SNS1",
+      "fee": 1000
     },
     {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
@@ -71,16 +90,6 @@
       "fee": 100000
     },
     {
-      "id": "4q2s2-oqaaa-aaaaq-aaaya-cai",
-      "index_canister": "46y7s-vaaaa-aaaaq-aaaza-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "GHOST",
-      "symbol": "GHOST",
-      "fee": 100000000
-    },
-    {
       "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
       "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
@@ -91,23 +100,94 @@
       "fee": 100000000
     },
     {
-      "id": "uwihq-liaaa-aaaal-qcbrq-cai",
-      "index_canister": "xazad-dqaaa-aaaap-abl5q-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nobleblocks.png",
+      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
+      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cat.png",
       "decimals": 8,
       "standard": "ICRC1",
-      "name": "NOBLEBLOCKS",
-      "symbol": "NOBL",
-      "fee": 10
+      "name": "CatalyzeDAO",
+      "symbol": "CAT",
+      "fee": 100000
     },
     {
-      "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
-      "fee": 10,
+      "id": "wedc6-xiaaa-aaaaq-aabaq-cai",
+      "index_canister": "wkbpw-myaaa-aaaaq-aabbq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/emc.png",
       "decimals": 8,
-      "name": "ORIGYN",
-      "symbol": "OGY",
-      "standard": "ICRC1"
+      "standard": "ICRC1",
+      "name": "EdgeMatrixComputing",
+      "symbol": "EMC",
+      "fee": 100000
+    },
+    {
+      "id": "xsi2v-cyaaa-aaaaq-aabfq-cai",
+      "index_canister": "xaonm-oiaaa-aaaaq-aabgq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "Modclub",
+      "symbol": "MOD",
+      "fee": 10000
+    },
+    {
+      "id": "vtrom-gqaaa-aaaaq-aabia-cai",
+      "index_canister": "v5tde-5aaaa-aaaaq-aabja-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/boom.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "BoomDAO",
+      "symbol": "BOOM",
+      "fee": 100000
+    },
+    {
+      "id": "viusj-4iaaa-aaaaq-aabkq-cai",
+      "index_canister": "vgw7b-hyaaa-aaaaq-aablq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/seer.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "SEER",
+      "symbol": "SEER",
+      "fee": 100000
+    },
+    {
+      "id": "rffwt-piaaa-aaaaq-aabqq-cai",
+      "index_canister": "rlh33-uyaaa-aaaaq-aabrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icx.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "IC-X",
+      "symbol": "ICX",
+      "fee": 100000
+    },
+    {
+      "id": "rxdbk-dyaaa-aaaaq-aabtq-cai",
+      "index_canister": "q5mdq-biaaa-aaaaq-aabuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nua.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Nuance",
+      "symbol": "NUA",
+      "fee": 100000
+    },
+    {
+      "id": "qbizb-wiaaa-aaaaq-aabwq-cai",
+      "index_canister": "qpkuj-nyaaa-aaaaq-aabxq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sonic.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Sonic",
+      "symbol": "SONIC",
+      "fee": 100000
+    },
+    {
+      "id": "sotaq-jqaaa-aaaaq-aab2a-cai",
+      "index_canister": "sarny-saaaa-aaaaq-aab3a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/qro.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Querio",
+      "symbol": "QRO",
+      "fee": 100000
     }
   ]
 }

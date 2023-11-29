@@ -20,5 +20,13 @@ module.exports = {
       */
     sourceType: 'module'
   },
+  overrides: [
+    {
+      files: ['**/icrc1.did.js'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off'
+      }
+    }
+  ],
   rules: {}
 };

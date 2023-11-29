@@ -1,46 +1,44 @@
 import { SnsWasmCanister } from '@dfinity/nns';
 import { Principal } from '@dfinity/principal';
 import { initSnsWrapper } from '@dfinity/sns';
-import fs from 'fs';
 import { generateImage, loadJSON } from './helpers.js';
+import {
+  fetchTokensFromGc,
+  updateTokenListJson,
+  TOKEN_LOGO_PATH,
+  FAUCET_TOKEN_PATH
+} from './helpers.js';
 
-const ICP_SYMBOL = 'ICP';
 const MAINNET_SNS_WASM_CANISTER_ID = Principal.fromText(
   'qaa6y-5yaaa-aaaaa-aaafa-cai'
 );
 
 const TokensJson = loadJSON('./tokenlist.json');
 
-const updateTokenListJson = async (data, path) => {
-  fs.writeFile(
-    new URL(path, import.meta.url),
-    JSON.stringify(data),
-    function (err) {
-      if (err) throw err;
-      console.log('complete');
-    }
-  );
-};
-
-class TokenList {
+class TokenListUpdater {
   static async create() {
     const snsTokens = await this.getSnsTokens();
     const snsTokensWithLogos = await this.generateSnsTokenLogos(snsTokens);
     this.updateTokenListFile(snsTokensWithLogos);
+    await this.getEvmFaucetTokens();
   }
+
   static async generateSnsTokenLogos(snsTokens) {
-    const promises = snsTokens.map((sns) => {
-      return (async () => {
-        let logoPath = `logos/${sns.symbol.toLowerCase()}.png`;
-        if (sns?.logo) {
-          await generateImage(sns.logo, logoPath);
-        }
-        return {
-          ...sns,
-          logo: `https://raw.githubusercontent.com/infinity-swap/token-lists/main/${logoPath}`
-        };
-      })();
-    });
+    const promises = snsTokens
+      .filter((sns) => sns && sns.symbol)
+      .map((sns) => {
+        return (async () => {
+          const imageName = `${sns.symbol.toLowerCase()}.png`;
+          const logoPath = `logos/${imageName}`;
+          if (sns?.logo) {
+            await generateImage(sns.logo, logoPath);
+          }
+          return {
+            ...sns,
+            logo: `${TOKEN_LOGO_PATH}${imageName}`
+          };
+        })();
+      });
     const results = (await Promise.allSettled(promises)).map((v) => {
       if (v.status === 'fulfilled') {
         return v.value;
@@ -50,15 +48,27 @@ class TokenList {
     return results;
   }
   static async updateTokenListFile(snsTokens) {
-    const icpToken = TokensJson.tokens.find(
-      (token) => token.name.toLowerCase() === ICP_SYMBOL.toLowerCase()
+    const snsTokenNames = snsTokens.map((token) => token.name.toLowerCase());
+    const oldTokens = TokensJson.tokens.filter(
+      (token) => !snsTokenNames.includes(token.name.toLowerCase())
     );
+    const tokens = [...oldTokens, ...snsTokens].filter(
+      (obj, index, self) => self.findIndex((o) => o.id === obj.id) === index
+    );
+    const uniqueTokens = tokens.reduce((acc, item) => {
+      const index = acc.findIndex((existing) => existing.name === item.name);
+      if (index !== -1) {
+        acc[index] = item;
+      } else {
+        acc.push(item);
+      }
+      return acc;
+    }, []);
     const mainnetTokens = {
       name: TokensJson.name,
-      tokens: [icpToken, ...snsTokens]
+      tokens: uniqueTokens
     };
-
-    updateTokenListJson(mainnetTokens, 'tokenlist.json');
+    updateTokenListJson(mainnetTokens, './tokenlist.json');
   }
   static async getSnsTokens() {
     const agent = undefined;
@@ -66,7 +76,9 @@ class TokenList {
       agent,
       canisterId: MAINNET_SNS_WASM_CANISTER_ID
     });
+
     const snses = await snsWasm.listSnses({});
+
     const promises = snses.map((sns) => {
       return (async () => {
         const tokenMeta = {
@@ -112,6 +124,14 @@ class TokenList {
     });
     return results;
   }
+  static async getEvmFaucetTokens() {
+    const faucetTokens = await fetchTokensFromGc();
+    const data = {
+      name: 'Bitfinity Faucet Tokens',
+      tokens: [...faucetTokens]
+    };
+    updateTokenListJson(data, FAUCET_TOKEN_PATH);
+  }
 }
 
-TokenList.create();
+TokenListUpdater.create();
