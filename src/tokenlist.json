@@ -21,6 +21,16 @@
       "standard": "BTC"
     },
     {
+      "id": "ss2fx-dyaaa-aaaar-qacoq-cai",
+      "index_canister": "s3zol-vqaaa-aaaar-qacpa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cketh.png",
+      "fee": 2000000000000,
+      "decimals": 18,
+      "name": "ckETH",
+      "symbol": "ckETH",
+      "standard": "ICRC1"
+    },
+    {
       "id": "uwihq-liaaa-aaaal-qcbrq-cai",
       "index_canister": "xazad-dqaaa-aaaap-abl5q-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nobleblocks.png",
