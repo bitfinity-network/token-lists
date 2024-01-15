@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.3.4
+
+### Patch Changes
+
+- [#71](https://github.com/bitfinity-network/token-lists/pull/71) [`cce37a2`](https://github.com/bitfinity-network/token-lists/commit/cce37a2b53d87daefaa6791db06d5a623116a8e0) Thanks [@EstherOA](https://github.com/EstherOA)! - updated axios version to fix follow-redirects vulnerability
+
 ## 0.3.2
 
 ### Patch Changes
