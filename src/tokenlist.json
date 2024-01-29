@@ -198,6 +198,46 @@
       "name": "Querio",
       "symbol": "QRO",
       "fee": 100000
+    },
+    {
+      "id": "emww2-4yaaa-aaaaq-aacbq-cai",
+      "index_canister": "e6qbd-qiaaa-aaaaq-aaccq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/trax.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "TRAX",
+      "symbol": "TRAX",
+      "fee": 100000
+    },
+    {
+      "id": "tyyy3-4aaaa-aaaaq-aab7a-cai",
+      "index_canister": "efv5g-kqaaa-aaaaq-aacaa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/gldgov.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Gold Governance Token",
+      "symbol": "GLDGov",
+      "fee": 100000
+    },
+    {
+      "id": "f54if-eqaaa-aaaaq-aacea-cai",
+      "index_canister": "ft6fn-7aaaa-aaaaq-aacfa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ntn.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Neutrinite",
+      "symbol": "NTN",
+      "fee": 10000
+    },
+    {
+      "id": "hvgxa-wqaaa-aaaaq-aacia-cai",
+      "index_canister": "h3e2i-naaaa-aaaaq-aacja-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sneed.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Sneed DAO",
+      "symbol": "SNEED",
+      "fee": 1000
     }
   ]
 }
