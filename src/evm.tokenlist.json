@@ -1,1 +1,61 @@
-{"name":"InfinitySwap Faucet Tokens","tokens":[{"address":"0xAab0700ef3768009D71cA47E2349069fA0025358","name":"Cashium","symbol":"CSM","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Cashium.png"},{"address":"0xaDaa5C48b7770610549f9A39FFA11f8C4dDe74f3","name":"Coinaro","symbol":"CNR","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinaro.png"},{"address":"0x908b2560Bc2770FeCaD17Ac9386b9d5a3b57C797","name":"Coinverse","symbol":"CVS","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinverse.png"},{"address":"0xD8A47f77C647cFFA9c1C4262c724ec28f75c2713","name":"Coinovation","symbol":"COV","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinovation.png"},{"address":"0x3072Ad2cd58986E90612BecA9c285DBeC7f53f1B","name":"Intellicoin","symbol":"ITC","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Intellicoin.png"},{"address":"0xC12860d6C9C6AbCf26ecF9171B948F92048e8677","name":"Incoingnito","symbol":"ICG","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Incoingnito.png"},{"address":"0x0d2Db9dEe48d30B2aA2030002d5aB45C5752A5Fe","name":"Arcoin","symbol":"ARC","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Arcoin.png"},{"address":"0xE39b2eFd901ec72959150D3f8c9F48F81F6ecD4E","name":"Coinicious","symbol":"CNS","decimals":18,"logo":"https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinicious.png"}]}
+{
+  "name": "InfinitySwap Faucet Tokens",
+  "tokens": [
+    {
+      "address": "0xAab0700ef3768009D71cA47E2349069fA0025358",
+      "name": "Cashium",
+      "symbol": "CSM",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Cashium.png"
+    },
+    {
+      "address": "0xaDaa5C48b7770610549f9A39FFA11f8C4dDe74f3",
+      "name": "Coinaro",
+      "symbol": "CNR",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinaro.png"
+    },
+    {
+      "address": "0x908b2560Bc2770FeCaD17Ac9386b9d5a3b57C797",
+      "name": "Coinverse",
+      "symbol": "CVS",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinverse.png"
+    },
+    {
+      "address": "0xD8A47f77C647cFFA9c1C4262c724ec28f75c2713",
+      "name": "Coinovation",
+      "symbol": "COV",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinovation.png"
+    },
+    {
+      "address": "0x3072Ad2cd58986E90612BecA9c285DBeC7f53f1B",
+      "name": "Intellicoin",
+      "symbol": "ITC",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Intellicoin.png"
+    },
+    {
+      "address": "0xC12860d6C9C6AbCf26ecF9171B948F92048e8677",
+      "name": "Incoingnito",
+      "symbol": "ICG",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Incoingnito.png"
+    },
+    {
+      "address": "0x0d2Db9dEe48d30B2aA2030002d5aB45C5752A5Fe",
+      "name": "Arcoin",
+      "symbol": "ARC",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Arcoin.png"
+    },
+    {
+      "address": "0xE39b2eFd901ec72959150D3f8c9F48F81F6ecD4E",
+      "name": "Coinicious",
+      "symbol": "CNS",
+      "decimals": 18,
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/Coinicious.png"
+    }
+  ]
+}

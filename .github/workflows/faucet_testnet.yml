@@ -2,7 +2,7 @@ name: Fetch Faucet Testnet
 on:
   repository_dispatch:
     types: [sync-contracts]
-  
+
 env:
   IC_HOST: https://ic0.app
   IC_ENVIRON: testnet

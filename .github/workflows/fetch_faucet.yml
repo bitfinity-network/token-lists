@@ -20,7 +20,7 @@ jobs:
           node src/fetchFaucetTokens.js
           npm run prettier
         shell: bash
-        
+
       - name: Commit Update
         run: |
           git config user.name github-actions
