@@ -1,5 +1,25 @@
 # @infinityswapofficial/token-lists
 
+## 0.3.5
+
+### Patch Changes
+
+- [#73](https://github.com/bitfinity-network/token-lists/pull/73) [`b731345`](https://github.com/bitfinity-network/token-lists/commit/b731345933f9d727cfa1e7ead8290c64660eb76f) Thanks [@EstherOA](https://github.com/EstherOA)! - Update axios version
+
+## 0.3.4
+
+### Patch Changes
+
+- [#71](https://github.com/bitfinity-network/token-lists/pull/71) [`cce37a2`](https://github.com/bitfinity-network/token-lists/commit/cce37a2b53d87daefaa6791db06d5a623116a8e0) Thanks [@EstherOA](https://github.com/EstherOA)! - updated axios version to fix follow-redirects vulnerability
+
+## 0.3.2
+
+### Patch Changes
+
+- [#70](https://github.com/bitfinity-network/token-lists/pull/70) [`ca1f5ea`](https://github.com/bitfinity-network/token-lists/commit/ca1f5ea5ec2ab02b99d16f118d0c2d4e0987ade8) Thanks [@EstherOA](https://github.com/EstherOA)! - update axios version
+
+- [#67](https://github.com/bitfinity-network/token-lists/pull/67) [`8067f2e`](https://github.com/bitfinity-network/token-lists/commit/8067f2e1916cf98e32a6126e904b1f6370b87bb6) Thanks [@Leleking](https://github.com/Leleking)! - updated tokenlist
+
 ## 0.3.0
 
 ### Minor Changes

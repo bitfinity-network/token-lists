@@ -42,7 +42,6 @@ jobs:
           yarn install --frozen-lockfile
           chmod +x ./run.sh
           ./run.sh
-          npm run prettier
 
         shell: bash
 
@@ -55,7 +54,6 @@ jobs:
             git pull
             git checkout -f "Automated-TokenList-Update"
             ./run.sh
-            npm run prettier
             git add .
             git commit -m "Updated TokenList" ||echo  "Branch is up to date"
             git push -u origin "Automated-TokenList-Update"  

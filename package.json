@@ -1,6 +1,6 @@
 {
   "name": "@infinityswapofficial/token-lists",
-  "version": "0.3.0",
+  "version": "0.3.5",
   "description": "InfinitySwap Token Lists specification",
   "author": "InfinitySwap <support@infinityswap.one> (https://infinityswap.one)",
   "type": "module",
@@ -35,8 +35,8 @@
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
     "@types/jest": "^28.1.2",
-    "@typescript-eslint/eslint-plugin": "^5.28.0",
-    "@typescript-eslint/parser": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jest": "^26.5.3",
@@ -62,7 +62,7 @@
     "@dfinity/utils": "^0.0.12",
     "ajv": "^8.11.0",
     "ajv-formats": "^2.1.1",
-    "axios": "^0.27.2",
+    "axios": "^1.6.5",
     "dotenv": "^16.0.3",
     "node-fetch": "^3.3.1"
   }

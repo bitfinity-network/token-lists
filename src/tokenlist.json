@@ -11,6 +11,45 @@
       "standard": "ICP"
     },
     {
+      "id": "mxzaz-hqaaa-aaaar-qaada-cai",
+      "index_canister": "n5wcd-faaaa-aaaar-qaaea-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/bitcoin.svg",
+      "fee": 10,
+      "decimals": 8,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "standard": "BTC"
+    },
+    {
+      "id": "ss2fx-dyaaa-aaaar-qacoq-cai",
+      "index_canister": "s3zol-vqaaa-aaaar-qacpa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cketh.png",
+      "fee": 2000000000000,
+      "decimals": 18,
+      "name": "ckETH",
+      "symbol": "ckETH",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "uwihq-liaaa-aaaal-qcbrq-cai",
+      "index_canister": "xazad-dqaaa-aaaap-abl5q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nobleblocks.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "NOBLEBLOCKS",
+      "symbol": "NOBL",
+      "fee": 10
+    },
+    {
+      "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
+      "fee": 10,
+      "decimals": 8,
+      "name": "ORIGYN",
+      "symbol": "OGY",
+      "standard": "ICRC1"
+    },
+    {
       "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
       "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sns1.png",
@@ -61,16 +100,6 @@
       "fee": 100000
     },
     {
-      "id": "4q2s2-oqaaa-aaaaq-aaaya-cai",
-      "index_canister": "46y7s-vaaaa-aaaaq-aaaza-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "GHOST",
-      "symbol": "GHOST",
-      "fee": 100000000
-    },
-    {
       "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
       "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
@@ -81,8 +110,8 @@
       "fee": 100000000
     },
     {
-      "id": "5bqmf-wyaaa-aaaaq-aaa5q-cai",
-      "index_canister": "5tw34-2iaaa-aaaaq-aaa6q-cai",
+      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
+      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cat.png",
       "decimals": 8,
       "standard": "ICRC1",
@@ -99,16 +128,6 @@
       "name": "EdgeMatrixComputing",
       "symbol": "EMC",
       "fee": 100000
-    },
-    {
-      "id": "wrett-waaaa-aaaaq-aabda-cai",
-      "index_canister": "x3lrj-uqaaa-aaaaq-aabea-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "Modclub",
-      "symbol": "MOD",
-      "fee": 10000
     },
     {
       "id": "xsi2v-cyaaa-aaaaq-aabfq-cai",
@@ -138,16 +157,6 @@
       "standard": "ICRC1",
       "name": "SEER",
       "symbol": "SEER",
-      "fee": 100000
-    },
-    {
-      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
-      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cat.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "CatalyzeDAO",
-      "symbol": "CAT",
       "fee": 100000
     },
     {
@@ -191,8 +200,8 @@
       "fee": 100000
     },
     {
-      "id": "tn7jw-5iaaa-aaaaq-aab4q-cai",
-      "index_canister": "td5e6-gyaaa-aaaaq-aab5q-cai",
+      "id": "emww2-4yaaa-aaaaq-aacbq-cai",
+      "index_canister": "e6qbd-qiaaa-aaaaq-aaccq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/trax.png",
       "standard": "ICRC1",
       "decimals": 8,
@@ -208,16 +217,6 @@
       "decimals": 8,
       "name": "Gold Governance Token",
       "symbol": "GLDGov",
-      "fee": 100000
-    },
-    {
-      "id": "emww2-4yaaa-aaaaq-aacbq-cai",
-      "index_canister": "e6qbd-qiaaa-aaaaq-aaccq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/trax.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "TRAX",
-      "symbol": "TRAX",
       "fee": 100000
     },
     {

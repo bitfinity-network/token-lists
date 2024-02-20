@@ -1,3 +1,2 @@
-node src/executable.js
-node src/fetchFaucetTokens.js
+node src/tokenUpdater.js
 npm run prettier
