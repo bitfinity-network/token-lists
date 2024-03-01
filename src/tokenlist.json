@@ -248,6 +248,16 @@
       "name": "ICLighthouse DAO",
       "symbol": "ICL",
       "fee": 1000000
+    },
+    {
+      "id": "gemj7-oyaaa-aaaaq-aacnq-cai",
+      "index_canister": "gwk6g-ciaaa-aaaaq-aacoq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/elna.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ELNA",
+      "symbol": "ELNA",
+      "fee": 100000
     }
   ]
 }
