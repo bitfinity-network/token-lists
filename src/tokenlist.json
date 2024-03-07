@@ -238,6 +238,26 @@
       "name": "Sneed DAO",
       "symbol": "SNEED",
       "fee": 1000
+    },
+    {
+      "id": "hhaaz-2aaaa-aaaaq-aacla-cai",
+      "index_canister": "gnpcd-yqaaa-aaaaq-aacma-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icl.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICLighthouse DAO",
+      "symbol": "ICL",
+      "fee": 1000000
+    },
+    {
+      "id": "gemj7-oyaaa-aaaaq-aacnq-cai",
+      "index_canister": "gwk6g-ciaaa-aaaaq-aacoq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/elna.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ELNA",
+      "symbol": "ELNA",
+      "fee": 100000
     }
   ]
 }
