@@ -268,6 +268,16 @@
       "name": "OpenFPL",
       "symbol": "FPL",
       "fee": 100000
+    },
+    {
+      "id": "druyg-tyaaa-aaaaq-aactq-cai",
+      "index_canister": "c3324-riaaa-aaaaq-aacuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/panda.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICPanda",
+      "symbol": "PANDA",
+      "fee": 10000
     }
   ]
 }
