@@ -278,6 +278,16 @@
       "name": "ICPanda",
       "symbol": "PANDA",
       "fee": 10000
+    },
+    {
+      "id": "ca6gz-lqaaa-aaaaq-aacwa-cai",
+      "index_canister": "co4lr-qaaaa-aaaaq-aacxa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ics.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICPSwap Token",
+      "symbol": "ICS",
+      "fee": 1000000
     }
   ]
 }
