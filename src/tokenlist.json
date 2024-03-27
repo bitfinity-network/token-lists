@@ -288,6 +288,16 @@
       "name": "ICPSwap Token",
       "symbol": "ICS",
       "fee": 1000000
+    },
+    {
+      "id": "atbfz-diaaa-aaaaq-aacyq-cai",
+      "index_canister": "a5dir-yyaaa-aaaaq-aaczq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/yuku.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Yuku DAO",
+      "symbol": "YUKU",
+      "fee": 1000000
     }
   ]
 }
