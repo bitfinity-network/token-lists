@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.3.7
+
+### Patch Changes
+
+- [#78](https://github.com/bitfinity-network/token-lists/pull/78) [`8782092`](https://github.com/bitfinity-network/token-lists/commit/8782092ac047cfa0b56ba16b846b514813b4eaa6) Thanks [@EstherOA](https://github.com/EstherOA)! - fix follow-redirects vulnerability
+
 ## 0.3.5
 
 ### Patch Changes
