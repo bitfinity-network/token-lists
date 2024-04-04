@@ -52,11 +52,11 @@
     {
       "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
       "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sns1.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dkp.png",
       "decimals": 8,
       "standard": "ICRC1",
-      "name": "SNS-1",
-      "symbol": "SNS1",
+      "name": "Dragginz",
+      "symbol": "DKP",
       "fee": 100000
     },
     {
