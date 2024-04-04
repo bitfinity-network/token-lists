@@ -57,7 +57,7 @@
       "standard": "ICRC1",
       "name": "SNS-1",
       "symbol": "SNS1",
-      "fee": 1000
+      "fee": 100000
     },
     {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
@@ -238,6 +238,66 @@
       "name": "Sneed DAO",
       "symbol": "SNEED",
       "fee": 1000
+    },
+    {
+      "id": "hhaaz-2aaaa-aaaaq-aacla-cai",
+      "index_canister": "gnpcd-yqaaa-aaaaq-aacma-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icl.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICLighthouse DAO",
+      "symbol": "ICL",
+      "fee": 1000000
+    },
+    {
+      "id": "gemj7-oyaaa-aaaaq-aacnq-cai",
+      "index_canister": "gwk6g-ciaaa-aaaaq-aacoq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/elna.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ELNA",
+      "symbol": "ELNA",
+      "fee": 100000
+    },
+    {
+      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
+      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "OpenFPL",
+      "symbol": "FPL",
+      "fee": 100000
+    },
+    {
+      "id": "druyg-tyaaa-aaaaq-aactq-cai",
+      "index_canister": "c3324-riaaa-aaaaq-aacuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/panda.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICPanda",
+      "symbol": "PANDA",
+      "fee": 10000
+    },
+    {
+      "id": "ca6gz-lqaaa-aaaaq-aacwa-cai",
+      "index_canister": "co4lr-qaaaa-aaaaq-aacxa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ics.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICPSwap Token",
+      "symbol": "ICS",
+      "fee": 1000000
+    },
+    {
+      "id": "atbfz-diaaa-aaaaq-aacyq-cai",
+      "index_canister": "a5dir-yyaaa-aaaaq-aaczq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/yuku.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Yuku DAO",
+      "symbol": "YUKU",
+      "fee": 1000000
     }
   ]
 }
