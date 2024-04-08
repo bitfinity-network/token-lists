@@ -298,6 +298,16 @@
       "name": "Yuku DAO",
       "symbol": "YUKU",
       "fee": 1000000
+    },
+    {
+      "id": "bliq2-niaaa-aaaaq-aac4q-cai",
+      "index_canister": "bfk5s-wyaaa-aaaaq-aac5q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/est.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ESTATE",
+      "symbol": "EST",
+      "fee": 100000
     }
   ]
 }
