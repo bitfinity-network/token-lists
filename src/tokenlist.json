@@ -308,6 +308,16 @@
       "name": "ESTATE",
       "symbol": "EST",
       "fee": 100000
+    },
+    {
+      "id": "bzohd-byaaa-aaaaq-aac7q-cai",
+      "index_canister": "kaztj-xiaaa-aaaaq-aadaq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mora.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "MORA DAO",
+      "symbol": "MORA",
+      "fee": 1000000
     }
   ]
 }
