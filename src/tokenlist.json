@@ -60,13 +60,13 @@
       "fee": 100000
     },
     {
-      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
-      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
-      "standard": "ICRC1",
+      "id": "wedc6-xiaaa-aaaaq-aabaq-cai",
+      "index_canister": "wkbpw-myaaa-aaaaq-aabbq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/emc.png",
       "decimals": 8,
-      "name": "OpenFPL",
-      "symbol": "FPL",
+      "standard": "ICRC1",
+      "name": "EdgeMatrixComputing",
+      "symbol": "EMC",
       "fee": 100000
     },
     {
@@ -118,16 +118,6 @@
       "name": "GHOST",
       "symbol": "GHOST",
       "fee": 100000000
-    },
-    {
-      "id": "wedc6-xiaaa-aaaaq-aabaq-cai",
-      "index_canister": "wkbpw-myaaa-aaaaq-aabbq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/emc.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "EdgeMatrixComputing",
-      "symbol": "EMC",
-      "fee": 100000
     },
     {
       "id": "xsi2v-cyaaa-aaaaq-aabfq-cai",
@@ -267,6 +257,16 @@
       "decimals": 8,
       "name": "ELNA",
       "symbol": "ELNA",
+      "fee": 100000
+    },
+    {
+      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
+      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "OpenFPL",
+      "symbol": "FPL",
       "fee": 100000
     },
     {
