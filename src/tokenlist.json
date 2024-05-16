@@ -200,8 +200,8 @@
       "fee": 100000
     },
     {
-      "id": "tn7jw-5iaaa-aaaaq-aab4q-cai",
-      "index_canister": "td5e6-gyaaa-aaaaq-aab5q-cai",
+      "id": "emww2-4yaaa-aaaaq-aacbq-cai",
+      "index_canister": "e6qbd-qiaaa-aaaaq-aaccq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/trax.png",
       "standard": "ICRC1",
       "decimals": 8,
