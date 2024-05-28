@@ -42,12 +42,21 @@
     },
     {
       "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy_legacy.png",
+      "fee": 200000,
+      "decimals": 8,
+      "name": "legacy-ORIGYN",
+      "symbol": "legacy-OGY",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "lkwrt-vyaaa-aaaaq-aadhq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
-      "fee": 10,
+      "fee": 200000,
       "decimals": 8,
       "name": "ORIGYN",
       "symbol": "OGY",
-      "standard": "ICRC1"
+      "standard": "ICRC2"
     },
     {
       "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
