@@ -41,15 +41,6 @@
       "fee": 10
     },
     {
-      "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
-      "fee": 10,
-      "decimals": 8,
-      "name": "ORIGYN",
-      "symbol": "OGY",
-      "standard": "ICRC1"
-    },
-    {
       "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
       "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sns1.png",
@@ -57,6 +48,26 @@
       "standard": "ICRC1",
       "name": "SNS-1",
       "symbol": "SNS1",
+      "fee": 100000
+    },
+    {
+      "id": "wedc6-xiaaa-aaaaq-aabaq-cai",
+      "index_canister": "wkbpw-myaaa-aaaaq-aabbq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/emc.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "EdgeMatrixComputing",
+      "symbol": "EMC",
+      "fee": 100000
+    },
+    {
+      "id": "viusj-4iaaa-aaaaq-aabkq-cai",
+      "index_canister": "vgw7b-hyaaa-aaaaq-aablq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/seer.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "SEER",
+      "symbol": "SEER",
       "fee": 100000
     },
     {
@@ -110,26 +121,6 @@
       "fee": 100000000
     },
     {
-      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
-      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cat.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "CatalyzeDAO",
-      "symbol": "CAT",
-      "fee": 100000
-    },
-    {
-      "id": "wedc6-xiaaa-aaaaq-aabaq-cai",
-      "index_canister": "wkbpw-myaaa-aaaaq-aabbq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/emc.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "EdgeMatrixComputing",
-      "symbol": "EMC",
-      "fee": 100000
-    },
-    {
       "id": "xsi2v-cyaaa-aaaaq-aabfq-cai",
       "index_canister": "xaonm-oiaaa-aaaaq-aabgq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
@@ -150,13 +141,13 @@
       "fee": 100000
     },
     {
-      "id": "viusj-4iaaa-aaaaq-aabkq-cai",
-      "index_canister": "vgw7b-hyaaa-aaaaq-aablq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/seer.png",
+      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
+      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ctz.png",
       "decimals": 8,
       "standard": "ICRC1",
-      "name": "SEER",
-      "symbol": "SEER",
+      "name": "CatalyzeDAO",
+      "symbol": "CTZ",
       "fee": 100000
     },
     {
@@ -298,6 +289,56 @@
       "name": "Yuku DAO",
       "symbol": "YUKU",
       "fee": 1000000
+    },
+    {
+      "id": "bliq2-niaaa-aaaaq-aac4q-cai",
+      "index_canister": "bfk5s-wyaaa-aaaaq-aac5q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/est.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ESTATE",
+      "symbol": "EST",
+      "fee": 100000
+    },
+    {
+      "id": "bzohd-byaaa-aaaaq-aac7q-cai",
+      "index_canister": "kaztj-xiaaa-aaaaq-aadaq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mora.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "MORA DAO",
+      "symbol": "MORA",
+      "fee": 1000000
+    },
+    {
+      "id": "k45jy-aiaaa-aaaaq-aadcq-cai",
+      "index_canister": "ks7eq-3yaaa-aaaaq-aaddq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/motoko.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Motoko",
+      "symbol": "MOTOKO",
+      "fee": 10000
+    },
+    {
+      "id": "lrtnw-paaaa-aaaaq-aadfa-cai",
+      "index_canister": "ldv2p-dqaaa-aaaaq-aadga-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/conf.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICPCC DAO LLC",
+      "symbol": "CONF",
+      "fee": 10000
+    },
+    {
+      "id": "lkwrt-vyaaa-aaaaq-aadhq-cai",
+      "index_canister": "jqkzp-liaaa-aaaaq-aadiq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ORIGYN",
+      "symbol": "OGY",
+      "fee": 200000
     }
   ]
 }
