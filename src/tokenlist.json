@@ -50,16 +50,6 @@
       "standard": "ICRC1"
     },
     {
-      "id": "lkwrt-vyaaa-aaaaq-aadhq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
-      "fee": 200000,
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "Dragginz",
-      "symbol": "DKP",
-      "fee": 100000
-    },
-    {
       "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
       "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dkp.png",
