@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.3.9
+
+### Patch Changes
+
+- [#84](https://github.com/bitfinity-network/token-lists/pull/84) [`9338d0836ae183095143ac104570833a7362737a`](https://github.com/bitfinity-network/token-lists/commit/9338d0836ae183095143ac104570833a7362737a) Thanks [@EstherOA](https://github.com/EstherOA)! - move @changesets/cli to devDependencies
+
 ## 0.3.7
 
 ### Patch Changes
