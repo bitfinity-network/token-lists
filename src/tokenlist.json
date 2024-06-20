@@ -339,6 +339,16 @@
       "name": "ORIGYN",
       "symbol": "OGY",
       "fee": 200000
+    },
+    {
+      "id": "jcmow-hyaaa-aaaaq-aadlq-cai",
+      "index_canister": "iidmm-fiaaa-aaaaq-aadmq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/wtn.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "WaterNeuron",
+      "symbol": "WTN",
+      "fee": 1000000
     }
   ]
 }
