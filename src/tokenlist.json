@@ -358,6 +358,16 @@
       "name": "WaterNeuron",
       "symbol": "WTN",
       "fee": 1000000
+    }, 
+    {
+      "id": "lnezh-4aaaa-aaaam-acrba-cai",
+      "index_canister": "tuhw4-ryaaa-aaaak-qinkq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/rtx.png",
+      "standard": "ICRC2",
+      "decimals": 8,
+      "name": "Ratex",
+      "symbol": "RTX",
+      "fee": 10000
     }
   ]
 }
