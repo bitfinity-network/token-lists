@@ -71,6 +71,16 @@
       "fee": 100000
     },
     {
+      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
+      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ctz.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "CatalyzeDAO",
+      "symbol": "CTZ",
+      "fee": 100000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -138,16 +148,6 @@
       "standard": "ICRC1",
       "name": "BoomDAO",
       "symbol": "BOOM",
-      "fee": 100000
-    },
-    {
-      "id": "uf2wh-taaaa-aaaaq-aabna-cai",
-      "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ctz.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "CatalyzeDAO",
-      "symbol": "CTZ",
       "fee": 100000
     },
     {
@@ -349,6 +349,16 @@
       "name": "WaterNeuron",
       "symbol": "WTN",
       "fee": 1000000
+    },
+    {
+      "id": "itgqj-7qaaa-aaaaq-aadoa-cai",
+      "index_canister": "i5e5b-eaaaa-aaaaq-aadpa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cts.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "CYCLES-TRANSFER-STATION",
+      "symbol": "CTS",
+      "fee": 100000
     }
   ]
 }
