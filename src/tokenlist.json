@@ -81,6 +81,16 @@
       "fee": 10000
     },
     {
+      "id": "sotaq-jqaaa-aaaaq-aab2a-cai",
+      "index_canister": "sarny-saaaa-aaaaq-aab3a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/qro.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Querio",
+      "symbol": "QRO",
+      "fee": 100000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -178,16 +188,6 @@
       "decimals": 8,
       "name": "Sonic",
       "symbol": "SONIC",
-      "fee": 100000
-    },
-    {
-      "id": "sotaq-jqaaa-aaaaq-aab2a-cai",
-      "index_canister": "sarny-saaaa-aaaaq-aab3a-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/qro.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "Querio",
-      "symbol": "QRO",
       "fee": 100000
     },
     {
