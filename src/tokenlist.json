@@ -191,16 +191,6 @@
       "fee": 100000
     },
     {
-      "id": "emww2-4yaaa-aaaaq-aacbq-cai",
-      "index_canister": "e6qbd-qiaaa-aaaaq-aaccq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/trax.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "TRAX",
-      "symbol": "TRAX",
-      "fee": 100000
-    },
-    {
       "id": "tyyy3-4aaaa-aaaaq-aab7a-cai",
       "index_canister": "efv5g-kqaaa-aaaaq-aacaa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/gldgov.png",
@@ -208,6 +198,16 @@
       "decimals": 8,
       "name": "Gold Governance Token",
       "symbol": "GLDGov",
+      "fee": 100000
+    },
+    {
+      "id": "emww2-4yaaa-aaaaq-aacbq-cai",
+      "index_canister": "e6qbd-qiaaa-aaaaq-aaccq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/trax.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "TRAX",
+      "symbol": "TRAX",
       "fee": 100000
     },
     {
