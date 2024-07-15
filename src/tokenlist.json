@@ -91,6 +91,16 @@
       "fee": 100000
     },
     {
+      "id": "rffwt-piaaa-aaaaq-aabqq-cai",
+      "index_canister": "rlh33-uyaaa-aaaaq-aabrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icx.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "IC-X",
+      "symbol": "ICX",
+      "fee": 100000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -158,16 +168,6 @@
       "standard": "ICRC1",
       "name": "CatalyzeDAO",
       "symbol": "CTZ",
-      "fee": 100000
-    },
-    {
-      "id": "rffwt-piaaa-aaaaq-aabqq-cai",
-      "index_canister": "rlh33-uyaaa-aaaaq-aabrq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icx.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "IC-X",
-      "symbol": "ICX",
       "fee": 100000
     },
     {
