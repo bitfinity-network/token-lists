@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.3.11
+
+### Patch Changes
+
+- [#90](https://github.com/bitfinity-network/token-lists/pull/90) [`a6301ba8c704f6eda7f61ea33673f7e6fb57ba8a`](https://github.com/bitfinity-network/token-lists/commit/a6301ba8c704f6eda7f61ea33673f7e6fb57ba8a) Thanks [@EstherOA](https://github.com/EstherOA)! - update axios version
+
 ## 0.3.9
 
 ### Patch Changes
