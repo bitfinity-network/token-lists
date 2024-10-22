@@ -379,6 +379,16 @@
       "name": "Juno Build",
       "symbol": "JUNOBUILD",
       "fee": 1000000
+    },
+    {
+      "id": "o7oak-iyaaa-aaaaq-aadzq-cai",
+      "index_canister": "onixt-eiaaa-aaaaq-aad2q-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/kong.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "KongSwap",
+      "symbol": "KONG",
+      "fee": 10000
     }
   ]
 }
