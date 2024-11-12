@@ -111,14 +111,14 @@
       "fee": 100000
     },
     {
-      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
-      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
+      "id": "bzohd-byaaa-aaaaq-aac7q-cai",
+      "index_canister": "kaztj-xiaaa-aaaaq-aadaq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mora.png",
       "standard": "ICRC1",
       "decimals": 8,
-      "name": "OpenFPL",
-      "symbol": "FPL",
-      "fee": 100000
+      "name": "MORA DAO",
+      "symbol": "MORA",
+      "fee": 1000000
     },
     {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
@@ -251,6 +251,16 @@
       "fee": 100000
     },
     {
+      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
+      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "OpenFPL",
+      "symbol": "FPL",
+      "fee": 100000
+    },
+    {
       "id": "druyg-tyaaa-aaaaq-aactq-cai",
       "index_canister": "c3324-riaaa-aaaaq-aacuq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/panda.png",
@@ -289,16 +299,6 @@
       "name": "ESTATE",
       "symbol": "EST",
       "fee": 100000
-    },
-    {
-      "id": "bzohd-byaaa-aaaaq-aac7q-cai",
-      "index_canister": "kaztj-xiaaa-aaaaq-aadaq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mora.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "MORA DAO",
-      "symbol": "MORA",
-      "fee": 1000000
     },
     {
       "id": "k45jy-aiaaa-aaaaq-aadcq-cai",
