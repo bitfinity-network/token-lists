@@ -121,16 +121,6 @@
       "fee": 1000000
     },
     {
-      "id": "m6xut-mqaaa-aaaaq-aadua-cai",
-      "index_canister": "mqvz3-xaaaa-aaaaq-aadva-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icvc.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "ICVC",
-      "symbol": "ICVC",
-      "fee": 10000
-    },
-    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -369,6 +359,16 @@
       "name": "DOGMI",
       "symbol": "DOGMI",
       "fee": 5000000000
+    },
+    {
+      "id": "m6xut-mqaaa-aaaaq-aadua-cai",
+      "index_canister": "mqvz3-xaaaa-aaaaq-aadva-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icvc.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICVC",
+      "symbol": "ICVC",
+      "fee": 10000
     },
     {
       "id": "mmrdk-aaaaa-aaaaq-aadxa-cai",
