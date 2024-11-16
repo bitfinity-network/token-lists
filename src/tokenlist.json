@@ -121,6 +121,16 @@
       "fee": 1000000
     },
     {
+      "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
+      "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "GHOST",
+      "symbol": "GHOST",
+      "fee": 100000000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -139,16 +149,6 @@
       "name": "KINIC",
       "symbol": "KINIC",
       "fee": 100000
-    },
-    {
-      "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
-      "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "GHOST",
-      "symbol": "GHOST",
-      "fee": 100000000
     },
     {
       "id": "vtrom-gqaaa-aaaaq-aabia-cai",
