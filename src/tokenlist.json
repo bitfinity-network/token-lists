@@ -131,6 +131,16 @@
       "fee": 100000000
     },
     {
+      "id": "mmrdk-aaaaa-aaaaq-aadxa-cai",
+      "index_canister": "ownlw-6qaaa-aaaaq-aadya-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/junobuild.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Juno Build",
+      "symbol": "JUNOBUILD",
+      "fee": 1000000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -369,16 +379,6 @@
       "name": "ICVC",
       "symbol": "ICVC",
       "fee": 10000
-    },
-    {
-      "id": "mmrdk-aaaaa-aaaaq-aadxa-cai",
-      "index_canister": "ownlw-6qaaa-aaaaq-aadya-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/junobuild.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "Juno Build",
-      "symbol": "JUNOBUILD",
-      "fee": 1000000
     },
     {
       "id": "o7oak-iyaaa-aaaaq-aadzq-cai",
