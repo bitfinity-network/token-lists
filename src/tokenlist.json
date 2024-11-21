@@ -141,6 +141,16 @@
       "fee": 1000000
     },
     {
+      "id": "rxdbk-dyaaa-aaaaq-aabtq-cai",
+      "index_canister": "q5mdq-biaaa-aaaaq-aabuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nua.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Nuance",
+      "symbol": "NUA",
+      "fee": 100000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -178,16 +188,6 @@
       "standard": "ICRC1",
       "name": "CatalyzeDAO",
       "symbol": "CTZ",
-      "fee": 100000
-    },
-    {
-      "id": "rxdbk-dyaaa-aaaaq-aabtq-cai",
-      "index_canister": "q5mdq-biaaa-aaaaq-aabuq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nua.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "Nuance",
-      "symbol": "NUA",
       "fee": 100000
     },
     {
