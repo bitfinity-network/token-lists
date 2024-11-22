@@ -121,16 +121,6 @@
       "fee": 1000000
     },
     {
-      "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
-      "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "GHOST",
-      "symbol": "GHOST",
-      "fee": 100000000
-    },
-    {
       "id": "mmrdk-aaaaa-aaaaq-aadxa-cai",
       "index_canister": "ownlw-6qaaa-aaaaq-aadya-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/junobuild.png",
@@ -139,16 +129,6 @@
       "name": "Juno Build",
       "symbol": "JUNOBUILD",
       "fee": 1000000
-    },
-    {
-      "id": "rxdbk-dyaaa-aaaaq-aabtq-cai",
-      "index_canister": "q5mdq-biaaa-aaaaq-aabuq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nua.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "Nuance",
-      "symbol": "NUA",
-      "fee": 100000
     },
     {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
@@ -171,6 +151,16 @@
       "fee": 100000
     },
     {
+      "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
+      "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "GHOST",
+      "symbol": "GHOST",
+      "fee": 100000000
+    },
+    {
       "id": "vtrom-gqaaa-aaaaq-aabia-cai",
       "index_canister": "v5tde-5aaaa-aaaaq-aabja-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/boom.png",
@@ -188,6 +178,16 @@
       "standard": "ICRC1",
       "name": "CatalyzeDAO",
       "symbol": "CTZ",
+      "fee": 100000
+    },
+    {
+      "id": "rxdbk-dyaaa-aaaaq-aabtq-cai",
+      "index_canister": "q5mdq-biaaa-aaaaq-aabuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nua.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Nuance",
+      "symbol": "NUA",
       "fee": 100000
     },
     {
