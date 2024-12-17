@@ -31,6 +31,116 @@
       "standard": "ICRC1"
     },
     {
+      "id": "cngnf-vqaaa-aaaar-qag4q-cai",
+      "index_canister": "cefgz-dyaaa-aaaar-qag5a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckusdt.png",
+      "fee": 10000,
+      "decimals": 6,
+      "name": "ckUSDT",
+      "symbol": "ckUSDT",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "xevnm-gaaaa-aaaar-qafnq-cai",
+      "index_canister": "xrs4b-hiaaa-aaaar-qafoa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckusdc.png",
+      "fee": 10000,
+      "decimals": 6,
+      "name": "ckUSDC",
+      "symbol": "ckUSDC",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "g4tto-rqaaa-aaaar-qageq-cai",
+      "index_canister": "gvqys-hyaaa-aaaar-qagfa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cklink.png",
+      "fee": 100000000000000,
+      "decimals": 18,
+      "name": "ckLINK",
+      "symbol": "ckLINK",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "j2tuh-yqaaa-aaaar-qahcq-cai",
+      "index_canister": "jtq73-oyaaa-aaaar-qahda-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckwsteth.png",
+      "fee": 1000000000000,
+      "decimals": 18,
+      "name": "ckWSTETH",
+      "symbol": "ckWSTETH",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "fxffn-xiaaa-aaaar-qagoa-cai",
+      "index_canister": "fqedz-2qaaa-aaaar-qagoq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckshib.png",
+      "fee": 100000000000000000000,
+      "decimals": 18,
+      "name": "ckSHIB",
+      "symbol": "ckSHIB",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "bptq2-faaaa-aaaar-qagxq-cai",
+      "index_canister": "dso6s-wiaaa-aaaar-qagya-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckwbtc.png",
+      "fee": 10,
+      "decimals": 8,
+      "name": "ckWBTC",
+      "symbol": "ckWBTC",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "ilzky-ayaaa-aaaar-qahha-cai",
+      "index_canister": "imymm-naaaa-aaaar-qahhq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckuni.png",
+      "fee": 1000000000000000,
+      "decimals": 18,
+      "name": "ckUNI",
+      "symbol": "ckUNI",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "etik7-oiaaa-aaaar-qagia-cai",
+      "index_canister": "eujml-dqaaa-aaaar-qagiq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckpepe.png",
+      "fee": 1000000000000000000000,
+      "decimals": 18,
+      "name": "ckPEPE",
+      "symbol": "ckPEPE",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "nza5v-qaaaa-aaaar-qahzq-cai",
+      "index_canister": "nmhmy-riaaa-aaaar-qah2a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckxaut.png",
+      "fee": 1,
+      "decimals": 6,
+      "name": "ckXAUT",
+      "symbol": "ckXAUT",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "pe5t5-diaaa-aaaar-qahwa-cai",
+      "index_canister": "pd4vj-oqaaa-aaaar-qahwq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckeurc.png",
+      "fee": 10000,
+      "decimals": 6,
+      "name": "ckEURC",
+      "symbol": "ckEURC",
+      "standard": "ICRC1"
+    },
+    {
+      "id": "ebo5g-cyaaa-aaaar-qagla-cai",
+      "index_canister": "egp3s-paaaa-aaaar-qaglq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckoct.png",
+      "fee": 34000000000000000,
+      "decimals": 18,
+      "name": "ckOCT",
+      "symbol": "ckOCT",
+      "standard": "ICRC1"
+    },
+    {
       "id": "uwihq-liaaa-aaaal-qcbrq-cai",
       "index_canister": "xazad-dqaaa-aaaap-abl5q-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nobleblocks.png",
