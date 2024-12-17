@@ -1,6 +1,6 @@
 {
   "name": "@infinityswapofficial/token-lists",
-  "version": "0.3.11",
+  "version": "0.4.0",
   "description": "InfinitySwap Token Lists specification",
   "author": "InfinitySwap <support@infinityswap.one> (https://infinityswap.one)",
   "type": "module",
