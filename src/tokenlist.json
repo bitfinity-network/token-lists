@@ -33,7 +33,7 @@
     {
       "id": "cngnf-vqaaa-aaaar-qag4q-cai",
       "index_canister": "cefgz-dyaaa-aaaar-qag5a-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckusdt.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckusdt.svg",
       "fee": 10000,
       "decimals": 6,
       "name": "ckUSDT",
@@ -43,7 +43,7 @@
     {
       "id": "xevnm-gaaaa-aaaar-qafnq-cai",
       "index_canister": "xrs4b-hiaaa-aaaar-qafoa-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckusdc.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckusdc.svg",
       "fee": 10000,
       "decimals": 6,
       "name": "ckUSDC",
@@ -53,7 +53,7 @@
     {
       "id": "g4tto-rqaaa-aaaar-qageq-cai",
       "index_canister": "gvqys-hyaaa-aaaar-qagfa-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cklink.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cklink.svg",
       "fee": 100000000000000,
       "decimals": 18,
       "name": "ckLINK",
@@ -63,7 +63,7 @@
     {
       "id": "j2tuh-yqaaa-aaaar-qahcq-cai",
       "index_canister": "jtq73-oyaaa-aaaar-qahda-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckwsteth.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckwsteth.svg",
       "fee": 1000000000000,
       "decimals": 18,
       "name": "ckWSTETH",
@@ -73,7 +73,7 @@
     {
       "id": "fxffn-xiaaa-aaaar-qagoa-cai",
       "index_canister": "fqedz-2qaaa-aaaar-qagoq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckshib.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckshib.svg",
       "fee": 100000000000000000000,
       "decimals": 18,
       "name": "ckSHIB",
@@ -83,7 +83,7 @@
     {
       "id": "bptq2-faaaa-aaaar-qagxq-cai",
       "index_canister": "dso6s-wiaaa-aaaar-qagya-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckwbtc.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckwbtc.svg",
       "fee": 10,
       "decimals": 8,
       "name": "ckWBTC",
@@ -93,7 +93,7 @@
     {
       "id": "ilzky-ayaaa-aaaar-qahha-cai",
       "index_canister": "imymm-naaaa-aaaar-qahhq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckuni.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckuni.svg",
       "fee": 1000000000000000,
       "decimals": 18,
       "name": "ckUNI",
@@ -103,7 +103,7 @@
     {
       "id": "etik7-oiaaa-aaaar-qagia-cai",
       "index_canister": "eujml-dqaaa-aaaar-qagiq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckpepe.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckpepe.svg",
       "fee": 1000000000000000000000,
       "decimals": 18,
       "name": "ckPEPE",
@@ -113,7 +113,7 @@
     {
       "id": "nza5v-qaaaa-aaaar-qahzq-cai",
       "index_canister": "nmhmy-riaaa-aaaar-qah2a-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckxaut.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckxaut.svg",
       "fee": 1,
       "decimals": 6,
       "name": "ckXAUT",
@@ -123,7 +123,7 @@
     {
       "id": "pe5t5-diaaa-aaaar-qahwa-cai",
       "index_canister": "pd4vj-oqaaa-aaaar-qahwq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckeurc.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckeurc.svg",
       "fee": 10000,
       "decimals": 6,
       "name": "ckEURC",
@@ -133,7 +133,7 @@
     {
       "id": "ebo5g-cyaaa-aaaar-qagla-cai",
       "index_canister": "egp3s-paaaa-aaaar-qaglq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckoct.png",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ckoct.svg",
       "fee": 34000000000000000,
       "decimals": 18,
       "name": "ckOCT",
