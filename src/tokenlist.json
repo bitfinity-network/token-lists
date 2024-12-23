@@ -141,6 +141,16 @@
       "fee": 100000
     },
     {
+      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
+      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "OpenFPL",
+      "symbol": "FPL",
+      "fee": 100000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -268,16 +278,6 @@
       "decimals": 8,
       "name": "ELNA",
       "symbol": "ELNA",
-      "fee": 100000
-    },
-    {
-      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
-      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "OpenFPL",
-      "symbol": "FPL",
       "fee": 100000
     },
     {
