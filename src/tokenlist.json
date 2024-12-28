@@ -389,6 +389,16 @@
       "name": "KongSwap",
       "symbol": "KONG",
       "fee": 10000
+    },
+    {
+      "id": "p3dpy-ryaaa-aaaaq-aad7q-cai",
+      "index_canister": "peqml-6aaaa-aaaaq-aaeaq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icto.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICTO",
+      "symbol": "ICTO",
+      "fee": 1000000
     }
   ]
 }
