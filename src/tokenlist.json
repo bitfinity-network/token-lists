@@ -399,6 +399,16 @@
       "name": "ICTO",
       "symbol": "ICTO",
       "fee": 1000000
+    },
+    {
+      "id": "p7vqo-eyaaa-aaaaq-aaeca-cai",
+      "index_canister": "prx5g-7iaaa-aaaaq-aaeda-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cani.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "CANI DAO",
+      "symbol": "CANI",
+      "fee": 10000
     }
   ]
 }
