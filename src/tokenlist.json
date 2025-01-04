@@ -409,6 +409,16 @@
       "name": "CANI DAO",
       "symbol": "CANI",
       "fee": 10000
+    },
+    {
+      "id": "o4zzi-qaaaa-aaaaq-aaeeq-cai",
+      "index_canister": "os3ua-lqaaa-aaaaq-aaefq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/well.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "FomoWell",
+      "symbol": "WELL",
+      "fee": 100000
     }
   ]
 }
