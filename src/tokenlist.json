@@ -324,11 +324,11 @@
       "id": "k45jy-aiaaa-aaaaq-aadcq-cai",
       "index_canister": "ks7eq-3yaaa-aaaaq-aaddq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/motoko.png",
-      "standard": "ICRC1",
       "decimals": 8,
+      "standard": "ICRC1",
       "name": "Motoko",
       "symbol": "MOTOKO",
-      "fee": 10000
+      "fee": 100000000
     },
     {
       "id": "lrtnw-paaaa-aaaaq-aadfa-cai",
