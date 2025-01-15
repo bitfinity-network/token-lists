@@ -419,6 +419,16 @@
       "name": "FomoWell",
       "symbol": "WELL",
       "fee": 100000
+    },
+    {
+      "id": "oj6if-riaaa-aaaaq-aaeha-cai",
+      "index_canister": "mtcaz-pyaaa-aaaaq-aaeia-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/alice.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ALICE",
+      "symbol": "ALICE",
+      "fee": 100000000
     }
   ]
 }
