@@ -64,15 +64,6 @@
       "decimals": 8,
       "fee": 1000,
       "standard": "ICRC1"
-    },
-    {
-      "id": "mc6ru-gyaaa-aaaar-qaaaq-cai",
-      "fee": 10,
-      "decimals": 8,
-      "name": "Test Bitcoin",
-      "symbol": "Test-BTC",
-      "standard": "BTC",
-      "index_canister": "mm444-5iaaa-aaaar-qaabq-cai"
     }
   ]
 }
