@@ -151,6 +151,16 @@
       "fee": 1000000
     },
     {
+      "id": "tyyy3-4aaaa-aaaaq-aab7a-cai",
+      "index_canister": "efv5g-kqaaa-aaaaq-aacaa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/gldgov.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Gold Governance Token",
+      "symbol": "GLDGov",
+      "fee": 100000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -218,16 +228,6 @@
       "decimals": 8,
       "name": "Sonic",
       "symbol": "SONIC",
-      "fee": 100000
-    },
-    {
-      "id": "tyyy3-4aaaa-aaaaq-aab7a-cai",
-      "index_canister": "efv5g-kqaaa-aaaaq-aacaa-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/gldgov.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "Gold Governance Token",
-      "symbol": "GLDGov",
       "fee": 100000
     },
     {
