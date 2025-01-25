@@ -161,6 +161,16 @@
       "fee": 100000
     },
     {
+      "id": "k45jy-aiaaa-aaaaq-aadcq-cai",
+      "index_canister": "ks7eq-3yaaa-aaaaq-aaddq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/motoko.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "Motoko",
+      "symbol": "MOTOKO",
+      "fee": 100000000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -321,16 +331,6 @@
       "fee": 100000
     },
     {
-      "id": "k45jy-aiaaa-aaaaq-aadcq-cai",
-      "index_canister": "ks7eq-3yaaa-aaaaq-aaddq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/motoko.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "Motoko",
-      "symbol": "MOTOKO",
-      "fee": 100000000
-    },
-    {
       "id": "lrtnw-paaaa-aaaaq-aadfa-cai",
       "index_canister": "ldv2p-dqaaa-aaaaq-aadga-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/conf.png",
@@ -429,6 +429,16 @@
       "name": "ALICE",
       "symbol": "ALICE",
       "fee": 100000000
+    },
+    {
+      "id": "mih44-vaaaa-aaaaq-aaekq-cai",
+      "index_canister": "mgfru-oqaaa-aaaaq-aaelq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nfidw.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "NFID Wallet",
+      "symbol": "NFIDW",
+      "fee": 10000
     }
   ]
 }
