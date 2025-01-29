@@ -439,6 +439,16 @@
       "name": "NFID Wallet",
       "symbol": "NFIDW",
       "fee": 10000
+    },
+    {
+      "id": "nfjys-2iaaa-aaaaq-aaena-cai",
+      "index_canister": "nxppl-wyaaa-aaaaq-aaeoa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fuel.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "FUEL",
+      "symbol": "FUEL",
+      "fee": 100000
     }
   ]
 }
