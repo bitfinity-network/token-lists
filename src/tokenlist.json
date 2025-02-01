@@ -424,11 +424,11 @@
       "id": "oj6if-riaaa-aaaaq-aaeha-cai",
       "index_canister": "mtcaz-pyaaa-aaaaq-aaeia-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/alice.png",
-      "standard": "ICRC1",
       "decimals": 8,
+      "standard": "ICRC1",
       "name": "ALICE",
       "symbol": "ALICE",
-      "fee": 100000000
+      "fee": 500000000
     },
     {
       "id": "mih44-vaaaa-aaaaq-aaekq-cai",
