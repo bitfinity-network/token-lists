@@ -364,11 +364,11 @@
       "id": "np5km-uyaaa-aaaaq-aadrq-cai",
       "index_canister": "n535v-yiaaa-aaaaq-aadsq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dogmi.png",
-      "standard": "ICRC1",
       "decimals": 8,
+      "standard": "ICRC1",
       "name": "DOGMI",
       "symbol": "DOGMI",
-      "fee": 5000000000
+      "fee": 100000000000
     },
     {
       "id": "m6xut-mqaaa-aaaaq-aadua-cai",
