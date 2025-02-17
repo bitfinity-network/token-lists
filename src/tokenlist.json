@@ -449,6 +449,16 @@
       "name": "FUEL",
       "symbol": "FUEL",
       "fee": 100000
+    },
+    {
+      "id": "ifwyg-gaaaa-aaaaq-aaeqq-cai",
+      "index_canister": "iluvo-5qaaa-aaaaq-aaerq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ice.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICExplorer",
+      "symbol": "ICE",
+      "fee": 100000
     }
   ]
 }
