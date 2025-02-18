@@ -148,28 +148,31 @@
       "standard": "ICRC1",
       "name": "NOBLEBLOCKS",
       "symbol": "NOBL",
-      "fee": 10
-    },
-    {
+      "fee": 10,
+      "root_canister": "5swkl-gyaaa-aaaap-abbuq-cai"
+  },
+  {
       "id": "jwcfb-hyaaa-aaaaj-aac4q-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy_legacy.png",
       "fee": 200000,
       "decimals": 8,
       "name": "legacy-ORIGYN",
       "symbol": "legacy-OGY",
-      "standard": "ICRC1"
-    },
-    {
+      "standard": "ICRC1",
+      "root_canister": "a3lu7-uiaaa-aaaaj-aadnq-cai"
+  },
+  {
       "id": "zfcdd-tqaaa-aaaaq-aaaga-cai",
       "index_canister": "zlaol-iaaaa-aaaaq-aaaha-cai",
+      "root_canister": "zxeu2-7aaaa-aaaaq-aaafa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dkp.png",
       "decimals": 8,
       "standard": "ICRC1",
       "name": "Dragginz",
       "symbol": "DKP",
       "fee": 100000
-    },
-    {
+  },
+  {
       "id": "wedc6-xiaaa-aaaaq-aabaq-cai",
       "index_canister": "wkbpw-myaaa-aaaaq-aabbq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/emc.png",
@@ -177,9 +180,10 @@
       "standard": "ICRC1",
       "name": "EdgeMatrixComputing",
       "symbol": "EMC",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "55uwu-byaaa-aaaaq-aaa7q-cai"
+  },
+  {
       "id": "viusj-4iaaa-aaaaq-aabkq-cai",
       "index_canister": "vgw7b-hyaaa-aaaaq-aablq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/seer.png",
@@ -187,9 +191,10 @@
       "standard": "ICRC1",
       "name": "SEER",
       "symbol": "SEER",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "v2sfq-qyaaa-aaaaq-aabjq-cai"
+  },
+  {
       "id": "xsi2v-cyaaa-aaaaq-aabfq-cai",
       "index_canister": "xaonm-oiaaa-aaaaq-aabgq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mod.png",
@@ -197,9 +202,10 @@
       "standard": "ICRC1",
       "name": "Modclub",
       "symbol": "MOD",
-      "fee": 10000
-    },
-    {
+      "fee": 10000,
+      "root_canister": "x4kx5-ziaaa-aaaaq-aabeq-cai"
+  },
+  {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -207,9 +213,10 @@
       "standard": "ICRC1",
       "name": "CHAT",
       "symbol": "CHAT",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "3e3x2-xyaaa-aaaaq-aaalq-cai"
+  },
+  {
       "id": "7ajy4-sqaaa-aaaaq-aaaqa-cai",
       "index_canister": "7olvu-jaaaa-aaaaq-aaara-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/soc.png",
@@ -217,9 +224,10 @@
       "standard": "ICRC1",
       "name": "SONIC",
       "symbol": "SOC",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "23ten-uaaaa-aaaaq-aaapa-cai"
+  },
+  {
       "id": "73mez-iiaaa-aaaaq-aaasq-cai",
       "index_canister": "7vojr-tyaaa-aaaaq-aaatq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/kinic.png",
@@ -227,9 +235,10 @@
       "standard": "ICRC1",
       "name": "KINIC",
       "symbol": "KINIC",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "7jkta-eyaaa-aaaaq-aaarq-cai"
+  },
+  {
       "id": "6rdgd-kyaaa-aaaaq-aaavq-cai",
       "index_canister": "6dfr2-giaaa-aaaaq-aaawq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/hot.png",
@@ -237,9 +246,10 @@
       "standard": "ICRC1",
       "name": "HotOrNot",
       "symbol": "HOT",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "67bll-riaaa-aaaaq-aaauq-cai"
+  },
+  {
       "id": "4c4fd-caaaa-aaaaq-aaa3a-cai",
       "index_canister": "5ithz-aqaaa-aaaaq-aaa4a-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ghost.png",
@@ -247,19 +257,21 @@
       "standard": "ICRC1",
       "name": "GHOST",
       "symbol": "GHOST",
-      "fee": 100000000
-    },
-    {
+      "fee": 100000000,
+      "root_canister": "4m6il-zqaaa-aaaaq-aaa2a-cai"
+  },
+  {
       "id": "vtrom-gqaaa-aaaaq-aabia-cai",
       "index_canister": "v5tde-5aaaa-aaaaq-aabja-cai",
+      "root_canister": "xjngq-yaaaa-aaaaq-aabha-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/boom.png",
       "decimals": 8,
       "standard": "ICRC1",
       "name": "BoomDAO",
       "symbol": "BOOM",
       "fee": 100000
-    },
-    {
+  },
+  {
       "id": "uf2wh-taaaa-aaaaq-aabna-cai",
       "index_canister": "ux4b6-7qaaa-aaaaq-aaboa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ctz.png",
@@ -267,9 +279,10 @@
       "standard": "ICRC1",
       "name": "CatalyzeDAO",
       "symbol": "CTZ",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "uly3p-iqaaa-aaaaq-aabma-cai"
+  },
+  {
       "id": "rffwt-piaaa-aaaaq-aabqq-cai",
       "index_canister": "rlh33-uyaaa-aaaaq-aabrq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icx.png",
@@ -277,9 +290,10 @@
       "decimals": 8,
       "name": "IC-X",
       "symbol": "ICX",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "u67kc-jyaaa-aaaaq-aabpq-cai"
+  },
+  {
       "id": "rxdbk-dyaaa-aaaaq-aabtq-cai",
       "index_canister": "q5mdq-biaaa-aaaaq-aabuq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/nua.png",
@@ -287,9 +301,10 @@
       "decimals": 8,
       "name": "Nuance",
       "symbol": "NUA",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "rzbmc-yiaaa-aaaaq-aabsq-cai"
+  },
+  {
       "id": "qbizb-wiaaa-aaaaq-aabwq-cai",
       "index_canister": "qpkuj-nyaaa-aaaaq-aabxq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sonic.png",
@@ -297,9 +312,10 @@
       "decimals": 8,
       "name": "Sonic",
       "symbol": "SONIC",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "qtooy-2yaaa-aaaaq-aabvq-cai"
+  },
+  {
       "id": "sotaq-jqaaa-aaaaq-aab2a-cai",
       "index_canister": "sarny-saaaa-aaaaq-aab3a-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/qro.png",
@@ -307,9 +323,10 @@
       "decimals": 8,
       "name": "Querio",
       "symbol": "QRO",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "s4vxj-faaaa-aaaaq-aabza-cai"
+  },
+  {
       "id": "emww2-4yaaa-aaaaq-aacbq-cai",
       "index_canister": "e6qbd-qiaaa-aaaaq-aaccq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/trax.png",
@@ -317,9 +334,10 @@
       "decimals": 8,
       "name": "TRAX",
       "symbol": "TRAX",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "ecu3s-hiaaa-aaaaq-aacaq-cai"
+  },
+  {
       "id": "tyyy3-4aaaa-aaaaq-aab7a-cai",
       "index_canister": "efv5g-kqaaa-aaaaq-aacaa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/gldgov.png",
@@ -327,9 +345,10 @@
       "decimals": 8,
       "name": "Gold Governance Token",
       "symbol": "GLDGov",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "tw2vt-hqaaa-aaaaq-aab6a-cai"
+  },
+  {
       "id": "f54if-eqaaa-aaaaq-aacea-cai",
       "index_canister": "ft6fn-7aaaa-aaaaq-aacfa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ntn.png",
@@ -337,9 +356,10 @@
       "decimals": 8,
       "name": "Neutrinite",
       "symbol": "NTN",
-      "fee": 10000
-    },
-    {
+      "fee": 10000,
+      "root_canister": "extk7-gaaaa-aaaaq-aacda-cai"
+  },
+  {
       "id": "hvgxa-wqaaa-aaaaq-aacia-cai",
       "index_canister": "h3e2i-naaaa-aaaaq-aacja-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/sneed.png",
@@ -347,9 +367,10 @@
       "decimals": 8,
       "name": "Sneed DAO",
       "symbol": "SNEED",
-      "fee": 1000
-    },
-    {
+      "fee": 1000,
+      "root_canister": "fp274-iaaaa-aaaaq-aacha-cai"
+  },
+  {
       "id": "hhaaz-2aaaa-aaaaq-aacla-cai",
       "index_canister": "gnpcd-yqaaa-aaaaq-aacma-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icl.png",
@@ -357,9 +378,10 @@
       "decimals": 8,
       "name": "ICLighthouse DAO",
       "symbol": "ICL",
-      "fee": 1000000
-    },
-    {
+      "fee": 1000000,
+      "root_canister": "hjcnr-bqaaa-aaaaq-aacka-cai"
+  },
+  {
       "id": "gemj7-oyaaa-aaaaq-aacnq-cai",
       "index_canister": "gwk6g-ciaaa-aaaaq-aacoq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/elna.png",
@@ -367,9 +389,10 @@
       "decimals": 8,
       "name": "ELNA",
       "symbol": "ELNA",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "gkoex-viaaa-aaaaq-aacmq-cai"
+  },
+  {
       "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
       "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
@@ -377,9 +400,10 @@
       "decimals": 8,
       "name": "OpenFPL",
       "symbol": "FPL",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "gyito-zyaaa-aaaaq-aacpq-cai"
+  },
+  {
       "id": "druyg-tyaaa-aaaaq-aactq-cai",
       "index_canister": "c3324-riaaa-aaaaq-aacuq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/panda.png",
@@ -387,9 +411,10 @@
       "decimals": 8,
       "name": "ICPanda",
       "symbol": "PANDA",
-      "fee": 10000
-    },
-    {
+      "fee": 10000,
+      "root_canister": "d7wvo-iiaaa-aaaaq-aacsq-cai"
+  },
+  {
       "id": "ca6gz-lqaaa-aaaaq-aacwa-cai",
       "index_canister": "co4lr-qaaaa-aaaaq-aacxa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ics.png",
@@ -397,9 +422,10 @@
       "decimals": 8,
       "name": "ICPSwap Token",
       "symbol": "ICS",
-      "fee": 1000000
-    },
-    {
+      "fee": 1000000,
+      "root_canister": "csyra-haaaa-aaaaq-aacva-cai"
+  },
+  {
       "id": "atbfz-diaaa-aaaaq-aacyq-cai",
       "index_canister": "a5dir-yyaaa-aaaaq-aaczq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/yuku.png",
@@ -407,9 +433,10 @@
       "decimals": 8,
       "name": "Yuku DAO",
       "symbol": "YUKU",
-      "fee": 1000000
-    },
-    {
+      "fee": 1000000,
+      "root_canister": "cj5nf-5yaaa-aaaaq-aacxq-cai"
+  },
+  {
       "id": "bliq2-niaaa-aaaaq-aac4q-cai",
       "index_canister": "bfk5s-wyaaa-aaaaq-aac5q-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/est.png",
@@ -417,9 +444,10 @@
       "decimals": 8,
       "name": "ESTATE",
       "symbol": "EST",
-      "fee": 100000
-    },
-    {
+      "fee": 100000,
+      "root_canister": "abhsa-pyaaa-aaaaq-aac3q-cai"
+  },
+  {
       "id": "bzohd-byaaa-aaaaq-aac7q-cai",
       "index_canister": "kaztj-xiaaa-aaaaq-aadaq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/mora.png",
@@ -427,9 +455,10 @@
       "decimals": 8,
       "name": "MORA DAO",
       "symbol": "MORA",
-      "fee": 1000000
-    },
-    {
+      "fee": 1000000,
+      "root_canister": "bxmkl-2iaaa-aaaaq-aac6q-cai"
+  },
+  {
       "id": "k45jy-aiaaa-aaaaq-aadcq-cai",
       "index_canister": "ks7eq-3yaaa-aaaaq-aaddq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/motoko.png",
@@ -437,9 +466,10 @@
       "decimals": 8,
       "name": "Motoko",
       "symbol": "MOTOKO",
-      "fee": 10000
-    },
-    {
+      "fee": 10000,
+      "root_canister": "ko36b-myaaa-aaaaq-aadbq-cai"
+  },
+  {
       "id": "lrtnw-paaaa-aaaaq-aadfa-cai",
       "index_canister": "ldv2p-dqaaa-aaaaq-aadga-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/conf.png",
@@ -447,9 +477,10 @@
       "decimals": 8,
       "name": "ICPCC DAO LLC",
       "symbol": "CONF",
-      "fee": 10000
-    },
-    {
+      "fee": 10000,
+      "root_canister": "l7ra6-uqaaa-aaaaq-aadea-cai"
+  },
+  {
       "id": "lkwrt-vyaaa-aaaaq-aadhq-cai",
       "index_canister": "jqkzp-liaaa-aaaaq-aadiq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
@@ -457,9 +488,10 @@
       "decimals": 8,
       "name": "ORIGYN",
       "symbol": "OGY",
-      "fee": 200000
-    },
-    {
+      "fee": 200000,
+      "root_canister": "leu43-oiaaa-aaaaq-aadgq-cai"
+  },
+  {
       "id": "jcmow-hyaaa-aaaaq-aadlq-cai",
       "index_canister": "iidmm-fiaaa-aaaaq-aadmq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/wtn.png",
@@ -467,9 +499,10 @@
       "decimals": 8,
       "name": "WaterNeuron",
       "symbol": "WTN",
-      "fee": 1000000
-    },
-    {
+      "fee": 1000000,
+      "root_canister": "jmod6-4iaaa-aaaaq-aadkq-cai"
+  },
+  {
       "id": "itgqj-7qaaa-aaaaq-aadoa-cai",
       "index_canister": "i5e5b-eaaaa-aaaaq-aadpa-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cts.png",
@@ -477,7 +510,8 @@
       "decimals": 8,
       "name": "CYCLES-TRANSFER-STATION",
       "symbol": "CTS",
-      "fee": 100000
-    }
+      "fee": 100000,
+      "root_canister": "ibahq-taaaa-aaaaq-aadna-cai"
+  }
   ]
 }
