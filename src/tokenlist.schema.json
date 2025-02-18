@@ -66,6 +66,11 @@
             "type": "string",
             "description": "The index canister maps accounts to their transactions",
             "examples": ["gear3-daaaa-aaaaj-ailpa-cai"]
+          },
+          "root_canister": {
+            "type": "string",
+            "description": "The root canister is the governance and management canister",
+            "examples": ["gear3-daaaa-aaaaj-ailpa-cai"]
           }
         },
         "required": ["id", "name", "symbol", "decimals", "standard"]
