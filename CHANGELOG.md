@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.5.0
+
+### Minor Changes
+
+- [#93](https://github.com/bitfinity-network/token-lists/pull/93) [`33a1d74c9caebfa58b302778269c1bfb18243a78`](https://github.com/bitfinity-network/token-lists/commit/33a1d74c9caebfa58b302778269c1bfb18243a78) Thanks [@EstherOA](https://github.com/EstherOA)! - add erc20 tokens
+
 ## 0.3.11
 
 ### Patch Changes
