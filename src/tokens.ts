@@ -27,6 +27,7 @@ export interface TokenProperties {
   standard: string;
   tags?: string[];
   index_canister?: string;
+  root_canister?: string;
   canisterInfo?: CanisterInfo;
   logo?: string;
 }
@@ -62,6 +63,7 @@ export class Token {
   decimals: number;
   standard: string;
   indexCanister?: Principal;
+  rootCanister?: Principal;
   tags?: string[];
   canisterInfo?: CanisterInfo;
   logo?: string;
@@ -77,6 +79,9 @@ export class Token {
     this.canisterInfo = props.canisterInfo;
     this.indexCanister = props.index_canister
       ? Principal.fromText(props.index_canister)
+      : undefined;
+    this.rootCanister = props.root_canister
+      ? Principal.fromText(props.root_canister)
       : undefined;
     this.logo = props.logo;
   }
@@ -122,6 +127,7 @@ export class Token {
       standard: this.standard,
       tags: this.tags || [],
       index_canister: this.indexCanister?.toText() || '',
+      root_canister: this.rootCanister?.toText() || '',
       canisterInfo: this.canisterInfo || {
         canisterId: '',
         controllers: [],
