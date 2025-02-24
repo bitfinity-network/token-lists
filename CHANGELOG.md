@@ -1,5 +1,11 @@
 # @infinityswapofficial/token-lists
 
+## 0.5.2
+
+### Patch Changes
+
+- [#98](https://github.com/bitfinity-network/token-lists/pull/98) [`8fde80195d3db583cdf91b50c7adba156794c1e3`](https://github.com/bitfinity-network/token-lists/commit/8fde80195d3db583cdf91b50c7adba156794c1e3) Thanks [@EstherOA](https://github.com/EstherOA)! - add root canister to token serializer
+
 ## 0.5.0
 
 ### Minor Changes
