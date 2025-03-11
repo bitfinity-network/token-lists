@@ -161,24 +161,14 @@
       "fee": 100000
     },
     {
-      "id": "np5km-uyaaa-aaaaq-aadrq-cai",
-      "index_canister": "n535v-yiaaa-aaaaq-aadsq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dogmi.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "DOGMI",
-      "symbol": "DOGMI",
-      "fee": 100000000000
-    },
-    {
-      "id": "nfjys-2iaaa-aaaaq-aaena-cai",
-      "index_canister": "nxppl-wyaaa-aaaaq-aaeoa-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fuel.png",
+      "id": "p3dpy-ryaaa-aaaaq-aad7q-cai",
+      "index_canister": "peqml-6aaaa-aaaaq-aaeaq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icto.png",
       "standard": "ICRC1",
       "decimals": 8,
-      "name": "FUEL",
-      "symbol": "FUEL",
-      "fee": 100000
+      "name": "ICTO",
+      "symbol": "ICTO",
+      "fee": 1000000
     },
     {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
@@ -381,6 +371,16 @@
       "fee": 1000000
     },
     {
+      "id": "np5km-uyaaa-aaaaq-aadrq-cai",
+      "index_canister": "n535v-yiaaa-aaaaq-aadsq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dogmi.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "DOGMI",
+      "symbol": "DOGMI",
+      "fee": 100000000000
+    },
+    {
       "id": "m6xut-mqaaa-aaaaq-aadua-cai",
       "index_canister": "mqvz3-xaaaa-aaaaq-aadva-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icvc.png",
@@ -399,16 +399,6 @@
       "name": "KongSwap",
       "symbol": "KONG",
       "fee": 10000
-    },
-    {
-      "id": "p3dpy-ryaaa-aaaaq-aad7q-cai",
-      "index_canister": "peqml-6aaaa-aaaaq-aaeaq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/icto.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "ICTO",
-      "symbol": "ICTO",
-      "fee": 1000000
     },
     {
       "id": "p7vqo-eyaaa-aaaaq-aaeca-cai",
@@ -449,6 +439,16 @@
       "name": "NFID Wallet",
       "symbol": "NFIDW",
       "fee": 10000
+    },
+    {
+      "id": "nfjys-2iaaa-aaaaq-aaena-cai",
+      "index_canister": "nxppl-wyaaa-aaaaq-aaeoa-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fuel.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "FUEL",
+      "symbol": "FUEL",
+      "fee": 100000
     },
     {
       "id": "ifwyg-gaaaa-aaaaq-aaeqq-cai",
