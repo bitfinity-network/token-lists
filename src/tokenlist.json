@@ -171,6 +171,26 @@
       "fee": 1000000
     },
     {
+      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
+      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "OpenFPL",
+      "symbol": "FPL",
+      "fee": 100000
+    },
+    {
+      "id": "oj6if-riaaa-aaaaq-aaeha-cai",
+      "index_canister": "mtcaz-pyaaa-aaaaq-aaeia-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/alice.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "ALICE",
+      "symbol": "ALICE",
+      "fee": 500000000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -288,16 +308,6 @@
       "decimals": 8,
       "name": "ELNA",
       "symbol": "ELNA",
-      "fee": 100000
-    },
-    {
-      "id": "ddsp7-7iaaa-aaaaq-aacqq-cai",
-      "index_canister": "dnqcx-eyaaa-aaaaq-aacrq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/fpl.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "OpenFPL",
-      "symbol": "FPL",
       "fee": 100000
     },
     {
@@ -419,16 +429,6 @@
       "name": "FomoWell",
       "symbol": "WELL",
       "fee": 100000
-    },
-    {
-      "id": "oj6if-riaaa-aaaaq-aaeha-cai",
-      "index_canister": "mtcaz-pyaaa-aaaaq-aaeia-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/alice.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "ALICE",
-      "symbol": "ALICE",
-      "fee": 500000000
     },
     {
       "id": "mih44-vaaaa-aaaaq-aaekq-cai",
