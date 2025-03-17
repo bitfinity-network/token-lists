@@ -181,6 +181,16 @@
       "fee": 100000
     },
     {
+      "id": "p7vqo-eyaaa-aaaaq-aaeca-cai",
+      "index_canister": "prx5g-7iaaa-aaaaq-aaeda-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cani.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "CANI DAO",
+      "symbol": "CANI",
+      "fee": 10000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -398,16 +408,6 @@
       "decimals": 8,
       "name": "KongSwap",
       "symbol": "KONG",
-      "fee": 10000
-    },
-    {
-      "id": "p7vqo-eyaaa-aaaaq-aaeca-cai",
-      "index_canister": "prx5g-7iaaa-aaaaq-aaeda-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/cani.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "CANI DAO",
-      "symbol": "CANI",
       "fee": 10000
     },
     {
