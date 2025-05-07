@@ -221,6 +221,16 @@
       "fee": 100000000
     },
     {
+      "id": "np5km-uyaaa-aaaaq-aadrq-cai",
+      "index_canister": "n535v-yiaaa-aaaaq-aadsq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dogmi.png",
+      "decimals": 8,
+      "standard": "ICRC1",
+      "name": "DOGMI",
+      "symbol": "DOGMI",
+      "fee": 100000000000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -379,16 +389,6 @@
       "name": "WaterNeuron",
       "symbol": "WTN",
       "fee": 1000000
-    },
-    {
-      "id": "np5km-uyaaa-aaaaq-aadrq-cai",
-      "index_canister": "n535v-yiaaa-aaaaq-aadsq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dogmi.png",
-      "decimals": 8,
-      "standard": "ICRC1",
-      "name": "DOGMI",
-      "symbol": "DOGMI",
-      "fee": 100000000000
     },
     {
       "id": "m6xut-mqaaa-aaaaq-aadua-cai",
