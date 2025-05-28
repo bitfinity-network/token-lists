@@ -231,6 +231,16 @@
       "fee": 100000000000
     },
     {
+      "id": "ixqp7-kqaaa-aaaaq-aaetq-cai",
+      "index_canister": "j57nf-iaaaa-aaaaq-aaeuq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dao.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "Personal DAO",
+      "symbol": "DAO",
+      "fee": 10000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -459,16 +469,6 @@
       "name": "ICExplorer",
       "symbol": "ICE",
       "fee": 100000
-    },
-    {
-      "id": "ixqp7-kqaaa-aaaaq-aaetq-cai",
-      "index_canister": "j57nf-iaaaa-aaaaq-aaeuq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/dao.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "Personal DAO",
-      "symbol": "DAO",
-      "fee": 10000
     },
     {
       "id": "jg2ra-syaaa-aaaaq-aaewa-cai",
