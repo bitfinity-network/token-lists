@@ -231,26 +231,6 @@
       "fee": 100000000000
     },
     {
-      "id": "gemj7-oyaaa-aaaaq-aacnq-cai",
-      "index_canister": "gwk6g-ciaaa-aaaaq-aacoq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/elna.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "ELNA",
-      "symbol": "ELNA",
-      "fee": 100000
-    },
-    {
-      "id": "jcmow-hyaaa-aaaaq-aadlq-cai",
-      "index_canister": "iidmm-fiaaa-aaaaq-aadmq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/wtn.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "WaterNeuron",
-      "symbol": "WTN",
-      "fee": 1000000
-    },
-    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -341,6 +321,16 @@
       "fee": 1000000
     },
     {
+      "id": "gemj7-oyaaa-aaaaq-aacnq-cai",
+      "index_canister": "gwk6g-ciaaa-aaaaq-aacoq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/elna.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ELNA",
+      "symbol": "ELNA",
+      "fee": 100000
+    },
+    {
       "id": "druyg-tyaaa-aaaaq-aactq-cai",
       "index_canister": "c3324-riaaa-aaaaq-aacuq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/panda.png",
@@ -389,6 +379,16 @@
       "name": "ORIGYN",
       "symbol": "OGY",
       "fee": 200000
+    },
+    {
+      "id": "jcmow-hyaaa-aaaaq-aadlq-cai",
+      "index_canister": "iidmm-fiaaa-aaaaq-aadmq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/wtn.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "WaterNeuron",
+      "symbol": "WTN",
+      "fee": 1000000
     },
     {
       "id": "m6xut-mqaaa-aaaaq-aadua-cai",
