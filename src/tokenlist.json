@@ -231,16 +231,6 @@
       "fee": 100000000000
     },
     {
-      "id": "lkwrt-vyaaa-aaaaq-aadhq-cai",
-      "index_canister": "jqkzp-liaaa-aaaaq-aadiq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "ORIGYN",
-      "symbol": "OGY",
-      "fee": 200000
-    },
-    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -379,6 +369,16 @@
       "name": "Motoko",
       "symbol": "MOTOKO",
       "fee": 10000000
+    },
+    {
+      "id": "lkwrt-vyaaa-aaaaq-aadhq-cai",
+      "index_canister": "jqkzp-liaaa-aaaaq-aadiq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ogy.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ORIGYN",
+      "symbol": "OGY",
+      "fee": 200000
     },
     {
       "id": "jcmow-hyaaa-aaaaq-aadlq-cai",
