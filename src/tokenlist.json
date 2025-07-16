@@ -231,6 +231,26 @@
       "fee": 100000000000
     },
     {
+      "id": "o4zzi-qaaaa-aaaaq-aaeeq-cai",
+      "index_canister": "os3ua-lqaaa-aaaaq-aaefq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/well.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "FomoWell",
+      "symbol": "WELL",
+      "fee": 100000
+    },
+    {
+      "id": "kknbx-zyaaa-aaaaq-aae4a-cai",
+      "index_canister": "kepm7-ciaaa-aaaaq-aae5a-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/taco.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "TACO DAO Token",
+      "symbol": "TACO",
+      "fee": 10000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -411,16 +431,6 @@
       "fee": 10000
     },
     {
-      "id": "o4zzi-qaaaa-aaaaq-aaeeq-cai",
-      "index_canister": "os3ua-lqaaa-aaaaq-aaefq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/well.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "FomoWell",
-      "symbol": "WELL",
-      "fee": 100000
-    },
-    {
       "id": "oj6if-riaaa-aaaaq-aaeha-cai",
       "index_canister": "mtcaz-pyaaa-aaaaq-aaeia-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/alice.png",
@@ -489,16 +499,6 @@
       "name": "ICPEx",
       "symbol": "ICX",
       "fee": 100000
-    },
-    {
-      "id": "kknbx-zyaaa-aaaaq-aae4a-cai",
-      "index_canister": "kepm7-ciaaa-aaaaq-aae5a-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/taco.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "TACO DAO Token",
-      "symbol": "TACO",
-      "fee": 10000
     }
   ]
 }
