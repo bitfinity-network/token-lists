@@ -251,16 +251,6 @@
       "fee": 100000
     },
     {
-      "id": "ifwyg-gaaaa-aaaaq-aaeqq-cai",
-      "index_canister": "iluvo-5qaaa-aaaaq-aaerq-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ice.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "ICExplorer",
-      "symbol": "ICE",
-      "fee": 100000
-    },
-    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -469,6 +459,16 @@
       "name": "NFID Wallet",
       "symbol": "NFIDW",
       "fee": 10000
+    },
+    {
+      "id": "ifwyg-gaaaa-aaaaq-aaeqq-cai",
+      "index_canister": "iluvo-5qaaa-aaaaq-aaerq-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/ice.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ICExplorer",
+      "symbol": "ICE",
+      "fee": 100000
     },
     {
       "id": "ixqp7-kqaaa-aaaaq-aaetq-cai",
