@@ -251,6 +251,16 @@
       "fee": 100000
     },
     {
+      "id": "b5yyv-uyaaa-aaaaq-aafca-cai",
+      "index_canister": "bt2v5-piaaa-aaaaq-aafda-cai",
+      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/onicai.png",
+      "standard": "ICRC1",
+      "decimals": 8,
+      "name": "ONICAI",
+      "symbol": "ONICAI",
+      "fee": 100000
+    },
+    {
       "id": "2ouva-viaaa-aaaaq-aaamq-cai",
       "index_canister": "2awyi-oyaaa-aaaaq-aaanq-cai",
       "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/chat.png",
@@ -509,16 +519,6 @@
       "name": "Tendies",
       "symbol": "TENDY",
       "fee": 420
-    },
-    {
-      "id": "b5yyv-uyaaa-aaaaq-aafca-cai",
-      "index_canister": "bt2v5-piaaa-aaaaq-aafda-cai",
-      "logo": "https://raw.githubusercontent.com/infinity-swap/token-lists/main/logos/onicai.png",
-      "standard": "ICRC1",
-      "decimals": 8,
-      "name": "ONICAI",
-      "symbol": "ONICAI",
-      "fee": 100000
     }
   ]
 }
